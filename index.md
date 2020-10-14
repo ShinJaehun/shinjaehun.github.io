@@ -43,14 +43,14 @@ layout: about
  * [자유롭게 살고자 하는 리눅서 FreeKGB, 강기봉과의 만남, 리눅스 매거진, 2003-10](https://wiki.kldp.org/wiki.php/KLDPInterview/%B0%AD%B1%E2%BA%C0)
  * [대한민국 서버 관리자 그룹 : 수퍼유저코리아의 수퍼유저 박성수, 리눅스 매거진, 2003-11](https://wiki.kldp.org/wiki.php/KLDPInterview/%B9%DA%BC%BA%BC%F6)
  * [대한민국 Tcl/Tk 사용자 그룹의 리더 : 민인학, 리눅스 매거진, 2004-01](https://wiki.kldp.org/wiki.php/KLDPInterview/%B9%CE%C0%CE%C7%D0)
- * [어셈블리 개발자 그룹, 어셈러브의 운영자 : 김기오, 리눅스 매거진, 2004-02]
+ * [어셈블리 개발자 그룹, 어셈러브의 운영자 : 김기오, 리눅스 매거진, 2004-02](https://wiki.kldp.org/wiki.php/KLDPInterview/%B1%E8%B1%E2%BF%C0)
  * [FreeBSD KR 사용자 그룹(KFUG)의 리더 최준호 그만의 이야기, 리눅스 매거진, 2004-03](https://wiki.kldp.org/wiki.php/KLDPInterview/%C3%D6%C1%D8%C8%A3)
 
 # 프로젝트
-* [크노픽스 한글 프로젝트](http://knoppixko.kldp.net/projects/knoppixko/)
-* [네모네모 100칸 계산](https://wiki.kldp.org/wiki.php/MathPractice)
-* [클래스캐스트](https://github.com/ShinJaehun/ClassCasts)
-* [곱셈과 나눗셈의 원리를 찾아가는 쑥쑥수학](https://github.com/ShinJaehun/SukSuk)
+* [크노픽스 한글 프로젝트](https://wiki.kldp.org/wiki.php/Knoppix) : 데비안 기반 라이브 CD 리눅스 Knoppix를 한글화하기 위한 프로젝트
+* [네모네모 100칸 계산](https://wiki.kldp.org/wiki.php/MathPractice) : 머리가 좋아지는 기적의 100칸 계산법 홈페이지 설명을 참고로 간단하게 만들어본 자바 게임
+* [클래스캐스트](https://github.com/ShinJaehun/ClassCasts) : 유튜브 수업 영상을 제공하고 평가 도구와 커뮤니티 기능을 갖춘 온라인 공개 수업 도구
+* [곱셈과 나눗셈의 원리를 찾아가는 쑥쑥수학](https://github.com/ShinJaehun/SukSuk) : 곱하는 수가 두 자리 이상인 곱셈, 나누는 수가 두 자리 이상인 나눗셈, 받아 올림이 있는 곱셈, 받아 내림이 있는 나눗셈을 연습해볼 수 있는 안드로이드 응용 프로그램
 
 # 수상경력
 * [SK텔레콤 2013 모바일웹앱공모전 장려상 수상](http://cornerstone.sktelecom.com/event/#contest)
