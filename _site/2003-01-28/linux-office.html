@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ShinJaehun</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">ShinJaehun</h2>
+        </a>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <h2 class="post-title">리눅스를 데스크탑으로!! - 리눅스용 오피스 슈트 3종 분석</h2>
+  <div class="post-line"></div>
+
+  <p><strong>이 기사는 2003년 2월 리눅스 매거진에 실린 기사입니다. 이전까지와의 원고와는 다르게 청탁을 받고 쓴 원고라서 정식 원고료를 받는 기사였는데 끝내 원고료는 받지 못했습니다. 가슴이 아프군요;;;</strong></p>
+
+<p>각 운영체제는 나름대로 자기만의 특징이 있기 마련이다. 사실 그동안 리눅스는 데스크탑 운영체제로서 제대로 된 대접을 받지 못했던 것이 사실이다. 그러나 리눅스가 탄생한 때부터 ??년이 지난 지금, 리눅스 역시 쓸만한 데스크탑 운영체제로 두각을 나타내고 있다. 이에 본 기사에서는 데스크탑 운영체제로서 가장 중요하다고 판단되는 리눅스용 오피스 슈트를 분석해 보고자 한다.</p>
+
+<h2 id="분석에-앞서">분석에 앞서</h2>
+
+<h3 id="리눅스를-데스크탑으로">리눅스를 데스크탑으로!</h3>
+
+<p>이미 리눅스를 데스크탑 운영체제로 활용하자는 테마는 리눅서들에게 식상한 주제가 아닐 수 없다. 지금 리눅스 매거진을 보고 있는 독자들 중에서도 몇몇 분들은 분명 리눅스에서 음악을 들으며 문서작업을 해보았거나 DVD 타이틀 혹은 동영상을 즐겨 보았을 것이라고 생각한다.</p>
+
+<p>필자가 가장 처음 만난 리눅스 배포판은 99년 모 잡지 부록으로 받았던 레드햇 5.2기반의 알짜 리눅스였다. 당시 Xfree86이 필자의 비디오 카드를 지원하지 않아 X 윈도우는 꿈도 꾸지 못했었지만 이때 만해도 벌써 리눅스를 데스크탑으로 활용하기 위한 전략들이 쏟아져 나왔던 것을 기억한다. 이미 Real Player가 리눅스에서 사용되고 있었으며 XMMS 등의 MP3 플레이어를 인터넷을 통해 쉽게 구할 수 있었다. Windows에서 인기를 끌었던 몇몇 유명한 게임들이 리눅스용으로 포팅되?판매되었으며 국내 절대지존의 워드프로세서 한글이 한글X라는 이름으로 리눅스 애플리케이션 시장에 등장했다.</p>
+
+<p>리눅스용 킬러 애플리케이션에 목말라 하는 리눅서들에게 한차례 소나기라도 내리듯 ‘리눅스로’의 구호는 점점 커져만 갔다. 내일이라도 당장, 우리 집 앞에 있는 컴퓨터를 조립해서 파는 가게에서도 운영체제를 리눅스로 하여 팔기 시작할 것만 같았고 PC방에서도 리눅스용 온라인 게이머들로 성황을 이룰 것이라 기대했다. 학교 전산실에 있는 모든 PC의 운영체제는 저렴하면서도 쉽게 배울 수 있는 리눅스로 바뀌게 될 것이고 동네 비디오 가게 아저씨의 Visual C++로 어설프게 만든 비디오 대여 프로그램은 Qt 라이브러리를 이용한 KDE에서 돌아가게 될 것이라고 생각했다.</p>
+
+<p>현재의 데스크탑으로서 리눅스는 필자의 4년 전 이러한 기대에 완벽하게 부응하지 못하는 것이 사실이다. 솔직히 기대가 너무 컸다는 것도 인정한다. 아, 이것은 결코 데스크탑 리눅스가 성능이 나쁘다거나, Windows 보다 사용이 불편하다거나, 소위 말하는 ‘죽이는’ 애플리케이션이 없기 때문에 기대에 못 미친다는 이야기가 아니다. 수많은 사람들이 아직도 Windows 운영체제를 버리지 못함을 한탄함이니 오해는 하지말기 바란다.</p>
+
+<h3 id="데스크탑과-오피스-슈트-">데스크탑과 오피스 슈트 ===</h3>
+
+<p>필자는 리눅스 관련 기사를 쓸 때 도저히 글감을 발견할 수 없다면 자포자기하는 심정으로 KLDP의 Geek 포럼을 찾는다. (<a href="http://geekforum.kldp.org">http://geekforum.kldp.org</a>) 재미있는 토론 내용들을 시간 가는 줄 모르고 읽어 내려감으로서 힌트를 얻는 것은 기사 마감을 얼마 남겨두지 않고 리눅스 매거진에 민폐를 끼치는 행위임에 틀림없다. 창작의 고통이란 실로 고된 것.</p>
+
+<p>각설하고 Geek 포럼에서는 데스크탑 리눅스와 관련된 재미있는 토론 주제들을 많이 찾을 수 있다. ‘데스크탑 리눅스 배포판이 갖추어야 할 기능은?’, ‘리눅스 데스크탑의 현재와 미래’ 등등 독자 여러분도 시간이 난다면 꼭 읽어보기 바란다. 물론 오래 전에 등록된 토론 주제의 경우 지금 리눅스의 현실과 맞지 않는 부분도 많다.</p>
+
+<p>긴 토론들을 읽어내려 가면서 나름대로 내린 결론은 리눅스에도 MS Office 같이 훌륭한 오피스 슈트가 필요하다는 생각이다. 일반적으로 데스크탑 운영체제로서 반드시 갖추어야할 요건으로 오피스 슈트를 손꼽는다. MS사가 성공한 이면에는 Windows 뿐만 아니라 MS Office의 역할도 상당했음을 생각한다면 리눅스를 데스크탑으로 활용하자는 테마는 결국 리눅스에서의 오피스 슈트 활용 여부로 귀결된다고 할 수 있다.</p>
+
+<p>‘이것’이 오피스 슈트다라고 딱히 정의하기는 어렵지만 오피스 슈트라고 하면 개인의 업무를 도울 수 있는 애플리케이션의 집합 정도라고 생각한다. 단순 문서작업을 위한 워드프로세서뿐만 아니라 강력한 계산 기능과 데이터를 분석할 수 있는 스프레드시트, 데이터를 자유자재로 분석하고 관리할 수 있는 개인용 데이터베이스, 자기가 수행한 업무 내용을 종합하여 발표하는데 필요한 프리젠테이션 프로그램 정도가 포함되어 있는 것이라고 할 수 있다. 물론 각 애플리케이션간의 데이터 교환이 자유로워야 한다는 것, 역시 중요하다. 하나의 애플리케이션을 통해 가공된 데이터를 다른 애플리케이션에서 활용할 수 있도록 하는 것이 각각의 애플리케이션들을 하나의 오피스 슈트로 묶을 수 있는 범위가 된다.</p>
+
+<h3 id="분석-리눅스용-오피스-슈트">분석! 리눅스용 오피스 슈트</h3>
+
+<p>이러한 맥락에서 필자는 현재 독자 여러분들이 쉽게 구할 수 있고 쉽게 사용할 수 있는 오피스 슈트들을 나름대로 분석해 보았다.
+쉽게 구할 수 있고 쉽게 사용할 수 있는 오피스 슈트는 한컴 리눅스에서 개발한 한컴오피스, 오픈오피스, 통합 데스크탑 환경 KDE에서 제공하는 K오피스 이 정도가 될 듯하다.</p>
+
+<p>인터넷을 통해 직접 다운받아 사용할 수 있으며 오픈 오피스와 K 오피스의 경우에는 리눅스 배포판에서 기본적으로 제공하는 패키지이기도 하다.
+원래 계획대로라면 여기에 썬  마이크로시스템즈에서 개발/공급하고 있는 StarSuite까지 함께 분석할 예정이었으나 사정상 StarSuite는 분석할 수 없었다. 이점 양해하기 바란다.</p>
+
+<p><strong>참고로 StarSuite은 스타 오피스의 새로운 이름으로 썬 마이크로 시스템즈는 스타 오피스 6.0버전 이후부터 그 명칭을 StarSuite으로 변경하였다. StarSuite은 11개국어로 개발되어 있으며 국내에서는 미지리서치가 한글화 작업에 참여하며 배포판권을 가지고 있다.</strong></p>
+
+<p>이번 분석은 각각의 오피스 슈트에서 제공하는 대표적인 애플리케이션인 워드프로세서, 스프레드시트, 개인용 데이터베이스, 프리젠테이션 프로그램을 구분하여 실시한다. 각 오피스 슈트마다 특별히 강조하고 있는 애플리케이션도 있을 것이며 분석 대상 애플리케이션 외에 추가적으로 제공하고 있는 애플리케이션도 물론 존재할 것이다. 그러나 본 기사는 리눅스 데스크탑 사용자의 업무에 가장 기본적으로 도움을 줄 수 있는 애플리케이션에 초점을 맞추었다.</p>
+
+<h3 id="워드프로세서">워드프로세서</h3>
+
+<p>전 세계적으로 오피스 시장을 독식하고 있는 마이크로소프트 오피스의 워드프로세서 MS 워드는 유독 국내에서 워드프로세서 시장에서 밀리고 있다는 평을 듣는다. 우리나라에는 한글이라는 마이크로소프트조차 넘기 힘든 벽이 있기 때문일 것이다. 그만큼 오피스 슈트에서 워드프로세서의 존재는 매우 중요하다. 기본적인 문서작업을 할 수 있는 워드프로세서가 있어야 비로소 오피스 슈트로서 제 몫을 할 수 있는 법. 먼저 각 오피스 슈트의 간판 역할을 하는 워드프로세서를 분석한다.</p>
+
+<h3 id="스프래드시트">스프래드시트</h3>
+
+<p>스프래드시트는 기본적으로 계산을 위한 애플리케이션이다. 물론 단순 계산이 아니라 매크로, 차트 편집 등과 같이 데이터를 분석, 가공할 수 있는 정도가 되어야 스프래드시트라고 불릴수 있는 것이다. 두 번째로 업무용 오피스 슈트로서 성능을 결정짓는 스프래드시트를 분석해 본다.</p>
+
+<h3 id="프리젠테이션-프로그램">프리젠테이션 프로그램</h3>
+
+<p>필자와 같이 내성적인 사람에게 프리젠테이션은 힘들고 어려운 일이 아닐 수 없다. 많은 이들이 지켜보는, 아니 노려보는 가운데 성공적인 프리젠테이션을 하기 위해서는 무엇보다 발표 내용이 좋아야 할 것이다. 이에 덧붙여 적절한 용기와 두꺼운 낯짝, 그리고 성능 좋은 프리젠테이션 프로그램이 필요하다. 오피스 슈트를 이용해서 만든 데이터를 프리젠테이션에서 활용할 수 있는 도구로서 프리젠테이션 프로그램은 존재한다. 마지막으로 각 오피스 슈트의 프리젠테이션 도구를 분석한다.</p>
+
+<p>기사를 읽고 난 후에 독자들이 ‘리눅스에서도 오피스 슈트, 쓸만하겠는걸?’하는 느낌이 들 것이라고 확신한다. 마지막으로 모든 오피스 슈트는 지난 리눅스 매거진 2002년 12월호에서 부록으로 제공한 레드햇 리눅스 8.0에서 테스트되었음을 밝히는 바이다.</p>
+
+<h2 id="k오피스-12">K오피스 1.2</h2>
+
+<h3 id="k오피스-12에-대하여">K오피스 1.2에 대하여</h3>
+
+<p>K오피스는 KDE에 기본적으로 함께 들어있는 오피스 슈트이다. 리눅스의 유명한 다른 오피스 슈트들 - 스타 오피스, 오픈 오피스, 한컴오피스 등에 비해 상대적으로 무게 감이 느껴지지 않는 것은 무엇보다 K 오피스의 사용자가 많지 않다는 것이 원인일 것이다.</p>
+
+<p>사실 그동안 K오피스가 찬 밥 대우를 받은 데에는 이유가 있다. 가장 큰 원인은 한글화 문제일 것이다. 아무리 사용하기 편리한 인터페이스라고 할지라도 한글화가 제대로 되어 있지 않았으니 사용자 입장에서는 그림의 떡일 수밖에 없었던 것이다.</p>
+
+<p>K오피스의 한글화 정도는 KDE의 한글화 수준과 비례한다고 할 수 있다. 레드햇 리눅스 8.0에서는 KDE는 어느 정도 한글화가 잘 되어 있기 때문에 K오피스를 사용하는데 큰 지장은 없을 것이다. 참고로 레드햇 리눅스 8.0의 KDE는 3.0.3버전, K오피스는 1.2버전을 제공하고 있다.</p>
+
+<p>K오피스는 KDE 프로젝트의 일환으로 공식 K오피스 그룹에서 릴리즈하고 있다. 물론 GPL 라이센스에 의해서 배포된다.</p>
+
+<p><img src="/assets/img/linux_office/kofficeHome01.jpg" alt="kofficeHome01.jpg" /></p>
+
+<p>K오피스가 포함하고 있는 애플리케이션들은 다음과 같다.</p>
+<ul>
+  <li>KWord - K 오피스의 워드프로세서이다.</li>
+  <li>KSpread - K 오피스의 스프레드시트이다.</li>
+  <li>KPresenter - K 오피스의 프리젠테이션 프로그램이다.</li>
+  <li>Kivio - K 오피스의 플로우 차트 툴이다.</li>
+  <li>Karbon14 - K 오피스의 벡터 드로잉 툴이다.</li>
+  <li>Krita - K 오피스의 이미지 편집기이다.</li>
+  <li>Kugar - 비즈니스 보고서를 생성하기 위한 툴이다.</li>
+  <li>KChart - 차트와 그래프를 작성하는 툴이다.</li>
+  <li>KFormula - 수식을 작성하는 프로그램이다.</li>
+</ul>
+
+<p>이전 K오피스 1.1버전에 비해 K오피스1.2의 개선된 사항은 다음과 같다.</p>
+
+<ul>
+  <li>37개 언어를 지원한다.</li>
+  <li>KWord 및 KPresenter의 WYSIWYG(What You See Is What You Get) 기능이 강 화되었다.</li>
+  <li>K오피스의 문서 형식이 강화되었다.</li>
+  <li>SVG 이미지를 지원하게 되었다.</li>
+  <li>KWord와 KPresenter의 단어 완성기능이 추가되었다.</li>
+  <li>KPresenter와 KSpread의 철자 확인 기능이 추가되었다.</li>
+  <li>필터 기능이 향상되어 각 애플리케이션과 KDE와의 데이터 호환 기능이 강화되었다.</li>
+</ul>
+
+<h3 id="k오피스12-사용하기">K오피스1.2 사용하기</h3>
+
+<p>레드햇 리눅스 8.0에서 공식적으로 오픈 오피스가 오피스 슈트로 인정받고 있기 때문에 K오피스가 다소 자리를 내준 감도 없지 않다. 물론 전통적으로 레드햇 리눅스에서는 GNOME 데스크탑이 디폴트 데스크탑 환경으로 사용되어 왔다는 것도 이러한 분위기에 한 몫을 해 왔다. 레드햇 리눅스 8.0을 전체 설치하지 않는 이상 메뉴에서도 K오피스를 찾기는 힘들 것이다.</p>
+
+<p>그렇다고 해서 굳이 K오피스를 다운로드받을 필요는 없을 것 같다. 레드햇 리눅스 8.0에서 K오피스를 기본적으로 제공하기 때문이다. 물론 레드햇 리눅스가 제공하는 RPM 패키지가 마음에 들지 않는다면 K오피스 프로젝트 홈페이지에서 소스 파일을 받아서 직접 빌드할 수 있다. 사실 소스 파일 컴파일 하는 것은 귀찮은 일이 아닐 수 없다.</p>
+
+<p><img src="/assets/img/linux_office/kofficeHome02.jpg" alt="kofficeHome02.jpg" /></p>
+
+<p>K오피스 패키지는 레드햇 리눅스 8.0의 세 번째 설치 CD에 있다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">pwd</span>
+/mnt/cdrom/RedHat/RPMS/
+<span class="nv">$ </span><span class="nb">ls</span> <span class="k">*</span>koffice<span class="k">*</span>
+koffice-1.2-0.rc1.4.i386.rpm  koffice-devel-1.2-0.rc1.4.i386.rpm
+<span class="err">$</span>
+</code></pre></div></div>
+
+<p>root 권한으로 전환하여 K오피스를 설치한다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># rpm -Uvh koffice-1.2-0.rc1.4.i386.rpm</span>
+준비 중...                  <span class="c">########################################### [100%]</span>
+   1:koffice                <span class="c">########################################### [100%]</span>
+<span class="c">#</span>
+</code></pre></div></div>
+
+<p>GNOME에서는 실행에 문제가 있기 때문에 데스크탑 스위칭 툴을 이용해서 KDE로 전환하기 바란다. 터미널에서 다음과 같이 명령하거나 메뉴 → 기타 응용 프로그램 → 시스템 설정 → Desktop Switching Tool을 선택한다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># switchdesk</span>
+</code></pre></div></div>
+
+<p><img src="/assets/img/linux_office/desktopswitching01.jpg" alt="desktopswitching01.jpg" /></p>
+
+<p>데스크탑 스위칭 툴에서 KDE를 선택하고 OK 버튼을 클릭한다.</p>
+
+<p><img src="/assets/img/linux_office/desktopswitching02.jpg" alt="desktopswitching02.jpg" /></p>
+
+<p>X윈도우를 종료하고 재시작하면 KDE 기반의 X 윈도우가 실행될 것이다.</p>
+
+<p>K오피스가 설치되었으므로 터미널에서 K오피스의 애플리케이션을 실행할 수 있다. 물론 편리한 사용을 위하여 독자가 직접 메뉴를 K오피스의 메뉴를 구성할 수도 있다. 메뉴를 만드는 방법에 대해서는 설명을 생략한다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>KWord 실행
+<span class="nv">$ </span>kword &amp;
+
+KSpread 실행
+<span class="nv">$ </span>kspread &amp;
+
+KPresenter 실행
+<span class="nv">$ </span>kpresenter &amp;
+</code></pre></div></div>
+
+<h3 id="kword">KWord</h3>
+
+<p>KWord는 K오피스의 워드프로세서이다. 사실 필자의 입장에서 이전 버전의 KWord에서는 제대로 한글 글꼴을 활용할 수도 없어서 활용 가치가 고작 텍스트 편집기 정도에 지나지 않았지만 이번 분석을 위해 KWord를 사용해 본 후 많이 발전된 것을 느꼈다.</p>
+
+<p><strong>Kword에서는 레드햇 리눅스에서 기본 제공되는 백묵 글꼴?사용할 수 있으며 사용자가 한글 글꼴을 추가한다면 더욱 유용하게 사용할 수 있을 것이다.</strong></p>
+
+<p>터미널에서 KWord를 실행하면 새로운 문서 서식을 지정할 수 있다. 일반적으로 A4 용지를 선택해서 문서를 작성한다.</p>
+
+<p><img src="/assets/img/linux_office/kword01.jpg" alt="kword01.jpg" /></p>
+
+<p>KWord의 인터페이스이다. KDE의 애플리케이션이 제공하는 메뉴를 그대로 따르고 있음을 확인할 수 있다. 역시 한글화된 메뉴를 제공하지 않는다는 점은 아쉽다. 왼쪽의 Document Structure 창은 KWord가 문서 파일을 늘섭?구성하고 있는 것을 눈으로 확인하게 해 준다. 워드프로세서에서는 반드시 필요한 기능이라고 볼 수 없지만 KWord를 HTML 에디터 등으로 사용할 때에 더욱 유淪?것이다.</p>
+
+<p><img src="/assets/img/linux_office/kword02.jpg" alt="kword02.jpg" /></p>
+
+<p>이전 버전에 비해 KWord의 개선된 사항은 다음과 같다.</p>
+
+<ul>
+  <li>KWord에서 작성한 문서를 다양하게 활용할 수 있게 되었다.</li>
+  <li>각주, 미주 기능이 강화되었다.</li>
+  <li>테이블과 템플릿 기능이 강화되었다.</li>
+  <li>텍스트 핸들링이 강화되었다.</li>
+  <li>머리말, 꼬리말 기능이 강화되었다.</li>
+  <li>이미지 삽입 기능이 강화되었다.</li>
+</ul>
+
+<p>Kword로 테스트용 문서를 작성해봤다. 필자의 레드햇 리눅스는 기본 백묵 글꼴 밖에 지원하지 않기 때문에 이 정도의 문서를 만드는 것이 한계였다.</p>
+
+<p><img src="/assets/img/linux_office/kword03.jpg" alt="kword03.jpg" /></p>
+
+<p>KWord에서 작성한 문서 파일은 필터를 통하여 Lotus AmiPro, HTML, XML, 워드 퍼펙트, TeX, RTF, SGML, 아비워드, GNUmeric 스프레드시트 등의 문서 형식으로 저장할 수 있다. 아쉽지만 Winodows의 MS 워드 및 글과의 데이터 호환은 지원하지 않는 듯하다. KWord의 기본 확장자는 kwd이다.</p>
+
+<p><img src="/assets/img/linux_office/kword04.jpg" alt="kword04.jpg" /></p>
+
+<h3 id="kspread">KSpread</h3>
+
+<p>KSpread는 K오피스의 스프레드시트이다. 딱히 특징적인 기능이 있다거나 다른 오피스의 스프레드시트에 비해 탁월한 점은 그다지 발견하지 못했지만 나름대로 쓸만한 스프레드시트라고 생각한다.</p>
+
+<p>터미널에서 KSpread를 실행하면 템플릿을 통해 문서서식을 지정하여 문서 작성을 시작할 수 있다.</p>
+
+<p><img src="/assets/img/linux_office/kspread01.jpg" alt="kspread01.jpg" /></p>
+
+<p>KSpread의 인터페이스는 대체로 KWord와 비슷한 메뉴 구성, 스프레드시트가 가지고 있는 기본적인 셀 인터페이스 등을 그대로 따르고 있다.</p>
+
+<p><img src="/assets/img/linux_office/kspread02.jpg" alt="kspread02.jpg" /></p>
+
+<p>이전 버전에 비해 KSpread의 개선된 사항은 다음과 같다.</p>
+
+<ul>
+  <li>데이터 import 및 데이터베이스 연결 기능이 강화되었다.</li>
+  <li>프린팅 기능이 강화되었다.</li>
+  <li>정렬 기능이 강화되었다.</li>
+  <li>템플릿 기능이 강화되었다.</li>
+  <li>함수 기능이 강화되었다.</li>
+  <li>문서에 대한 다양한 형태의 시점을 제공한다.</li>
+  <li>레이아웃 기능이 강화되었다.</li>
+</ul>
+
+<p>테스트를 위해서 샘플 문서를 만들어 보았다.</p>
+
+<p><img src="/assets/img/linux_office/kspread03.jpg" alt="kspread03.jpg" /></p>
+
+<p>KWord와 같이 KSpread 역시 필터 기능을 이용하여 문서를 다양하게 활용할 수 있다. K오피스 프로젝트에서 밝히는 바대로 K오피스의 필터 기능은 리눅스 운영체제의 다양한 애플리케이션과 데이터 호환을 가능케 해주는 막강한 기능임에 틀림없다. KSpread의 기본 확장자는 ksp이다.</p>
+
+<p><img src="/assets/img/linux_office/kspread04.jpg" alt="kspread04.jpg" /></p>
+
+<p>KSpread 역시 한글과 느린 문제를 벗어날 수 없었다. 게다가 시스템 사양이 좋지 못하여 그런지는 알 수 없으나 문서를 작성하는 도중에 알 수 없는 오류로 애써 작성한 문서를 날려버리는 비극을 겪었다. 차기 버전의 K오피스에서는 이러한 문제를 극복했으면 하는 바이다.</p>
+
+<h3 id="kpresenter">KPresenter</h3>
+
+<p>KPresenter는 K오피스의 프리젠테이션 도구이다. KPresenter를 실행하면 문서서식을 지정할 수 있는데 좀 더 다양한 형식을 지정하지 못하는 것이 조금 아쉽다. 그러나 실재 프리젠테이션 문서를 만들 때에는 이 정도 양식이면 충분하다.</p>
+
+<p><img src="/assets/img/linux_office/kpresneter01.jpg" alt="kpresneter01.jpg" /></p>
+
+<p>KPresenter의 실행 화면이다. 프리젠테이션 프로그램에 충실한 인터페이스를 보여주고 있다.</p>
+
+<p><img src="/assets/img/linux_office/kpresneter02.jpg" alt="kpresneter02.jpg" /></p>
+
+<p>이전 버전에 비해 KPresenter의 개선된 사항은 다음과 같다.</p>
+
+<ul>
+  <li>변환기능이 강화되었다.</li>
+  <li>객체 기능이 강화되었다.</li>
+  <li>Thumbnail views 기능으로 슬라이드 미리보기가 강화되었다.</li>
+  <li>스타일 기능이 강화되었다.</li>
+  <li>코맨트 기능이 강화되었다.</li>
+</ul>
+
+<p>샘플 문서를 만들어 보았다.</p>
+
+<p><img src="/assets/img/linux_office/kpresneter03.jpg" alt="kpresneter03.jpg" /></p>
+
+<p>KPresneter의 프리젠테이션 문서를 저장하는 모습이다. 역시 다양한 문서 형식을 지원하고 있는 것을 확인할 수 있다. KPresenter의 기본 확장자는 kpr이다.</p>
+
+<p><img src="/assets/img/linux_office/kpresneter04.jpg" alt="kpresneter04.jpg" /></p>
+
+<h2 id="오픈오피스-10">오픈오피스 1.0</h2>
+
+<h3 id="오픈오피스-10에-대하여">오픈오피스 1.0에 대하여</h3>
+
+<p>오픈 오피스는 StarOffice의 오픈 소스 프로젝트이다. 오픈 소스 프로젝트인 만큼 소스 코드가 공개되어 있는 것은 당연하다. 오픈오피스의 주요 프로그램은 아래 세 가지이다.</p>
+
+<ul>
+  <li>OpenOffice.org Calc 스프레드시트</li>
+  <li>OpenOffice.org Impress 프레젠테이션</li>
+  <li>OpenOffice.org Writer</li>
+</ul>
+
+<h3 id="오픈오피스-설치">오픈오피스 설치</h3>
+
+<p>먼저 오픈오피스를 설치하는 방법을 알아보자. 레드햇 리눅스 8.0에서는 오픈 오피스를 기본 오피스 슈트로 제공하고 있다. 레드햇 리눅스 8.0 설치 CD 두 번째 장에 RPM 파일로 존재하므로 손쉽게 설치할 수 있다. 물론 리눅스를 설치하는 과정에서 오픈 오피스를 함께 설치하는 것도 가능하다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/mnt/cdrom/RedHat/RPMS/openoffice-1.0.1-8.i386.rpm
+/mnt/cdrom/RedHat/RPMS/openoffice-i18n-1.0.1-i.i386.rpm
+/mnt/cdrom/RedHat/RPMS/openoffice-libs-1.0.1-8.i386.rpm
+</code></pre></div></div>
+
+<p>ftp로는 다음의 주소에서 다운 로드 받을 수 있다.</p>
+
+<ul>
+  <li><a href="ftp://ftp.mizi.com/incoming/openoffice/">ftp://ftp.mizi.com/incoming/openoffice/</a></li>
+  <li><a href="http://www.openoffice.org/dev_docs/source/1.0.1/index.html#ko">http://www.openoffice.org/dev_docs/source/1.0.1/index.html#ko</a></li>
+</ul>
+
+<p><strong>ftp.mizi.com에 있는 오픈오피스 1.0.1을 받아서 설치 할 수 있으나, 시스템에 따라서 설치할 때 한글이 보이지 않는 문제와 Java가 설치되어 있는 문제가 있으므로 Red Hat 8.0의 rpm으로 설치를 하기 바란다.</strong></p>
+
+<p>X 윈도에서 해당 패키지를 클릭하는 것만으로 설치를 할 수 있다.</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_install_02.jpg" alt="OpenOffice_install_02.jpg" /></p>
+
+<p>Redhat 8.0의 두 번째 시디를 넣고 mount 시킨 후 다음과 같이 직접 명령을 내려 설치할 수도 있다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># mount /mnt/cdrom</span>
+<span class="c"># rpm -Uvh /mnt/cdrom/RedHat/RPMS/openoffice-1.0.1-8.i386.rpm</span>
+</code></pre></div></div>
+
+<p>설치 후 반드시 재부팅을 해야 패널에 아이콘들이 있는 것을 확인 할 수 있을 것이다.</p>
+
+<p><img src="/assets/img/linux_office/XscreenShot.jpg" alt="XscreenShot.jpg" /></p>
+
+<p>드디어 오픈오피스와의 첫 만남, 기존에 다른 오피스들과 화면 구성이 너무나 비슷했기 때문에 메뉴를 사용함에 있어서는 큰 불편을 느끼지 못했다. 파일 크기와 글자체, 문단정렬 등 모든 것이 쉬웠지만, 곧바로 한글 입력이 되지 않는 불편이 있었다 문제를 찾아보니, 한글을 지원하지 않는 폰트가 기본적으로 뜨는 것이다. 이것은 간단하게 백묵(Baekmuk)폰트를 사용함으로 바로 한글을 입력할 수 있었다.</p>
+
+<h3 id="워드프로세서-openoffice-writer">워드프로세서 OpenOffice Writer</h3>
+
+<p>설치가 완료되면, 레드햇의 경우 모자모형의 시작아이콘 옆으로 “OpenOffice.org Writer 워드프로세서” 시작 아이콘이 있으며, 모자를 눌렀을 때 “오피스” 라는 항목에 오픈오피스가 있는 것을 볼 수 있다. 최초로 실행하면 주소데이터 자동 파일럿 메뉴가 나온다. 취소를 누르면 또 등록하라는 메시지가 나온다. 의무사항은 아니니 등록하지 않아도 상관없다. 마이크로소프트 Word에서 작성한 이력서 양식을 불러보았다.</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Writer_05.jpg" alt="OpenOffice_Writer_05.jpg" /></p>
+
+<p>럴수럴수… Writer의 화면에 아무런 글이 나오지 않았다. (그림3) 화면에 폰트를 한글이 지원하는 다른 폰트로 맞추어야 한다. “[도구] - [옵션] - [OpenOffice.org 텝] - [글꼴 바꾸기]”에서 반드시 “대체 표적용(A)”에 체크표시를 하고 문서의 글꼴을 대체할 글꼴을 등록하여 이용하면 그나마 화면에 글들을 볼 수 있다. (그림4) 물론 완벽하게 똑같이 지원하지는 않는다. 문서 내용 모두를 일일이 한글이 지원하는 폰트로 변경하면 볼 수 있긴 하지만, 불편한 작업이 아닐 수 없다. 이러한 부분은 차후 개선될 것을 기대한다.</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Writer_07.jpg" alt="OpenOffice_Writer_07.jpg" /></p>
+
+<h3 id="스프레드시트-openoffice-calc">스프레드시트 OpenOffice Calc</h3>
+
+<p>Calc는 실행하면 엑셀과 거의 비슷하다. 바로 한글이 안나오는 문제가 있지만, 이 역시 워드에서 한글이 나오도록 하는 부분처럼 폰트만 바꾸어 주면 한글은 입력이 가능하다. MS엑셀을 사용하는 분이라면 다시 설명할 필요가 없을 정도로 셀에 입력된 값의 연산은 기존의 엑셀과 같다.</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_calc_01.jpg" alt="OpenOffice_calc_01.jpg" /></p>
+
+<p>엑셀에서 (그림5)의 문서를 오픈오피스에서 불러온 결과 한글이 나오지 않았다. 그리하여 문서 전체를 지정하여 한글을 지원하는 백묵 폰트를 변경을 했더니, 한글은 나왔으나 화면 하단에 시트 명칭이 “시트1” “시트2” 순으로 변경되어 나타났다. (그림6)</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_calc_02.jpg" alt="OpenOffice_calc_02.jpg" /></p>
+
+<p>그 외에 오픈오피스에서 작성한 문서를 Microsoft Excel 97 / 2000 / XP로 저장하여 MS Offce Excel로 본 결과 내용은 거의 다 보였다. MS Excel의 경우는 없는 폰트의 경우 자동으로 기본 폰트를 이용하여 나타내고 있었다.</p>
+
+<h3 id="프레젠테이션-openoffice-impress">프레젠테이션 OpenOffice Impress</h3>
+
+<p>다음은 오픈오피스의 프리젠테이션 프로그램인 Impress에 대해 알아보겠다. Impress를 실행하면 윈도우즈의 ‘마법사’ 기능 같은 파일럿이 실행되면서 간단히 프레젠테이션 문서를 제작할 수 있다.</p>
+
+<p><strong>프레젠테이션 형식</strong></p>
+
+<p>프레젠테이션을 실행하면, 어떤 문서를 제작할 것인지 묻는다. (그림7)</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Impress_01.jpg" alt="OpenOffice_Impress_01.jpg" /></p>
+
+<p>처음 실행하는 것이기에 빈 프레젠테이션을 사용하여 “다음(N) »”을 선택한다.</p>
+
+<p><strong>페이지 스타일</strong></p>
+
+<p>다음은 작성하려는 프레젠테이션을 어디에 사용할 것인지 결정한다. “화면(R)”을 선택하고 “다음(N) »”을 선택한다.</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Impress_02.jpg" alt="OpenOffice_Impress_02.jpg" /></p>
+
+<p><strong>슬라이드 전환효과 설정</strong></p>
+
+<p>슬라이드가 어떻게 바뀌는가 설정하는 화면이다. “효과(E)”에서 클릭하여 “위에서 날아오기”를 선택했다. “속도(S)”는 “빠르게”를 선택했다. 프레젠테이션 형식은 “기본 값(D)”으로 선택하고, “만들기(C)”를 선택했다.</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Impress_03.jpg" alt="OpenOffice_Impress_03.jpg" /></p>
+
+<p><strong>슬라이드 레이아웃 변경</strong></p>
+
+<p>기존의 파워포인트를 쓰시는 분이라면 이 부분 역시 낯설지 않은 화면일 것이다. 필자는 그림9와 같이 위로는 타이틀을 입력하고 좌측에 사진을 우측에 설명 내용이 들어가도록 선택하여 작성을 해보았다. 선택하고 “확인”을 누른다.</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Impress_04.jpg" alt="OpenOffice_Impress_04.jpg" /></p>
+
+<p><strong>드디어 편집화면</strong></p>
+
+<p>역시 이곳에서도 한글 문제는 피할 수 없었다. 글자들이 깨져서 읽기가 힘들긴 하지만, 이들은 한글을 지원하는 다른 폰트로 설정하면 문제가 없다. 글이 있는 부분을 마우스로 클릭해서 바로 입력 할 수 있는 것은 다른 프레젠테이션 프로그램들과 큰 차이는 없다. 사용할 폰트는 “Baekmuk Batang”을 이용한다.</p>
+
+<p>예제 문서를 한번 작성해 보았다. 그림을 클릭하고 리눅스매거진 홈페이지에서 1월호 사진을 넣고 글을 써넣었다. 이렇게 작성하고 상단의 “슬라이드 쇼(S)” 메뉴에서 “슬라이드 쇼(W)”를 선택하면 쇼를 볼 수 있다. (그림11)</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Impress_06.jpg" alt="OpenOffice_Impress_06.jpg" /></p>
+
+<p>이 문서가 기존의 프레젠테이션 프로그램에서도 잘 돌아가길 기대해 보며 “Microsoft PowerPoint 97 / 2000 / XP” 형태로 저장하고 이를 PowerPoint 2000에서 열어 보았다. (그림12)</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Impress_07.jpg" alt="OpenOffice_Impress_07.jpg" /></p>
+
+<p>글꼴만 제외하고 결과는 놀랍게도 비슷하다는 것을 알 수 있었다.</p>
+
+<p>반면 MS PowerPoint 2000에서 작성한 문서를 OpenOffice.org 1.0.1에서 보면, 한글만 빼고 다 보인다. 하지만, 그려진 그림에서 구름화살표의 방향이 틀리는 미세한 차이만 발견될 뿐 사용상에는 큰 문제가 없을 것이라 본다. 여기서 오픈오피스 워드의 한글 문제 또한 워드에서 한글이 나오도록 하는 방법과 같다. Power Point문서를 열어보고 폰트만 맞춰준 화면(그림14)</p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Impress_08.jpg" alt="OpenOffice_Impress_08.jpg" /></p>
+
+<p><strong><center>&lt;그림 MS PowerPoint 2000에서 작성된 원본&gt;</center></strong></p>
+
+<p><img src="/assets/img/linux_office/OpenOffice_Impress_09.jpg" alt="OpenOffice_Impress_09.jpg" /></p>
+
+<p><strong><center>&lt;그림 MS PowerPoint 2000에서 작성된 것을 OpenOffice에서 열어본 화면&gt;</center></strong></p>
+
+<p>각각의 그림과 글들을 마우스 오른쪽으로 클릭하여 텍스트 메뉴의 텍스트 애니메이션을 통하여 각가지 효과를 줄 수 있다.</p>
+
+<p>사실 한컴오피스나 K 오피스보다 MS 오피스와의 데이터 호환에 최적화된 오피스 슈트는 이 오픈 오피스가 아닌가 싶다. MS 오피스의 워드, 액셀, 파워 포인트에서 작성한 문서들을 오픈 오피스에서 거의 그대로 불려들어 수정 할 수 있었다. 아쉬운 부분은 역시 한글 문제가 가장 컸다. 물론 윈도에서 사용하고 있는 한글 트루 폰트를 그대로 리눅스에서 사용하고 있다면, 프로그램을 사용하는데 큰 문제가 없을 것이라고 본다. 그리고, 표와 차트 부분에서 대부분 인식을 했지만, 표의 크기나 선의 두께가 일정하지 않아 불편했다. 비록 1.0 버전이지만, 상당히 많은 부분이 서로 지원하고 있음을 발견했다. 앞으로 이런 부분들도 빨리 개선되기를 기대해 본다.</p>
+
+<h2 id="한컴오피스-20">한컴오피스 2.0</h2>
+
+<h3 id="한컴오피스-20에-대하여">한컴오피스 2.0에 대하여</h3>
+
+<p>솔직히 한컴오피스에 대해서는 별로 이야기할 거리가 없는 게 사실이다. 이미 리눅스 매거진 2003년 1월호에서도 한컴오피스 활용법에 대해 초보자도 쉽게 사용할 수 있도록 자세히 이야기된 바 있으며 조금만 노력한다면 인터넷을 통해 한컴오피스와 관련된 문서를 충분히 구할 수 있다.</p>
+
+<p>한컴오피스 2.0은 Windows용 한글 워디안을 리눅스용으로 개발한 한컴워드 6.0과 한글97 기반의 한컴워드5.2가 포함되어 있으며 매크로 기능, 강화된 차트 편집 기능 등이 추가된 한컴시트 2.0과 마스터 기능, 멀티미디어 지원 기능 등으로 다양한 효과를 줄 수 있는 한컴프리젠터 2.0, 그리고 레이어, 액션, 히스토리 기능 등으로 무장한 그래픽 툴, 한컴페인터 2.0으로 구성되어 있다.</p>
+
+<p>하나의 오피스 제품에 워드프로세서를 5.2버전과 6.0버전으로 따로 제공하는 것은 그만한 이유가 있다. Windows용 한글의 경우, 한글 97과 한글 워디안 및 2000으로 두 개의 버전이 존재한다는 것을 알고 있을 것이다. 한컴오피스의 한컴 워드 5.2는 Windows용 한글 97에, 한컴 워드 6.0은 한글 워디안에 해당한다. 물론 한컴 워드 5.2보다 한컴 워드 6.0이 편리한 기능이 더 많기는 하지만 5.2버전과 6.2버전의 개발 라이브러리가 다르기 때문에 사용 시 주의할 필요가 있다. - 실재 한컴 워드 6.0은 한글 97, 워디안, 2000의 문서와 모두 호환 가능하다.</p>
+
+<p><strong>사실 이것은 한컴오피스를 정품으로 구입했을 때의 이야기이다. 인터넷을 통해서 다운받아 사용할 수 있는 30일 한정판의 경우 한컴워드 5.2는 포함되어 있지 않았다.</strong></p>
+
+<p>기본적으로 Windows 환경에서 한컴오피스 및 한글 사용해본 사용자라면 누구나 쉽게 사용할 수 있을 것이라고 생각한다. 그만큼 한컴오피스는 리눅스에서 사용할 만한 오피스 슈트로서 손색이 없다는 소리다. 데스크탑으로 리눅스를 사용하고자 한다면 필히 한컴오피스 2.0을 정품으로 구입할 것을 권하고 싶다.</p>
+
+<p>한컴리눅스에서 밝히고 있는 한컴오피스2.0의 주요 특징은 다음과 같다.</p>
+
+<ul>
+  <li>MS Office 파일 호환 강화</li>
+  <li>각 제품간 데이터 호환 가능 (Text, Image)</li>
+  <li>라이브러리 통일로 설치 용량 최소화 및 실행 속도 개선</li>
+  <li>각 프로그램들의 UI 통일 및 개선</li>
+  <li>작업 및 샘플 폴더 일원화로 디렉토리 구조 정리</li>
+</ul>
+
+<p>한컴리눅스를 사용하기 위한 시스템 사양은 다음과 같다.</p>
+
+<ul>
+  <li>Linux Kernel : Kernel Release 2.2 이상</li>
+  <li>CPU : 펜티엄 이상 또는 호환기종 (펜티엄Ⅱ 200㎒ 이상 권장)</li>
+  <li>Memory : 64MB 이상</li>
+  <li>HDD : 전체 설치시 약 890MB 이상의 하드디스크 공간 필요</li>
+  <li>주변기기 : CD-ROM</li>
+</ul>
+
+<h3 id="한컴오피스20-설치">한컴오피스2.0 설치</h3>
+
+<p>한컴오피스는 한컴리눅스 홈페이지에서 30일 한정판을 다운받아 사용할 수 있다. 상용 오피스 슈트로서 부담이 되지 않는 금액이므로 정식으로 한컴오피스를 구입할 것을 권하는 바이다.</p>
+
+<p><strong>매뉴얼에는 시스템에 리눅스용 한글X, 한글/XR4, 리눅스한글R4, 리눅스한글R5, 한컴오피스 1.X 등의 한컴워드 이전 버전이나 한컴오피스 이전 버전이 설치되어 있다면 완전히 삭제할 것을 권하고 있다. 다중 실행의 문제는 없으나 사용 시 예기치 않은 문제가 발생할 수 있기 때문에 기존의 한컴오피스 및 리눅스용 한글을 모두 삭제하고 설치를 시작한다.</strong></p>
+
+<ol>
+  <li>한컴오피스 홈페이지(http://www.hancom.com)에 접속하여 왼쪽의 한컴오피스 2.0.3 30일 한정판 링크를 클릭한다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom01.jpg" alt="hancom01.jpg" /></p>
+
+<ol>
+  <li>라이센스를 읽어보고 동의함 버튼에 클릭한다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom02.jpg" alt="hancom02.jpg" /></p>
+
+<ol>
+  <li>버튼을 클릭하자마자 한컴오피스 설치 파일인 ‘HancomOffice2.0_Eval’을 다운받을 수 있다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom03.jpg" alt="hancom03.jpg" /></p>
+
+<ol>
+  <li>적절한 디렉토리에 한컴오피스 설치 파일을 다운받는다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom04.jpg" alt="hancom04.jpg" /></p>
+
+<p><img src="/assets/img/linux_office/hancom05.jpg" alt="hancom05.jpg" /></p>
+
+<ol>
+  <li>파일을 다운받았으면 설치 파일을 실행할 수 있도록 만들어 주어야 한다. 터미널을 열고 root 권한으로 전환한다.</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span>
+합계 235900
+<span class="nt">-rw-------</span>  1 GunSmoke GunSmoke 241312219  1월 13 23:08 HancomOffice2.0_Eval
+drwxr-xr-x    3 GunSmoke GunSmoke       4096  1월 13 23:00 images
+<span class="nv">$ </span>su
+Password:
+<span class="c">#</span>
+</code></pre></div></div>
+
+<ol>
+  <li>HancomOffice2.0_Eval에 실행 권한을 부여한다.</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># chmod +x HancomOffice2.0_Eval</span>
+<span class="c"># ls -l</span>
+합계 235900
+<span class="nt">-rwx--x--x</span>   1 GunSmoke GunSmoke 241312219  1월 13 23:08 HancomOffice2.0_Eval
+drwxr-xr-x    3 GunSmoke GunSmoke       4096  1월 13 23:00 images
+<span class="c">#</span>
+</code></pre></div></div>
+
+<ol>
+  <li>설치 파일을 실행한다.</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ./HancomOffice2.0_Eval</span>
+<span class="o">=======================================================================</span>
+한컴오피스 2.0 Evaluation의 설치를 위해 압축파일을 풀고 있습니다.
+이 작업은 시스템에 따라 1~5분 정도 소요 됩니다. 잠시 기다려 주십시요.
+<span class="o">=======================================================================</span>
+Loading HancomOffice Installer...
+</code></pre></div></div>
+
+<p><strong>당연한 얘기지만 설치 파일은 root 권한에서 실행하여 설치를 진행해야 한다.</strong></p>
+
+<ol>
+  <li>본격적인 한컴오피스 설치 과정이 시작된다. 한컴오피스 설치 프로그램을 이용하여 Windows용 애플리케이션의 설치 과정 같이 간단하게 설치할 수 있을 것이다. 다음 버튼을 클릭한다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom06.jpg" alt="hancom06.jpg" /></p>
+
+<ol>
+  <li>사용 계약서에 동의를 체크하면 다음 버튼이 활성화된다. 다음 과정으로 진행한다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom07.jpg" alt="hancom07.jpg" /></p>
+
+<ol>
+  <li>사용자 정보를 입력한다. 평가판이므로 제품번호는 입력할 수 없다. 이름과 회사/조직 정보만 입력하면 된다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom08.jpg" alt="hancom08.jpg" /></p>
+
+<ol>
+  <li>이 과정에서 한컴 워드, 한컴 시트, 한컴 프리젠터, 한컴 페인터 및 공통 파일과 기본 글꼴을 선택하여 설치할 수 있다. 한컴오피스 전체를 설치하는데는 화면과 같이 437MB의 용량이 필요하다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom09.jpg" alt="hancom09.jpg" /></p>
+
+<ol>
+  <li>설치를 위한 디렉토리를 생성한다는 경고 창이 나타날 것이다. OK 버튼을 클릭한다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom10.jpg" alt="hancom10.jpg" /></p>
+
+<ol>
+  <li>한컴오피스 설치 프로그램이 설치할 공간을 분석할 것이다. 설치 버튼을 클릭하면 설치 과정이 시작된다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom11.jpg" alt="hancom11.jpg" /></p>
+
+<ol>
+  <li>설치 진행중인 모습이다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom12.jpg" alt="hancom12.jpg" /></p>
+
+<ol>
+  <li>설치가 끝나면 한컴리눅스 회원으로 등록할 것을 묻는 창이 나타날 것이다. Yes  버튼을 클릭하면 웹 브라우저를 통해서 한컴리눅스 회원으로 등록할 수 있다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom13.jpg" alt="hancom13.jpg" /></p>
+
+<ol>
+  <li>설치가 완료되었다. 종료 버튼을 클릭하면 한컴오피스 설치 프로그램을 종료한다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom14.jpg" alt="hancom14.jpg" /></p>
+
+<p><strong>설치가 끝나면 한컴오피스의 정상적인 실행을 위해서 X 윈도우를 재시작하기 바란다.</strong></p>
+
+<ol>
+  <li>레드햇 8.0에서 한컴오피스 메뉴를 등록하려면 /usr/share/applnk/HancomOffice2 디렉토리를 /usr/share/applnk-redhat/ 밑으로 복사한다. 확인을 위해서 X 윈도우를 재시작한다.</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#mv /usr/share/applnk/HancomOffice2 /usr/share/applnk-redhat/ </span>
+</code></pre></div></div>
+
+<ol>
+  <li>파일을 복사한 뒤에 매뉴얼의 위치와는 조금 엉뚱한 곳에서 한컴오피스의 메뉴를 찾을 수 있었다. 한컴리눅스의 기본 데스크탑 환경이 KDE이기 때문에 이렇게 되지 않았나 생각한다. 이렇게 설정된 메뉴는 독자 스스로 편집해서 편하게 사용하기 바란다.</li>
+</ol>
+
+<p><img src="/assets/img/linux_office/hancom15.jpg" alt="hancom15.jpg" /></p>
+
+<p>메뉴를 통해서 한컴오피스의 애플리케이션들을 실행할 수도 있겠지만 한컴오피스 쉘을 이용할 수도 있다. 한컴오피스 쉘은 한컴오피스 애플리케이션들을 실행할 수 있는 아이콘들을 모아놓은 프로그램이다. 필자와 같이 매번 X 윈도우의 메뉴 패널에서 프로그램을 실행하는 것을 귀찮아하는 유저를 위해 한컴리눅스에서 만들어 놓은 프로그램이라고 생각한다.</p>
+
+<p>한컴오피스 쉘을 실행한 모습이다. 아이콘을 클릭하면 각 프로그램들이 실행될 것이다.</p>
+
+<p><img src="/assets/img/linux_office/hancom16.jpg" alt="hancom16.jpg" /></p>
+
+<h3 id="한컴워드-60">한컴워드 6.0</h3>
+
+<p>한컴워드 6.0은 Windows용 한글 워디안을 리눅스용으로 포팅한 것으로 인터페이스 역시 한글 워디안 및 한글 2000과 동일하다. 사실 똑 같다고 얘기해도 과언이 아니다. 따라서 그림삽입, 표 등 기초적인 문서작업에 있어 어려운 느낌을 전혀 받지 못했다. 한글을 잘 사용할 수 있는 유저라면 별다른 설명 없이도 한컴워드를 훌륭하게 사용할 수 있을 것이라고 생각한다.</p>
+
+<p><img src="/assets/img/linux_office/hanword01.jpg" alt="hanword01.jpg" /></p>
+
+<p>워드프로세서만큼 각 국가별 특성을 타는 애플리케이션이 어디 있겠는가. 그러한 의미에서 한컴워드 6.0은 국내 사용자가 리눅스에서 사용할만한 다른 오피스 슈트 중, 워드프로세서 면에서 단연 최고라고 할 수 있을 것이다.</p>
+
+<p>각 기능별로 한컴워드 6.0에서 개선된 사항은 다음과 같다.</p>
+
+<ul>
+  <li>
+    <p>문서 편집 기능</p>
+
+    <ul>
+      <li>undo, redo 기능이 추가되어 단계별 되살리기 기능을 구현했다.</li>
+      <li>다단 편집 기능이 강화되었다.</li>
+      <li>다양한 글자 속성을 적용할 수 있다.</li>
+      <li>바탕쪽을 편집할 수 있는 기능이 추가되었다.</li>
+      <li>쪽 테두리/배경 기능이 강화되었다.</li>
+      <li>주석 기능이 강화되었다.</li>
+      <li>스타일 기능이 강화되었다.</li>
+      <li>문단 모양 기능이 강화되었다.</li>
+      <li>편집용지 기능이 개선되었다.</li>
+      <li>머리말/꼬리말 편집 기능이 강화되었다.</li>
+      <li>문단 첫 글자 장식 기능이 추가되었다.</li>
+      <li>하이퍼 링크의 글자 모양을 지정할 수 있게 되었다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>문서 작업 기능</p>
+
+    <ul>
+      <li>문서 탭을 만들 수 있다.</li>
+      <li>화면 확대 기능이 강화되었다.</li>
+      <li>편집 화면을 분할할 수 있게 되었다.</li>
+      <li>찾기 기능이 강화되었다.</li>
+      <li>창 메뉴가 개선되었다.</li>
+      <li>책갈피를 쉽게 삽입할 수 있다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>표 기능</p>
+
+    <ul>
+      <li>표 편집 기능이 강화되었다.</li>
+      <li>표의 크기를 미리 지정하고 표를 만들 수 있다.</li>
+      <li>셀의 테두리와 배경에 다양한 효과를 지정할 수 있게 되었다.</li>
+      <li>비연속적인 셀 블록을 설정할 수 있다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>인쇄 기능</p>
+
+    <ul>
+      <li>미리 보기 기능이 강화되었다.</li>
+      <li>인쇄기능이 강화되었다.</li>
+      <li>머리말/꼬리말을 간편하게 인쇄할 수 있게 되었다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>그림 그리기 기능</p>
+
+    <ul>
+      <li>그리기 기능이 강화되었다.</li>
+      <li>그림 넣기가 강화되었다.</li>
+      <li>그림 파일을 불러올 때 원래 그림의 크기대로 불러오도록 개선되었다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>문서 작성 도구 기능</p>
+
+    <ul>
+      <li>맞춤법 검사가 강화되었다.</li>
+      <li>불러오기 대화상자에 작업경로를 등록할 수 있게 되었다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>마지막으로 독자 여러분들은 무엇보다 한컴워드에서 작성한 문서와 Windows의 한글에서 작성한 문서간에 호환성 여부에 관심을 가질 것이라고 생각한다. 이를 테스트해보기 위하여 리눅스상에서 문서를 작성해 보았다.</p>
+
+<p><img src="/assets/img/linux_office/hanword02.jpg" alt="hanword02.jpg" /></p>
+
+<p>파일은 한컴워드 문서 형식으로 저장한다. 한컴워드 6.0의 문서 형식은 Windows 한글과 같이 기본적으로 파일 확장자 hwp가 붙어 저장된다.</p>
+
+<p><img src="/assets/img/linux_office/hanword03.jpg" alt="hanword03.jpg" /></p>
+
+<p>Windows용 한글 2000에서 동일한 문서를 열어본 모습이다. 사용된 글꼴이 약간 다를 뿐 별다른 차이점은 발견할 수 없다.</p>
+
+<p><img src="/assets/img/linux_office/hanword04.jpg" alt="hanword04.jpg" /></p>
+
+<p>반면 한글 97에서는 문서를 제대로 확인할 수 없다. 이것은 다른 이유가 아니라 라이브러리 차이 때문이다. 한글 워디안 및 한글 2000에서 작성한 문서를 한글 97에서 볼 수 없는 것과 같은 이치라고 생각하면 된다.</p>
+
+<p><img src="/assets/img/linux_office/hanword05.jpg" alt="hanword05.jpg" /></p>
+
+<h3 id="한컴시트20">한컴시트2.0</h3>
+
+<p>솔직히 괴로운 것은 업무용 메일에 첨부해서 딸려 오는 Microsoft 오피스 액셀로 만들어진 파일들이었다. 아무리 데스크탑 운영체제로 리눅스를 쓰겠다고 결심하더라도 이런 메일 하나면 Windows를 다시 설치하고, 액셀을 다시 설치하는 것이 보통인 것이다. 너도나도 액셀을 사용하는 걸 보면 과거 스프래드시트 시장을 독식하던 Lotus123 만큼이나 액셀은 정말 편리한 Windows 애플리케이션임에 틀림없다고 인정한다.</p>
+
+<p>한컴시트는 한컴오피스에서 제공하고 있는 스프래드시트이다. 학생들의 성적처리, 견적서 작성, 급여 계산과 같은 일반 계산 업무에서부터 경영분석, 판매예측, 환율 변동에 따른 원가부담 예측 등의 경영 전반에 걸친 계획 작성과 분석 작업에 쓰일 수 있는 도구로서 활용할 수 있다.</p>
+
+<p>국내 기술로 만들어진 스프래드시트로서 당연히 한글처리에 있어서 만큼은 타 리눅스용 오피스 슈트의 스프래드시트를 능가한다. 또한 기본적인 수식 계산 기능 및 연산자 기능, 다양한 함수를 제공함으로서 스프레드시트 본연의 기능에서도 독자 여러분들이 충분히 만족할 것이라고 판단된다.</p>
+
+<p>한컴시트는 스프레드시트의 공통적인 인터페이스 화면을 제공한다. 사진을 보면 알겠지만 바둑판과 같은 셀 화면과 제공하는 메뉴 역시 액셀과 매우 비슷하다.</p>
+
+<p><img src="/assets/img/linux_office/hansheet01.jpg" alt="hansheet01.jpg" /></p>
+
+<p>한컴시트는 이전 버전에 비해 비약적인 업그레이드가 이루어졌다. 전체적인 기능면에서 개선 사항을 살펴보면 다음과 같다.</p>
+
+<ul>
+  <li>그리기 기능 개선되었다.</li>
+  <li>그림 삽입/편집 기능이 개선되었다.</li>
+  <li>매크로 기능이 강화되었다.</li>
+  <li>매크로 컨트롤 기능이 강화되었다.</li>
+  <li>단계별 되살리기 기능이 추가되었다.</li>
+  <li>셸 병합 기능이 강화되었다.</li>
+  <li>함수 마법사가 강화되었다.</li>
+  <li>이외에 애플리케이션의 각 부분들이 전체적으로 개선되었다.</li>
+</ul>
+
+<p>한컴시트는 만들어진 문서를 한컴시트 자체 파일 형식인 hst로 저장할 수 있으며, 더불어 마이크로소프트 오피스 액셀의 xls 형식으로도 저장이 가능하므로 액셀과의 데이터 호환이 가능하다.</p>
+
+<p><img src="/assets/img/linux_office/hansheet03.jpg" alt="hansheet03.jpg" /></p>
+
+<p>액셀에서 만든 파일을 리눅스에서 활용할 수 있다는 것이야말로 업무용 오피스 슈트를 필요로 리눅서에게 희소식이 아닐 수 없다. 액셀과의 호환성 테스트를 위해서 액셀의 샘플 파일 solvsamp.xls을 한컴시트에서 확인한 모습니다.</p>
+
+<p><img src="/assets/img/linux_office/hansheet02.jpg" alt="hansheet02.jpg" /></p>
+
+<p>액셀에서 같은 문서를 확인한 모습이다. 별다른 차이점을 발견할 수 없다.</p>
+
+<p><img src="/assets/img/linux_office/acc.jpg" alt="acc.jpg" /></p>
+
+<p>그러나 아쉽게도 한컴시트와 액셀은 100% 호환 가능한 것은 아니다. 액셀에서 특수한 매크로를 사용하거나 액셀의 고급 기능으로 문서를 화려하게 꾸며놓았을 경우에는 한컴시트에서 제대로 읽지 못하는 경우도 있기 때문이다.</p>
+
+<p>다음은 액셀에서 만들어진 모 방송사의 주간 프로그램 편성표이다.</p>
+
+<p><img src="/assets/img/linux_office/table.jpg" alt="table.jpg" /></p>
+
+<p>이 파일을 한컴시트에서 불러오게 되면…</p>
+
+<p><img src="/assets/img/linux_office/hansheet04.jpg" alt="hansheet04.jpg" /></p>
+
+<p>이렇게 한컴시트가 바로 종료되어 버린다. ‘튕긴다’는 표현은 이럴 때 쓰는 말일 것이다.</p>
+
+<p><img src="/assets/img/linux_office/hansheet05.jpg" alt="hansheet05.jpg" /></p>
+
+<p><strong>필자가 한컴시트2.0 정품을 사용해보지 않아서 30일 한정판에서만 이러한 현상이 나타나는 것인지 확신할 수는 없다.</strong></p>
+
+<p>하지만 문서 내용과 기본적인 함수는 그대로 사용할 수 있기 때문에 한컴시트를 액셀과 함께 사용하는데 있어서는 큰 불편을 느끼지는 않을 것이라고 생각한다. 물론 차후 개선의 여지는 얼마든지 있다.</p>
+
+<h3 id="한컴프리젠터20">한컴프리젠터2.0</h3>
+
+<p>프리젠테이션 프로그램은 수업 자료, 보고서, 기획안 등과 같은 발표용 문서를 효율적으로 작성할 수 있도록 도와주는 프로그램으로 학교나 회사에서 많이 사용된다. 필자의 신분이 학생이다보니 스프래드시트 보다는 워드프로세서와 더불어 프리젠테이션 프로그램을 자주 사용해왔던 것 같다.</p>
+
+<p>한컴프리젠터는 파워포인트와 같은 한컴오피스의 프리젠테이션 프로그램이다. 한컴오피스의 다른 프로그램들 역시 마찬가지이겠지만 Windows 사용자를 배려한 듯 파워포인트와 유사한 메뉴와 인터페이스를 보여준다. 사용 방법 역시 파워포인트를 사용하는 것과 같은 방법으로 간단히 프리젠테이션 문서를 제작할 수 있다. 특히 리눅스 상에서 발표할 일이 있을 때에 유용할 것이라고 생각한다.</p>
+
+<p>한컴프리젠터의 인터페이스이다.</p>
+
+<p><img src="/assets/img/linux_office/hanpresent01.jpg" alt="hanpresent01.jpg" /></p>
+
+<p>한컴프리젠터2.0의 특징은 다음과 같다.</p>
+
+<ul>
+  <li>PPT 파일 형식을 지원한다.</li>
+  <li>프리젠테이션 문서로 웹사이트 제작이 가능하다.</li>
+  <li>멀티미디어 기능이 강화되었다.</li>
+  <li>다양한 화면 전환 및 애니메이션 효과를 지원하게 되었다.</li>
+  <li>다양한 클립아트 및 애니메이션 GIF 샘플을 제공한다.</li>
+  <li>주제별 서식 문서를 제공한다.</li>
+  <li>개체 관리 기능이 강화되었다.</li>
+  <li>다양한 슬라이드 편집 메뉴를 제공한다.</li>
+  <li>사용자 슬라이드 쇼를 지원한다.</li>
+  <li>하이퍼링크 기능이 강화되었다.</li>
+  <li>이외에 다양한 사용자 설정 기능이 개선되었다.</li>
+</ul>
+
+<p>한컴프리젠터2.0의 특징에서 소개된 것처럼 ppt 파일 형식을 지원하므로 Windows 파워포인트와 데이터 호환이 가능하다. 한컴프리젠터2.0의 기본적인 파일 형식은 hpt이다. 한컴프리젠터에서 파일을 ppt 형식으로 저장해본다.</p>
+
+<p><img src="/assets/img/linux_office/hanpresent02.jpg" alt="hanpresent02.jpg" /></p>
+
+<p>파워포인트에서 같은 문서를 불러온 모습이다. 아～ 한숨이 절로 나온다. 기대했던 만큼 한컴프리젠터에서 작성한 문서를 제대로 보여주지 못해 아쉽다. 기본적으로 파워포인트와 한컴프리젠터의 폰트와 서식 파일이 다르기 때문에 생기는 문제이다. 차기 버전에서는 파워포인트와의 호환에 좀 더 신경을 썼으면 하는 바램이다.</p>
+
+<p><img src="/assets/img/linux_office/hanpresent03.jpg" alt="hanpresent03.jpg" /></p>
+
+<p>한컴프리젠터는 한컴오피스의 다른 애플리케이션 중에서 가장 느리게 작동하는 것을 느낄 수 있었다. 본 기사의 예제로 작성된 문서 같은 경우 한 두 페이지 정도였지만 슬라이드의 길이가 길어지고 애니매이션 효과나 음향 효과 등을 삽입하고자 한다면 어느 정도 컴퓨터의 사양이 받쳐 주어야 할 듯하다.</p>
+
+<h2 id="분석을-마치며">분석을 마치며…</h2>
+
+<p>본래 데스크탑 운영체제에 있어 리눅스는 마이크로소프트 Windows 보다 후발주자의 위치에 있다. 그런 만큼 리눅스는 Windows와의 공존을 위한 장치가 많고 그 장치를 잘 활용한다면 Windows가 해 줄 수 없는 역할까지 수행할 수 있는 능력을 갖출 수 있다. 이런 능력을 가진 사람들을 일컬어 소위 파워 리눅서라고 하지 않았던가. 같은 맥락에서 리눅스의 오피스 슈트들 역시 파워 리눅서를 만족시킬만한 Windows와의 호환을 가능케 하는 요소들을 많이 갖추고 있었다.</p>
+
+<p>조금 아쉬운 것은 국내 기술로 제작된 한컴오피스를 제외하고 한글 지원이 아직은 미숙하다는 것. 그러나 날이 갈수록 X 윈도우에서의 한글 지원기능이 확대되고 있으며 오피스 슈트를 사용함에 있어서도 사용자들을 만족시키고 있다. 각 오피스 슈트의 차기 버전에서는 더욱 개선된 기능, 개선된 한글 지원을 기대해 본다.</p>
+
+<p>각 오피스 슈트들 나름대로 일장일단, 개성 있는 모습을 보여주었다. 솔직히 필자의 바램은 본 기사가 ‘어떤 오피스를 선택하는 게 가장 좋을까?’에 대한 해답이 되었기 보다 독자 각자의 환경 및 취향에 맞는 오피스 슈트를 적절하게 사용할 수 있는 판단의 길잡이가 되었으면 좋겠다.</p>
+
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/2017-05-01/toy-project" class="left next">Prev</a>
+  
+  
+    <a href="/2002-12-28/interview-webmaster" class="right next">Next</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2020-10-15 01:42:51 -0500">2020</time> ShinJaehun. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
+      </span>
+    </footer>
+  </body>
+</html>
