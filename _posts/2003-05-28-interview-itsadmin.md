@@ -30,7 +30,7 @@ A : 새로운 도로의 건설 없이 기존 시스템의 효율성을 극대화
 
 **ITS에 관심이 있다면 직접 제주 ITS 홈 페이지에서 보다 자세한 내용을 확인할 수 있을 것이다.**
 
-![jejuits.jpg](/assets/img/interview_its_admin/jejuits.jpg)
+![jejuits.jpg](/assets/img/interview_its_admin/jejuits.jpg){: width="400"}
 
 Q :제주 ITS의 시스템 구성은?
 

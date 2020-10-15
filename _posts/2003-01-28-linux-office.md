@@ -70,7 +70,7 @@ K오피스의 한글화 정도는 KDE의 한글화 수준과 비례한다고 할
 
 K오피스는 KDE 프로젝트의 일환으로 공식 K오피스 그룹에서 릴리즈하고 있다. 물론 GPL 라이센스에 의해서 배포된다.
 
-![kofficeHome01.jpg](/assets/img/linux_office/kofficeHome01.jpg)
+![kofficeHome01.jpg](/assets/img/linux_office/kofficeHome01.jpg){: width="400"}
 
 K오피스가 포함하고 있는 애플리케이션들은 다음과 같다.
 * KWord - K 오피스의 워드프로세서이다.
@@ -99,7 +99,7 @@ K오피스가 포함하고 있는 애플리케이션들은 다음과 같다.
 
 그렇다고 해서 굳이 K오피스를 다운로드받을 필요는 없을 것 같다. 레드햇 리눅스 8.0에서 K오피스를 기본적으로 제공하기 때문이다. 물론 레드햇 리눅스가 제공하는 RPM 패키지가 마음에 들지 않는다면 K오피스 프로젝트 홈페이지에서 소스 파일을 받아서 직접 빌드할 수 있다. 사실 소스 파일 컴파일 하는 것은 귀찮은 일이 아닐 수 없다.
 
-![kofficeHome02.jpg](/assets/img/linux_office/kofficeHome02.jpg)
+![kofficeHome02.jpg](/assets/img/linux_office/kofficeHome02.jpg){: width="400"}
 
 K오피스 패키지는 레드햇 리눅스 8.0의 세 번째 설치 CD에 있다.
 
@@ -126,7 +126,7 @@ GNOME에서는 실행에 문제가 있기 때문에 데스크탑 스위칭 툴�
 # switchdesk
 ```
 
-![desktopswitching01.jpg](/assets/img/linux_office/desktopswitching01.jpg)
+![desktopswitching01.jpg](/assets/img/linux_office/desktopswitching01.jpg){: width="400"}
 
 데스크탑 스위칭 툴에서 KDE를 선택하고 OK 버튼을 클릭한다.
 
@@ -155,11 +155,11 @@ KWord는 K오피스의 워드프로세서이다. 사실 필자의 입장에서 �
 
 터미널에서 KWord를 실행하면 새로운 문서 서식을 지정할 수 있다. 일반적으로 A4 용지를 선택해서 문서를 작성한다.
 
-![kword01.jpg](/assets/img/linux_office/kword01.jpg)
+![kword01.jpg](/assets/img/linux_office/kword01.jpg){: width="400"}
 
-KWord의 인터페이스이다. KDE의 애플리케이션이 제공하는 메뉴를 그대로 따르고 있음을 확인할 수 있다. 역시 한글화된 메뉴를 제공하지 않는다는 점은 아쉽다. 왼쪽의 Document Structure 창은 KWord가 문서 파일을 늘섭?구성하고 있는 것을 눈으로 확인하게 해 준다. 워드프로세서에서는 반드시 필요한 기능이라고 볼 수 없지만 KWord를 HTML 에디터 등으로 사용할 때에 더욱 유淪?것이다.
+KWord의 인터페이스이다. KDE의 애플리케이션이 제공하는 메뉴를 그대로 따르고 있음을 확인할 수 있다. 역시 한글화된 메뉴를 제공하지 않는다는 점은 아쉽다. 왼쪽의 Document Structure 창은 KWord가 문서 파일을 구성하고 있는 것을 눈으로 확인하게 해 준다. 워드프로세서에서는 반드시 필요한 기능이라고 볼 수 없지만 KWord를 HTML 에디터 등으로 사용할 때에 더욱 유익할 것이다.
 
-![kword02.jpg](/assets/img/linux_office/kword02.jpg)
+![kword02.jpg](/assets/img/linux_office/kword02.jpg){: width="400"}
 
 이전 버전에 비해 KWord의 개선된 사항은 다음과 같다.
 
@@ -172,11 +172,11 @@ KWord의 인터페이스이다. KDE의 애플리케이션이 제공하는 메뉴
 
 Kword로 테스트용 문서를 작성해봤다. 필자의 레드햇 리눅스는 기본 백묵 글꼴 밖에 지원하지 않기 때문에 이 정도의 문서를 만드는 것이 한계였다.
 
-![kword03.jpg](/assets/img/linux_office/kword03.jpg)
+![kword03.jpg](/assets/img/linux_office/kword03.jpg){: width="400"}
 
 KWord에서 작성한 문서 파일은 필터를 통하여 Lotus AmiPro, HTML, XML, 워드 퍼펙트, TeX, RTF, SGML, 아비워드, GNUmeric 스프레드시트 등의 문서 형식으로 저장할 수 있다. 아쉽지만 Winodows의 MS 워드 및 &#62778;글과의 데이터 호환은 지원하지 않는 듯하다. KWord의 기본 확장자는 kwd이다.
 
-![kword04.jpg](/assets/img/linux_office/kword04.jpg)
+![kword04.jpg](/assets/img/linux_office/kword04.jpg){: width="400"}
 
 ### KSpread
 
@@ -184,11 +184,11 @@ KSpread는 K오피스의 스프레드시트이다. 딱히 특징적인 기능이
 
 터미널에서 KSpread를 실행하면 템플릿을 통해 문서서식을 지정하여 문서 작성을 시작할 수 있다.
 
-![kspread01.jpg](/assets/img/linux_office/kspread01.jpg)
+![kspread01.jpg](/assets/img/linux_office/kspread01.jpg){: width="400"}
 
 KSpread의 인터페이스는 대체로 KWord와 비슷한 메뉴 구성, 스프레드시트가 가지고 있는 기본적인 셀 인터페이스 등을 그대로 따르고 있다.
 
-![kspread02.jpg](/assets/img/linux_office/kspread02.jpg)
+![kspread02.jpg](/assets/img/linux_office/kspread02.jpg){: width="400"}
 
 이전 버전에 비해 KSpread의 개선된 사항은 다음과 같다.
 
@@ -202,11 +202,11 @@ KSpread의 인터페이스는 대체로 KWord와 비슷한 메뉴 구성, 스프
 
 테스트를 위해서 샘플 문서를 만들어 보았다.
 
-![kspread003.jpg](/assets/img/linux_office/kspread003.jpg)
+![kspread003.jpg](/assets/img/linux_office/kspread003.jpg){: width="400"}
 
 KWord와 같이 KSpread 역시 필터 기능을 이용하여 문서를 다양하게 활용할 수 있다. K오피스 프로젝트에서 밝히는 바대로 K오피스의 필터 기능은 리눅스 운영체제의 다양한 애플리케이션과 데이터 호환을 가능케 해주는 막강한 기능임에 틀림없다. KSpread의 기본 확장자는 ksp이다.
 
-![kspread04.jpg](/assets/img/linux_office/kspread04.jpg)
+![kspread04.jpg](/assets/img/linux_office/kspread04.jpg){: width="400"}
 
 KSpread 역시 한글과 느린 문제를 벗어날 수 없었다. 게다가 시스템 사양이 좋지 못하여 그런지는 알 수 없으나 문서를 작성하는 도중에 알 수 없는 오류로 애써 작성한 문서를 날려버리는 비극을 겪었다. 차기 버전의 K오피스에서는 이러한 문제를 극복했으면 하는 바이다.
 
@@ -214,11 +214,11 @@ KSpread 역시 한글과 느린 문제를 벗어날 수 없었다. 게다가 시
 
 KPresenter는 K오피스의 프리젠테이션 도구이다. KPresenter를 실행하면 문서서식을 지정할 수 있는데 좀 더 다양한 형식을 지정하지 못하는 것이 조금 아쉽다. 그러나 실재 프리젠테이션 문서를 만들 때에는 이 정도 양식이면 충분하다.
 
-![kpresneter01.jpg](/assets/img/linux_office/kpresneter01.jpg)
+![kpresneter01.jpg](/assets/img/linux_office/kpresneter01.jpg){: width="400"}
 
 KPresenter의 실행 화면이다. 프리젠테이션 프로그램에 충실한 인터페이스를 보여주고 있다.
 
-![kpresneter02.jpg](/assets/img/linux_office/kpresneter02.jpg)
+![kpresneter02.jpg](/assets/img/linux_office/kpresneter02.jpg){: width="400"}
 
 이전 버전에 비해 KPresenter의 개선된 사항은 다음과 같다.
 
@@ -230,11 +230,11 @@ KPresenter의 실행 화면이다. 프리젠테이션 프로그램에 충실한 
 
 샘플 문서를 만들어 보았다.
 
-![kpresneter03.jpg](/assets/img/linux_office/kpresneter03.jpg)
+![kpresneter03.jpg](/assets/img/linux_office/kpresneter03.jpg){: width="400"}
 
 KPresneter의 프리젠테이션 문서를 저장하는 모습이다. 역시 다양한 문서 형식을 지원하고 있는 것을 확인할 수 있다. KPresenter의 기본 확장자는 kpr이다.
 
-![kpresneter04.jpg](/assets/img/linux_office/kpresneter04.jpg)
+![kpresneter04.jpg](/assets/img/linux_office/kpresneter04.jpg){: width="400"}
 
 ## 오픈오피스 1.0
 
@@ -265,7 +265,7 @@ ftp로는 다음의 주소에서 다운 로드 받을 수 있다.
 
 X 윈도에서 해당 패키지를 클릭하는 것만으로 설치를 할 수 있다. 
 
-![OpenOffice_install_02.jpg](/assets/img/linux_office/OpenOffice_install_02.jpg)
+![OpenOffice_install_02.jpg](/assets/img/linux_office/OpenOffice_install_02.jpg){: width="400"}
 
 Redhat 8.0의 두 번째 시디를 넣고 mount 시킨 후 다음과 같이 직접 명령을 내려 설치할 수도 있다.
 
@@ -276,7 +276,7 @@ Redhat 8.0의 두 번째 시디를 넣고 mount 시킨 후 다음과 같이 직�
 
 설치 후 반드시 재부팅을 해야 패널에 아이콘들이 있는 것을 확인 할 수 있을 것이다.
 
-![XscreenShot.jpg](/assets/img/linux_office/XscreenShot.jpg)
+![XscreenShot.jpg](/assets/img/linux_office/XscreenShot.jpg){: width="400"}
 
 드디어 오픈오피스와의 첫 만남, 기존에 다른 오피스들과 화면 구성이 너무나 비슷했기 때문에 메뉴를 사용함에 있어서는 큰 불편을 느끼지 못했다. 파일 크기와 글자체, 문단정렬 등 모든 것이 쉬웠지만, 곧바로 한글 입력이 되지 않는 불편이 있었다 문제를 찾아보니, 한글을 지원하지 않는 폰트가 기본적으로 뜨는 것이다. 이것은 간단하게 백묵(Baekmuk)폰트를 사용함으로 바로 한글을 입력할 수 있었다.
 
@@ -284,21 +284,21 @@ Redhat 8.0의 두 번째 시디를 넣고 mount 시킨 후 다음과 같이 직�
 
 설치가 완료되면, 레드햇의 경우 모자모형의 시작아이콘 옆으로 "OpenOffice.org Writer 워드프로세서" 시작 아이콘이 있으며, 모자를 눌렀을 때 "오피스" 라는 항목에 오픈오피스가 있는 것을 볼 수 있다. 최초로 실행하면 주소데이터 자동 파일럿 메뉴가 나온다. 취소를 누르면 또 등록하라는 메시지가 나온다. 의무사항은 아니니 등록하지 않아도 상관없다. 마이크로소프트 Word에서 작성한 이력서 양식을 불러보았다.
 
-![OpenOffice_Writer_05.jpg](/assets/img/linux_office/OpenOffice_Writer_05.jpg)
+![OpenOffice_Writer_05.jpg](/assets/img/linux_office/OpenOffice_Writer_05.jpg){: width="400"}
 
 럴수럴수... Writer의 화면에 아무런 글이 나오지 않았다. (그림3) 화면에 폰트를 한글이 지원하는 다른 폰트로 맞추어야 한다. "[도구] - [옵션] - [OpenOffice.org 텝] - [글꼴 바꾸기]"에서 반드시 "대체 표적용(A)"에 체크표시를 하고 문서의 글꼴을 대체할 글꼴을 등록하여 이용하면 그나마 화면에 글들을 볼 수 있다. (그림4) 물론 완벽하게 똑같이 지원하지는 않는다. 문서 내용 모두를 일일이 한글이 지원하는 폰트로 변경하면 볼 수 있긴 하지만, 불편한 작업이 아닐 수 없다. 이러한 부분은 차후 개선될 것을 기대한다.
 
-![OpenOffice_Writer_07.jpg](/assets/img/linux_office/OpenOffice_Writer_07.jpg)
+![OpenOffice_Writer_07.jpg](/assets/img/linux_office/OpenOffice_Writer_07.jpg){: width="400"}
 
 ### 스프레드시트 OpenOffice Calc
 
 Calc는 실행하면 엑셀과 거의 비슷하다. 바로 한글이 안나오는 문제가 있지만, 이 역시 워드에서 한글이 나오도록 하는 부분처럼 폰트만 바꾸어 주면 한글은 입력이 가능하다. MS엑셀을 사용하는 분이라면 다시 설명할 필요가 없을 정도로 셀에 입력된 값의 연산은 기존의 엑셀과 같다.
 
-![OpenOffice_calc_01.jpg](/assets/img/linux_office/OpenOffice_calc_01.jpg)
+![OpenOffice_calc_01.jpg](/assets/img/linux_office/OpenOffice_calc_01.jpg){: width="300"}
 
 엑셀에서 (그림5)의 문서를 오픈오피스에서 불러온 결과 한글이 나오지 않았다. 그리하여 문서 전체를 지정하여 한글을 지원하는 백묵 폰트를 변경을 했더니, 한글은 나왔으나 화면 하단에 시트 명칭이 “시트1” “시트2” 순으로 변경되어 나타났다. (그림6)
 
-![OpenOffice_calc_02.jpg](/assets/img/linux_office/OpenOffice_calc_02.jpg)
+![OpenOffice_calc_02.jpg](/assets/img/linux_office/OpenOffice_calc_02.jpg){: width="400"}
 
 그 외에 오픈오피스에서 작성한 문서를 Microsoft Excel 97 / 2000 / XP로 저장하여 MS Offce Excel로 본 결과 내용은 거의 다 보였다. MS Excel의 경우는 없는 폰트의 경우 자동으로 기본 폰트를 이용하여 나타내고 있었다.
 
@@ -338,21 +338,21 @@ Calc는 실행하면 엑셀과 거의 비슷하다. 바로 한글이 안나오�
 
 예제 문서를 한번 작성해 보았다. 그림을 클릭하고 리눅스매거진 홈페이지에서 1월호 사진을 넣고 글을 써넣었다. 이렇게 작성하고 상단의 “슬라이드 쇼(S)” 메뉴에서 “슬라이드 쇼(W)”를 선택하면 쇼를 볼 수 있다. (그림11)
 
-![OpenOffice_Impress_06.jpg](/assets/img/linux_office/OpenOffice_Impress_06.jpg)
+![OpenOffice_Impress_06.jpg](/assets/img/linux_office/OpenOffice_Impress_06.jpg){: width="400"}
 
 이 문서가 기존의 프레젠테이션 프로그램에서도 잘 돌아가길 기대해 보며 “Microsoft PowerPoint 97 / 2000 / XP” 형태로 저장하고 이를 PowerPoint 2000에서 열어 보았다. (그림12)
 
-![OpenOffice_Impress_07.jpg](/assets/img/linux_office/OpenOffice_Impress_07.jpg)
+![OpenOffice_Impress_07.jpg](/assets/img/linux_office/OpenOffice_Impress_07.jpg){: width="400"}
 
 글꼴만 제외하고 결과는 놀랍게도 비슷하다는 것을 알 수 있었다.
 
 반면 MS PowerPoint 2000에서 작성한 문서를 OpenOffice.org 1.0.1에서 보면, 한글만 빼고 다 보인다. 하지만, 그려진 그림에서 구름화살표의 방향이 틀리는 미세한 차이만 발견될 뿐 사용상에는 큰 문제가 없을 것이라 본다. 여기서 오픈오피스 워드의 한글 문제 또한 워드에서 한글이 나오도록 하는 방법과 같다. Power Point문서를 열어보고 폰트만 맞춰준 화면(그림14)
 
-![OpenOffice_Impress_08.jpg](/assets/img/linux_office/OpenOffice_Impress_08.jpg)
+![OpenOffice_Impress_08.jpg](/assets/img/linux_office/OpenOffice_Impress_08.jpg){: width="400"}
 
 **<center><그림 MS PowerPoint 2000에서 작성된 원본></center>**
 
-![OpenOffice_Impress_09.jpg](/assets/img/linux_office/OpenOffice_Impress_09.jpg)
+![OpenOffice_Impress_09.jpg](/assets/img/linux_office/OpenOffice_Impress_09.jpg){: width="400"}
 
 **<center><그림 MS PowerPoint 2000에서 작성된 것을 OpenOffice에서 열어본 화면></center>**
 
@@ -398,11 +398,11 @@ Calc는 실행하면 엑셀과 거의 비슷하다. 바로 한글이 안나오�
 
 한컴오피스 홈페이지(http://www.hancom.com)에 접속하여 왼쪽의 한컴오피스 2.0.3 30일 한정판 링크를 클릭한다.
 
-![hancom01.jpg](/assets/img/linux_office/hancom01.jpg)
+![hancom01.jpg](/assets/img/linux_office/hancom01.jpg){: width="400"}
 
 라이센스를 읽어보고 동의함 버튼에 클릭한다.
 
-![hancom02.jpg](/assets/img/linux_office/hancom02.jpg)
+![hancom02.jpg](/assets/img/linux_office/hancom02.jpg){: width="400"}
 
 버튼을 클릭하자마자 한컴오피스 설치 파일인 ‘HancomOffice2.0_Eval’을 다운받을 수 있다. 
 
@@ -496,7 +496,7 @@ Loading HancomOffice Installer...
 
 파일을 복사한 뒤에 매뉴얼의 위치와는 조금 엉뚱한 곳에서 한컴오피스의 메뉴를 찾을 수 있었다. 한컴리눅스의 기본 데스크탑 환경이 KDE이기 때문에 이렇게 되지 않았나 생각한다. 이렇게 설정된 메뉴는 독자 스스로 편집해서 편하게 사용하기 바란다.
 
-![hancom15.jpg](/assets/img/linux_office/hancom15.jpg)
+![hancom15.jpg](/assets/img/linux_office/hancom15.jpg){: width="400"}
 
 메뉴를 통해서 한컴오피스의 애플리케이션들을 실행할 수도 있겠지만 한컴오피스 쉘을 이용할 수도 있다. 한컴오피스 쉘은 한컴오피스 애플리케이션들을 실행할 수 있는 아이콘들을 모아놓은 프로그램이다. 필자와 같이 매번 X 윈도우의 메뉴 패널에서 프로그램을 실행하는 것을 귀찮아하는 유저를 위해 한컴리눅스에서 만들어 놓은 프로그램이라고 생각한다.
 
@@ -508,7 +508,7 @@ Loading HancomOffice Installer...
 
 한컴워드 6.0은 Windows용 한글 워디안을 리눅스용으로 포팅한 것으로 인터페이스 역시 한글 워디안 및 한글 2000과 동일하다. 사실 똑 같다고 얘기해도 과언이 아니다. 따라서 그림삽입, 표 등 기초적인 문서작업에 있어 어려운 느낌을 전혀 받지 못했다. 한글을 잘 사용할 수 있는 유저라면 별다른 설명 없이도 한컴워드를 훌륭하게 사용할 수 있을 것이라고 생각한다. 
 
-![hanword01.jpg](/assets/img/linux_office/hanword01.jpg)
+![hanword01.jpg](/assets/img/linux_office/hanword01.jpg){: width="400"}
 
 워드프로세서만큼 각 국가별 특성을 타는 애플리케이션이 어디 있겠는가. 그러한 의미에서 한컴워드 6.0은 국내 사용자가 리눅스에서 사용할만한 다른 오피스 슈트 중, 워드프로세서 면에서 단연 최고라고 할 수 있을 것이다.
 
@@ -564,7 +564,7 @@ Loading HancomOffice Installer...
 
 마지막으로 독자 여러분들은 무엇보다 한컴워드에서 작성한 문서와 Windows의 한글에서 작성한 문서간에 호환성 여부에 관심을 가질 것이라고 생각한다. 이를 테스트해보기 위하여 리눅스상에서 문서를 작성해 보았다.
 
-![hanword02.jpg](/assets/img/linux_office/hanword02.jpg)
+![hanword02.jpg](/assets/img/linux_office/hanword02.jpg){: width="400"}
 
 파일은 한컴워드 문서 형식으로 저장한다. 한컴워드 6.0의 문서 형식은 Windows 한글과 같이 기본적으로 파일 확장자 hwp가 붙어 저장된다.
 
@@ -572,11 +572,11 @@ Loading HancomOffice Installer...
 
 Windows용 한글 2000에서 동일한 문서를 열어본 모습이다. 사용된 글꼴이 약간 다를 뿐 별다른 차이점은 발견할 수 없다.
 
-![hanword04.jpg](/assets/img/linux_office/hanword04.jpg)
+![hanword04.jpg](/assets/img/linux_office/hanword04.jpg){: width="400"}
 
 반면 한글 97에서는 문서를 제대로 확인할 수 없다. 이것은 다른 이유가 아니라 라이브러리 차이 때문이다. 한글 워디안 및 한글 2000에서 작성한 문서를 한글 97에서 볼 수 없는 것과 같은 이치라고 생각하면 된다.
 
-![hanword05.jpg](/assets/img/linux_office/hanword05.jpg)
+![hanword05.jpg](/assets/img/linux_office/hanword05.jpg){: width="400"}
 
 ### 한컴시트2.0
 
@@ -588,7 +588,7 @@ Windows용 한글 2000에서 동일한 문서를 열어본 모습이다. 사용�
 
 한컴시트는 스프레드시트의 공통적인 인터페이스 화면을 제공한다. 사진을 보면 알겠지만 바둑판과 같은 셀 화면과 제공하는 메뉴 역시 액셀과 매우 비슷하다. 
 
-![hansheet01.jpg](/assets/img/linux_office/hansheet01.jpg)
+![hansheet01.jpg](/assets/img/linux_office/hansheet01.jpg){: width="400"}
 
 한컴시트는 이전 버전에 비해 비약적인 업그레이드가 이루어졌다. 전체적인 기능면에서 개선 사항을 살펴보면 다음과 같다.
 
@@ -607,17 +607,17 @@ Windows용 한글 2000에서 동일한 문서를 열어본 모습이다. 사용�
 
 액셀에서 만든 파일을 리눅스에서 활용할 수 있다는 것이야말로 업무용 오피스 슈트를 필요로 리눅서에게 희소식이 아닐 수 없다. 액셀과의 호환성 테스트를 위해서 액셀의 샘플 파일 solvsamp.xls을 한컴시트에서 확인한 모습니다.
 
-![hansheet02.jpg](/assets/img/linux_office/hansheet02.jpg)
+![hansheet02.jpg](/assets/img/linux_office/hansheet02.jpg){: width="400"}
 
 액셀에서 같은 문서를 확인한 모습이다. 별다른 차이점을 발견할 수 없다.
 
-![acc.jpg](/assets/img/linux_office/acc.jpg)
+![acc.jpg](/assets/img/linux_office/acc.jpg){: width="400"}
 
 그러나 아쉽게도 한컴시트와 액셀은 100% 호환 가능한 것은 아니다. 액셀에서 특수한 매크로를 사용하거나 액셀의 고급 기능으로 문서를 화려하게 꾸며놓았을 경우에는 한컴시트에서 제대로 읽지 못하는 경우도 있기 때문이다.
 
 다음은 액셀에서 만들어진 모 방송사의 주간 프로그램 편성표이다.
 
-![table.jpg](/assets/img/linux_office/table.jpg)
+![table.jpg](/assets/img/linux_office/table.jpg){: width="400"}
 
 이 파일을 한컴시트에서 불러오게 되면...
 
@@ -625,7 +625,7 @@ Windows용 한글 2000에서 동일한 문서를 열어본 모습이다. 사용�
 
 이렇게 한컴시트가 바로 종료되어 버린다. ‘튕긴다’는 표현은 이럴 때 쓰는 말일 것이다.
 
-![hansheet05.jpg](/assets/img/linux_office/hansheet05.jpg)
+![hansheet05.jpg](/assets/img/linux_office/hansheet05.jpg){: width="400"}
 
 **필자가 한컴시트2.0 정품을 사용해보지 않아서 30일 한정판에서만 이러한 현상이 나타나는 것인지 확신할 수는 없다.**
 
@@ -639,7 +639,7 @@ Windows용 한글 2000에서 동일한 문서를 열어본 모습이다. 사용�
 
 한컴프리젠터의 인터페이스이다.
 
-![hanpresent01.jpg](/assets/img/linux_office/hanpresent01.jpg)
+![hanpresent01.jpg](/assets/img/linux_office/hanpresent01.jpg){: width="400"}
 
 한컴프리젠터2.0의 특징은 다음과 같다.
 
@@ -657,7 +657,7 @@ Windows용 한글 2000에서 동일한 문서를 열어본 모습이다. 사용�
 
 한컴프리젠터2.0의 특징에서 소개된 것처럼 ppt 파일 형식을 지원하므로 Windows 파워포인트와 데이터 호환이 가능하다. 한컴프리젠터2.0의 기본적인 파일 형식은 hpt이다. 한컴프리젠터에서 파일을 ppt 형식으로 저장해본다.
 
-![hanpresent02.jpg](/assets/img/linux_office/hanpresent02.jpg)
+![hanpresent02.jpg](/assets/img/linux_office/hanpresent02.jpg){: width="400"}
 
 파워포인트에서 같은 문서를 불러온 모습이다. 아～ 한숨이 절로 나온다. 기대했던 만큼 한컴프리젠터에서 작성한 문서를 제대로 보여주지 못해 아쉽다. 기본적으로 파워포인트와 한컴프리젠터의 폰트와 서식 파일이 다르기 때문에 생기는 문제이다. 차기 버전에서는 파워포인트와의 호환에 좀 더 신경을 썼으면 하는 바램이다.
 
