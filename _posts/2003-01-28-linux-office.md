@@ -70,7 +70,7 @@ K오피스의 한글화 정도는 KDE의 한글화 수준과 비례한다고 할
 
 K오피스는 KDE 프로젝트의 일환으로 공식 K오피스 그룹에서 릴리즈하고 있다. 물론 GPL 라이센스에 의해서 배포된다.
 
-![kofficeHome01.jpg](/assets/img/linux_office/kofficeHome01.jpg){: width="400"}
+![kofficeHome01.jpg](/assets/img/linux_office/kofficeHome01.jpg){: width="50%"}
 
 K오피스가 포함하고 있는 애플리케이션들은 다음과 같다.
 * KWord - K 오피스의 워드프로세서이다.
@@ -99,7 +99,7 @@ K오피스가 포함하고 있는 애플리케이션들은 다음과 같다.
 
 그렇다고 해서 굳이 K오피스를 다운로드받을 필요는 없을 것 같다. 레드햇 리눅스 8.0에서 K오피스를 기본적으로 제공하기 때문이다. 물론 레드햇 리눅스가 제공하는 RPM 패키지가 마음에 들지 않는다면 K오피스 프로젝트 홈페이지에서 소스 파일을 받아서 직접 빌드할 수 있다. 사실 소스 파일 컴파일 하는 것은 귀찮은 일이 아닐 수 없다.
 
-![kofficeHome02.jpg](/assets/img/linux_office/kofficeHome02.jpg){: width="400"}
+![kofficeHome02.jpg](/assets/img/linux_office/kofficeHome02.jpg){: width="50%"}
 
 K오피스 패키지는 레드햇 리눅스 8.0의 세 번째 설치 CD에 있다.
 
@@ -126,11 +126,11 @@ GNOME에서는 실행에 문제가 있기 때문에 데스크탑 스위칭 툴�
 # switchdesk
 ```
 
-![desktopswitching01.jpg](/assets/img/linux_office/desktopswitching01.jpg){: width="400"}
+![desktopswitching01.jpg](/assets/img/linux_office/desktopswitching01.jpg){: width="50%"}
 
 데스크탑 스위칭 툴에서 KDE를 선택하고 OK 버튼을 클릭한다.
 
-![desktopswitching02.jpg](/assets/img/linux_office/desktopswitching02.jpg)
+![desktopswitching02.jpg](/assets/img/linux_office/desktopswitching02.jpg){: width="20%"}
 
 X윈도우를 종료하고 재시작하면 KDE 기반의 X 윈도우가 실행될 것이다.
 
