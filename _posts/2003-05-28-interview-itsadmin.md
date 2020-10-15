@@ -12,7 +12,7 @@ type: 기사
 
 ![jjoole_su.jpg](/assets/img/interview_its_admin/jjoole_su.jpg)
 
-**<center><사진>제주 ITS 웹 서버 관리자 고혁준</center>**
+**<center>제주 ITS 웹 서버 관리자 고혁준</center>**
 
 Q : 어떤 일을 하고 있는가?
 
