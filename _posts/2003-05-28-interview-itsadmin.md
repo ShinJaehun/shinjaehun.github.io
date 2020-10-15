@@ -12,7 +12,7 @@ type: 기사
 
 ![jjoole_su.jpg](/assets/img/interview_its_admin/jjoole_su.jpg)
 
-**<center><사진> 제주 ITS 웹 서버 관리자 고혁준</center>**
+**<center><사진>제주 ITS 웹 서버 관리자 고혁준</center>**
 
 Q : 어떤 일을 하고 있는가?
 
@@ -28,7 +28,7 @@ Q : 제주 ITS(Intelligent Transport Systems) 서비스란? (<http://www.jejuits
 
 A : 새로운 도로의 건설 없이 기존 시스템의 효율성을 극대화시켜 교통체증, 교통사고 등 교통문제 해결을 위한 기반시설 조성하여 교통부문의 정보화와 첨단의 제어기술을 도입하고 적용한 것이 ITS, 즉 지능형 교통 체계라고 할 수 있다. 제주시 첨단 교통정보서비스는 제주 시민과 제주시를 방문하는 모든 관광객들을 위해 교통 혼잡을 해소하고 교통의 흐름을 원활히 하며 제주도 관광지 정보를 제공함으로서 제주시민은 물론 제주를 찾는 관광객들에게 보다 나은 정보과 서비스를 제공하기 위해 개발되었다. 
 
-**ITS에 관심이 있다면 직접 제주 ITS 홈 페이지에서 보다 자세한 내용을 확인할 수 있을 것이다. <그림>**
+**ITS에 관심이 있다면 직접 제주 ITS 홈 페이지에서 보다 자세한 내용을 확인할 수 있을 것이다.**
 
 ![jejuits.jpg](/assets/img/interview_its_admin/jejuits.jpg)
 
