@@ -130,7 +130,7 @@ GNOME에서는 실행에 문제가 있기 때문에 데스크탑 스위칭 툴�
 
 데스크탑 스위칭 툴에서 KDE를 선택하고 OK 버튼을 클릭한다.
 
-![desktopswitching02.jpg](/assets/img/linux_office/desktopswitching02.jpg){: width="50%"}
+![desktopswitching02.jpg](/assets/img/linux_office/desktopswitching02.jpg){: width="30%"}
 
 X윈도우를 종료하고 재시작하면 KDE 기반의 X 윈도우가 실행될 것이다.
 
