@@ -12,7 +12,7 @@ type: project
 
 자바를 이용해서 처음으로 만들어본 응용 프로그램을 조심스럽게 KLDP에 공개합니다.
 
-![shot01.JPG](/assets/img/project_mathpractice/shot01.JPG)
+![shot01.JPG](/assets/img/project_mathpractice/shot01.jpg)
 
 # 주의 사항
 
@@ -28,7 +28,7 @@ type: project
 
 '100칸 계산법'은 계산의 기초를 익혀 숙달하기 위해 일본 전국 각지에서 사용되고 있는 교재입니다. 세로/가로에 10개씩 나열한 수를 계산하여, 그 답을 100개의 칸에 쓰는 간단한 학습법입니다.
 
-![shot04.JPG](/assets/img/project_mathpractice/shot04.JPG)
+![shot04.JPG](/assets/img/project_mathpractice/shot04.jpg)
 
  * 100칸 덧셈 : 세로(왼쪽 열)의 수에, 가로(위의 행)의 수를 순서대로 더해갑니다.
  * 100칸 뺄셈 : 가로(위의 행)의 수부터 세로(왼쪽 열)의 수를 순서대로 빼 갑니다.
@@ -38,11 +38,11 @@ type: project
 
 문제를 열심히 풀고 있는 스크린 샷을 첨부합니다.
 
-![shot02.JPG](/assets/img/project_mathpractice/shot02.JPG)
+![shot02.JPG](/assets/img/project_mathpractice/shot02.jpg)
 
 문제를 다 풀고 타이머를 클릭하면 계산 결과와 경과 시간을 알려줍니다.
 
-![shot03.JPG](/assets/img/project_mathpractice/shot03.JPG)
+![shot03.JPG](/assets/img/project_mathpractice/shot03.jpg)
 
 # 개발자의 변
 
