@@ -13,9 +13,10 @@ type: project
 * kldp.net이 폐쇄되면서 프로젝트 페이지가 사라진 상태입니다.
 * 추후 knoppix 한글화에 쓰인 스크립트를 github에 올릴 예정입니다.
 
-# Knoppix 한글 이미지 내려받기 ==
+# Knoppix 한글 이미지 내려받기
 
-Knoppix 한글 이미지를 내려받을 수 있는 링크입니다. 
+Knoppix 한글 이미지를 내려받을 수 있는 링크입니다.
+
 **KFUG에서 무료로 호스팅해주고 있습니다. 최준호님 고맙습니다.**
 
 * [Knoppix 3.8.1 한글 이미지 공개](http://bbs.kldp.org/viewtopic.php?t=55146)
