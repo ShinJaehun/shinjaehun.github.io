@@ -41,7 +41,9 @@
   <h2 class="post-title">프로그래밍 학습 도구로서 게임 : Real Time Battle</h2>
   <div class="post-line"></div>
 
-  <p><strong>2005.6.7 현재 RealTimeBattle은 1.0.7으로 판올림되어 있으며 RealTimeBattle Team에 의해서 꾸준히 개선되어가고 있는 중입니다. [http://realtimebattle.sourceforge.net 홈페이지]의 Latest News를 참고하시기 바랍니다.</strong></p>
+  <p><strong>2005.6.7 현재 RealTimeBattle은 1.0.7으로 판올림되어 있으며 RealTimeBattle Team에 의해서 꾸준히 개선되어가고 있는 중입니다.</strong></p>
+
+<p><strong><a href="http://realtimebattle.sourceforge.net">http://realtimebattle.sourceforge.net</a>의 Latest News를 참고하시기 바랍니다.</strong></p>
 
 <p><strong>이 글은 리눅스매거진 2002년 7월호에 실린 기사입니다. 기사를 위키로 정리하면서 이때 왜 이렇게 글을 썼는지 부끄러운 마음이 앞서더군요. 2002년 기사를 정리한 것이라서 2004년 12월 현재 RTB 프로젝트가 어디까지 와 있는지, 아직도 활발히 개발이 이루어지고 있는지에 대해서는 전혀 알지 못합니다. 프로젝트에 관심있는 분이 계시다면 이 기사를 더욱 알차게 보완해 주시리라 믿어 의심치 않습니다.</strong></p>
 
@@ -71,7 +73,7 @@
 
 <p>여기 ‘Real Time Battle’(이하 RTB)이라는 게임이 있다. &lt;그림 1&gt;의 스크린 샷을 보아하니 게임 퀼리티는 X의 기본 게임들이나 그다지 다를 게 없다. 이쯤 와서 ‘뭐야?! 고작 이런 게임이야?!’하고 실망하는 독자들의 원성이 하나 둘씩 들리기 시작한다.</p>
 
-<p><img src="/assets/img/rtb_screenshot.jpg" alt="스크린샷" /></p>
+<p><img src="/assets/img/article_rtb/rtb_screenshot.jpg" alt="스크린샷" /></p>
 
 <p><strong><center>&lt;그림 1&gt; RTB 스크린 샷 ‘이 정도 게임쯤이야～’라고 얕보지 말길</center></strong></p>
 
@@ -79,8 +81,8 @@
 
 <p>로봇은 캐터필러를 이용해서 이동하고 각각 캐논과 레이더를 장비하고 있다. 대충 &lt;그림 2&gt;와 같은 로봇들이 서로 치고 박고 싸우는 것을 상상하면 된다. 레이더를 사용해 주변 환경을 관찰하며 캐논을 이용해 상대방을 공격하는 형태로 전투가 진행된다. 랜덤 하게 나타나는 지뢰를 피해야 (실재 게임에서는 빨간 점으로 표시된다.) 하고 로봇의 에너지를 올려주는 쿠키를 (실재 게임에서는 푸른 점으로 표시된다.) 먹어야 한다. 사람이 먹는 쿠키를 어떻게 로봇이 먹는지에 대해서는 논의에서 제외한다.</p>
 
-<p><img src="/assets/img/rtb_rmv-1-02.jpg" alt="rmv-1" width="400" />
-<img src="/assets/img/rtb_ms-06v.jpg" alt="ms-06v" width="400" /></p>
+<p><img src="/assets/img/article_rtb/rtb_rmv-1-02.jpg" alt="rmv-1" width="400" />
+<img src="/assets/img/article_rtb/rtb_ms-06v.jpg" alt="ms-06v" width="400" /></p>
 
 <p><strong><center>&lt;그림 2&gt; RTB에 등장하는 로봇들 (이 정도 상상력은 되어야 당신도 로봇 과학자!)</center></strong></p>
 
@@ -88,13 +90,13 @@
 
 <p>RTB의 홈페이지를 방문하면 2000년 10월에 릴리즈 된 1.0.5 버전의 RTB tar볼을 다운받을 수 있다. &lt;그림 3&gt; 벌써 2년이나 지났는데 2.0 버전이 릴리즈 되지 않는 것을 보면 어느 정도 개발이 중지되었을 것이라는 생각도 해 본다. 하지만 그런 게 뭐 대수인가? 이걸 가지고 재미있게 즐길 수만 있으면 되는 것이니…</p>
 
-<p><img src="/assets/img/rtb_homepage.jpg" alt="홈페이지" /></p>
+<p><img src="/assets/img/article_rtb/rtb_homepage.jpg" alt="홈페이지" /></p>
 
 <p><strong><center>&lt;그림 3&gt; RTB의 홈페이지 (http://realtimebattle.sourceforge.net)</center></strong></p>
 
 <p>정기적으로 RealTimeBattle Championships 같은 대회도 열리나 보다. 홈페이지의 Competition 메뉴를 클릭하면 2000년 2월에 열린 First Official RealTimeBattle Competition을 시작으로 몇 번의 대회가 있었던 사실이 기록되어 있다. 국내에서도 어느 정도 매니아들이 생긴다면 서로의 로봇을 대전시키는 이벤트 정도는 기대할 수 있을 것 같다.</p>
 
-<p>왼쪽 메뉴의 Download 링크를 클릭하면 RTB를 다운받을 수 있는 페이지로 이동한다. tar.gz 형태와 tar.bz2 형태의 파일 중 편한 것을 다운 받자. tar볼에 SPEC 파일이 포함되어 있으므로 RPM  패키지를 작성하는 것은 가능하지만 홈페이지에서 RPM 패키지를 배포하고 있지는 않다. (데비안 패키지의 경우는 http://packages.debian.org/unstable/games/realtimebattle.html에서 제공하고 있다.)</p>
+<p>왼쪽 메뉴의 Download 링크를 클릭하면 RTB를 다운받을 수 있는 페이지로 이동한다. tar.gz 형태와 tar.bz2 형태의 파일 중 편한 것을 다운 받자. tar볼에 SPEC 파일이 포함되어 있으므로 RPM  패키지를 작성하는 것은 가능하지만 홈페이지에서 RPM 패키지를 배포하고 있지는 않다. (데비안 패키지의 경우는 <a href="http://packages.debian.org/unstable/games/realtimebattle.html">http://packages.debian.org/unstable/games/realtimebattle.html</a>에서 제공하고 있다.)</p>
 
 <p>파일을 다운받았으면 압축을 해제하고 일반적인 빌드 순서에 따라 ./configure → make → make install 명령을 차례로 내리면 된다. 실험 결과 펜티엄 셀러론 300M급 머신에서 담배 한 대 피우는 시간이면 빌드가 끝나는 것을 확인할 수 있었다.</p>
 
@@ -157,7 +159,7 @@ $
 
 <p>설치가 모두 끝났다면 RTB를 시작해 보자. 터미널에서 ‘RealTimeBattle &amp;’(1.0.7 : realtimebattle)라고 입력하면 RTB 컨트롤 윈도우가 나타난다. 컨트롤 윈도우의 각 버튼에 대한 설명은 &lt;그림 4&gt;와 같다.</p>
 
-<p><img src="/assets/img/rtb_controlWW.jpg" alt="컨트롤 윈도우" /></p>
+<p><img src="/assets/img/article_rtb/rtb_controlWW.jpg" alt="컨트롤 윈도우" /></p>
 
 <p><strong><center>&lt;그림 4&gt; RTB의 메인 인터페이스인 컨트롤 윈도우</center></strong></p>
 
@@ -175,7 +177,7 @@ $
   <li>Miscellaneous : 그 외 잡다한 설정들을 해 준다.</li>
 </ul>
 
-<p><img src="/assets/img/rtb_optionWW01.jpg" alt="옵션 윈도우" /></p>
+<p><img src="/assets/img/article_rtb/rtb_optionWW01.jpg" alt="옵션 윈도우" /></p>
 
 <p><strong><center>&lt;그림 5&gt; 눈이 휘둥그레지는 RTB의 옵션 창. 더욱 재미있는 전투 환경을 만들어 보라</center></strong></p>
 
@@ -183,7 +185,7 @@ $
 
 <p>RTB에서 로봇 파일은 /usr/local/games/RealTimeBattle/Robot 디렉토리에 위치하는데 컴파일된 파일로서 *.robot이라는 확장자를 갖는다. rotate_and_fire 로봇과 seek_and_destroy 로봇이 기본적으로 제공되는 로봇이다. 또한 로봇이 전투를 벌이는 Arena 파일은 /usr/local/games/RealTimeBattle/Arena 디렉토리에 *.arena라는 이름으로 저장된다. 직접 확인해 보라.</p>
 
-<p><img src="/assets/img/rtb_tournamentWW.jpg" alt="토너먼트 윈도우" /></p>
+<p><img src="/assets/img/article_rtb/rtb_tournamentWW.jpg" alt="토너먼트 윈도우" /></p>
 
 <p><strong><center>&lt;그림 6&gt; 선수입장! 토너먼트 윈도우에서는 로봇과 전투를 벌일 Arena를 결정한다.</center></strong></p>
 
@@ -195,25 +197,25 @@ $
 
 <p>&lt;그림 7&gt;은 Arena 윈도우이다. 실시간으로 벌어지는 로봇의 전투 과정을 지켜볼 수 있다. Zoom 버튼을 이용해서 전투 장면을 확대해서 볼 수도 있다. 앞에서 잠깐 언급한 바와 같이 로봇은 캐터필러를 이용해서 움직이며 주변의 정보를 파악하기 위한 레이더와 적의 로봇을 파괴하기 위한 캐논을 장비하고 있다. (확대해서 보면 더 잘 볼 수 있다.) 로봇은 레이더를 이용해서 랜덤 하게 등장하는 지뢰를 (붉은 점) 피하고 쿠키를 먹어서 (푸른 점) 에너지를 회복한다. 로봇의 상태는 에너지로 표시되는데 당연히 적의 포격을 받으면 에너지가 감소하고 또한 상대방 로봇과 충돌했을 때, 벽에 부딪쳤을 때, 지뢰를 밟았을 때에도 에너지가 줄어든다.</p>
 
-<p><img src="/assets/img/rtb_arenaWW.jpg" alt="아레나 윈도우" /></p>
+<p><img src="/assets/img/article_rtb/rtb_arenaWW.jpg" alt="아레나 윈도우" /></p>
 
 <p><strong><center>&lt;그림 7&gt; Arena 윈도우, 캐논과 레이더를 사용하는 로봇의 더욱 자세한 모습을 보고 싶다면 Zoom 버튼으로 화면을 확대해 보라.</center></strong></p>
 
 <p>&lt;그림 8&gt;은 메시지 윈도우이다. 전투가 시작되거나 종료되었을 때, 적에게 포격 당하고 있을 때,  쿠키를 먹거나 지뢰를 밟았을 때 등 Arena에서 벌어지는 전투 장면이 실시간으로 기록된다.</p>
 
-<p><img src="/assets/img/rtb_messageWW.jpg" alt="메시지 윈도우" /></p>
+<p><img src="/assets/img/article_rtb/rtb_messageWW.jpg" alt="메시지 윈도우" /></p>
 
 <p><strong><center>&lt;그림 8&gt; 메시지 윈도우</center></strong></p>
 
 <p>마지막으로 &lt;그림 9&gt;은 스코어 윈도우이다. 스코어 윈도우에서 로봇의 에너지를 확인할 수 있는데 로봇의 에너지가 0이 되면 로봇은 파괴된다. Arena에 남아있는 로봇이 1대도 남지 않았을 때, 스코어 윈도우에서 확인할 수 있는 제한된 시간이 경과되었을 때 그 게임은 종료된다. 승리한 로봇은 1포인트가 가산되어 최종 토너먼트에 기록이 반영된다.</p>
 
-<p><img src="/assets/img/rtb_scoreWW.jpg" alt="스코어 윈도우" /></p>
+<p><img src="/assets/img/article_rtb/rtb_scoreWW.jpg" alt="스코어 윈도우" /></p>
 
 <p><strong><center>&lt;그림 9&gt; score 윈도우</center></strong></p>
 
 <p>이상 Arena 윈도우와 메시지 윈도우, 스코어 윈도우가 실제 전투가 진행되는 동안 독자가 지켜봐야 하는 메인 윈도우이며 한 전투가 종료되면 컨트롤 윈도우에서 Statistics 버튼을 클릭해서 전투 결과를 다양한 관점에서 정리한 정보를 확인할 수 있다. &lt;그림 10&gt;은 정보를 보여주는 statistic 윈도우이다.</p>
 
-<p><img src="/assets/img/rtb_statistWW.jpg" alt="통계 윈도우" /></p>
+<p><img src="/assets/img/article_rtb/rtb_statistWW.jpg" alt="통계 윈도우" /></p>
 
 <p><strong><center>&lt;그림 10&gt; statistic 윈도우 한 경기의 결과를 총체적으로 정리해서 보여준다.</center></strong></p>
 
@@ -223,13 +225,13 @@ $
 
 <p>로봇 프로그램은 RTB에서 자식 프로세스로 실행되어 표준 입출력 (stdin/stdout)을 통해 RTB 본체와 메시지를 교환하는 방식으로 동작한다. 이것은 마치 네트워크 모델에서 서버 머신과 클라이언트 머신간에 통신하는 방법과 비슷하다. RTB 메인 프로그램은 서버 머신에 해당하며 로봇 프로그램은 클라이언트 머신에 해당한다고 할 수 있다. &lt;그림 11&gt;</p>
 
-<p><img src="/assets/img/rtb_howtocom.jpg" alt="원리" /></p>
+<p><img src="/assets/img/article_rtb/rtb_howtocom.jpg" alt="원리" /></p>
 
 <p><strong><center>&lt;그림 11&gt; RTB 메인 프로그램과 로봇 프로그램이 동작하는 원리</center></strong></p>
 
 <p>RTB 메인 프로그램과 로봇 프로그램간에 메시지를 교환하는 방식이기 때문에 표준 입출력을(stdin/stdout) 통해서 전달되는 메시지의 형식만 제대로 갖춘다면 로봇 프로그램은 어떠한 프로그래밍 언어를 사용해서 프로그래밍 하는 것이 가능하다. C, C++이나 Java는 물론 Perl이나 PHP 같은 스크립트 언어를 사용해서 로봇을 프로그래밍 할 수도 있다.</p>
 
-<p>메시지 종류나 메시지의 송수신 방법, 기타 로봇을 프로그래밍 하는데 필요한 매뉴얼은 RTB의 홈페이지에 상세히 소개되어 있다. (http://www.lysator.liu.se/realtimebattle/Documentation/RealTimeBattle-4.html) 아쉽지만 지면 관계상 본 기사에서는 매뉴얼의 내용을 모두 소개하지는 않는다. 대신 RTB의 메인 프로그램과 여러분이 제작하는 로봇 사이에 교환되는 메시지를 간단히 살펴본 후, 실제 로봇의 소스에는 메시지가 어떻게 활용되고 있는지 확인하기로 한다. 이를 통해 로봇이 동작하는 방식을 이해하도록 하자.</p>
+<p>메시지 종류나 메시지의 송수신 방법, 기타 로봇을 프로그래밍 하는데 필요한 매뉴얼은 RTB의 홈페이지에 상세히 소개되어 있다. (<a href="http://www.lysator.liu.se/realtimebattle/Documentation/RealTimeBattle-4.html">http://www.lysator.liu.se/realtimebattle/Documentation/RealTimeBattle-4.html</a>) 아쉽지만 지면 관계상 본 기사에서는 매뉴얼의 내용을 모두 소개하지는 않는다. 대신 RTB의 메인 프로그램과 여러분이 제작하는 로봇 사이에 교환되는 메시지를 간단히 살펴본 후, 실제 로봇의 소스에는 메시지가 어떻게 활용되고 있는지 확인하기로 한다. 이를 통해 로봇이 동작하는 방식을 이해하도록 하자.</p>
 
 <p>메시지의 송수신 방법은 표준 입출력을 통해서 이루어진다. 표준 입출력이란 무엇인가? 보통 C에서는 stdin, stdout, stderr 같은 표준 입력, 표준 출력, 표준 에러 파일을 읽기, 쓰기 위해 미리 열어서 제공한다. 이러한 파일을 표준 파일이라고 한다. 데이터를 하나 또는 그 이상의 물리적(스크린이나 프린터, 플로터 등의 컴퓨터에 연결될 수 있는 모든)장치로 지향되는 스트림(stream)의 형태로 나타낸 것이 바로 표준 입출력 파일인 것이다. 스트림을 이용한 표준 입출력 장치는 이들을 처리하는 stdio.h 헤더에 정의되어 있다.</p>
 
@@ -246,13 +248,13 @@ $
 
 <p>먼저 RTB 메인 프로그램으로부터 로봇 프로그램에게 전달되는 메시지는 다음과 같다. &lt;표 1&gt; 각 메시지의 옵션에 대한 설명은 생략하니 매뉴얼을 참고하라. 로봇을 프로그래밍 하는 여러분의 입장에서는 RTB로부터 로봇에게 전달되는 문자열을 비교해서 그에 알맞은 처리를 해 주면 된다.</p>
 
-<p><img src="/assets/img/rtb_table01.jpg" alt="메시지1" /></p>
+<p><img src="/assets/img/article_rtb/rtb_table01.jpg" alt="메시지1" /></p>
 
 <p><strong><center>&lt;표 1&gt; RTB 메인 프로그램으로부터 로봇에게 전달되는 메시지</center></strong></p>
 
 <p>다음은 로봇으로부터 RTB에 전달되는 메시지이다. &lt;표 2&gt; RTB가 전달하는 메시지에 대해서 이벤트를 설정하고 각 이벤트에 대응하는 동작을 수행하라는 식으로 프로그래밍 한다. 프로그래밍 된 동작을 RTB에 &lt;표 2&gt;와 같은 메시지를 통해서 전달하면 된다.</p>
 
-<p><img src="/assets/img/rtb_table02.jpg" alt="메시지2" /></p>
+<p><img src="/assets/img/article_rtb/rtb_table02.jpg" alt="메시지2" /></p>
 
 <p><strong><center>&lt;표 2&gt; 로봇으로부터 RTB 메인 프로그램에 전달되는 메시지</center></strong></p>
 
@@ -264,7 +266,7 @@ $
 
 <p>RTB 게임 내에 기본적으로 포함되어 있는 로봇은 모두 C++을 이용해서 제작되었기 때문에 다수의 독자를 고려하여 C를 이용해서 제작된 로봇을 찾아봤다. RTB 홈페이지에 링크되어 있는 Dr. Frost의 로봇 데이터베이스에는 &lt;그림 12&gt; C++, C, JAVA, Perl, PHP 등으로 코딩된 다양한 로봇 프로그램을 확인할 수 있다. 이 중에서 Trinity라는 로봇과 Olivaw라는 로봇이 C로 제작되어 있는데 필자는 ‘어느 로봇이 더 강한가?’의 기준이 아니라 ‘어느 로봇이 더 보기 쉽게 코딩되어 있는가?’의 기준으로 주석이 많이 달려 있고 가독성이 좋게 코딩된 Trinity 로봇을 선정하여 독자 여러분께 소개한다.</p>
 
-<p><img src="/assets/img/rtb_mrfrostdatabase.jpg" alt="로봇 데이터베이스" /></p>
+<p><img src="/assets/img/article_rtb/rtb_mrfrostdatabase.jpg" alt="로봇 데이터베이스" /></p>
 
 <p>Trinity 로봇은 아직 부족한 사항이 많다. 목표를 지정하고 그 곳으로 이동하는 알고리즘도 형성되어있지 않고 개발자가 RTB에서 로봇에게 전달되는 모든 메시지를 분석해서 로봇에 적용하고 있는 것도 아니다. (그래서 그런지 실제 전투에서 Trinity가 이기는 꼴을 한번도 못 봤다.) 그러나 Trinity의 코드는 개발자가 코드 하나하나에 주석을 집어넣어 자세한 설명을 해주고 있으며 뒤죽박죽 마구잡이로 코딩되어 있지 않기 때문에 가독성이 좋다. 자세한 설명과 가독성이 높은 코드로 개선의 여지가 많다는 것, 이것이야말로 가장 좋은 프로그래밍 습관일 것이니 프로그래밍을 공부하는 독자 여러분들도 필히 이를 본받도록!</p>
 
@@ -391,7 +393,7 @@ $
 
 <p>독자들 중 대부분은 신의 장난감이라고 불리는 레고 블록을 한번쯤은 가지고 놀아봤던 경험을 가지고 있을 줄 안다. 최근에 레고 시리즈 중 Mind Storm 시리즈가 출시되었다. &lt;그림 13&gt; 레고 블록을 가지고 로봇을 만들고 사용자가 직접 컨트롤러를 직접 프로그래밍 해서 동작하게 만든 시리즈로, 로봇 과학자를 꿈꾸는 어린이들의 동심을 자극하는 흥미로운 물건이다. 필자 역시 경제적인 여건이 허락한다면 구입하고 싶다.</p>
 
-<p><img src="/assets/img/rtb_mindstrom2.jpg" alt="레고 마인드스톰" /></p>
+<p><img src="/assets/img/article_rtb/rtb_mindstrom2.jpg" alt="레고 마인드스톰" /></p>
 
 <p>RTB는 Mind Storm 시리즈와 비슷한 면을 가지고 있다. 둘 다 프로그래밍을 학습하는데 좋은 학습도구가 될 수 있을 것이다. 단지 Mind Storm은 현실에서 로봇을 움직여 보는 것이고 RTB는 모니터 속에 추상화된 로봇을 지켜봐야 하는 점이 다를 뿐이다. 그러나 필자는 현실에서 동작하는 로봇을 프로그래밍 하는데 따르는 어느 정도의 제약이 따르기 때문에 RTB가 더욱 재미있을 것이라고 생각한다. 그만큼 RTB를 통해서 무한한 프로그래밍의 상상의 나래를 펼 수 있다.</p>
 
@@ -415,7 +417,7 @@ $
 
     <footer>
       <span>
-        &copy; <time datetime="2020-10-15 23:22:56 -0500">2020</time> ShinJaehun. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
+        &copy; <time datetime="2020-10-15 23:28:45 -0500">2020</time> ShinJaehun. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
       </span>
     </footer>
   </body>
