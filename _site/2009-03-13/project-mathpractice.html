@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ShinJaehun</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">ShinJaehun</h2>
+        </a>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <h2 class="post-title">네모네모 100칸 계산</h2>
+  <div class="post-line"></div>
+
+  <p><strong>본 프로그램에는 네모네모스폰지송(SpongeBob Square Pants) 캐릭터, 이미지가 아무런 허락 없이 사용되고 있습니다. 이는 명백한 저작권 위반 행위입니다. 이에 프로그램 배포를 중지합니다.</strong></p>
+
+<p><del><a href="http://kldp.org/files/package.jar_.jpg">http://kldp.org/files/package.jar_.jpg</a></del></p>
+
+<p>자바를 이용해서 처음으로 만들어본 응용 프로그램을 조심스럽게 KLDP에 공개합니다.</p>
+
+<p><img src="/assets/img/project_mathpractice/shot01.JPG" alt="shot01.JPG" /></p>
+
+<h1 id="주의-사항">주의 사항</h1>
+
+<ul>
+  <li>KLDP의 첨부 파일은 형식에 제한을 받기에 부득이하게 확장자를 바꿔 올렸습니다. 첨부 파일 중 ‘package.jar_.jpg’ 파일을 받으시고 ‘package.jar’로 바꾸신 뒤 프로그램을 실행하시면 됩니다.</li>
+  <li>프로그램을 실행하기 위해서는 자바 응용 프로그램을 실행할 수 있는 환경 JRE(Java Runtime Environment)가 구축되어 있어야 합니다.</li>
+</ul>
+
+<h1 id="게임-설명">게임 설명</h1>
+
+<p>머리가 좋아지는 [기적의 100칸 계산법] 홈페이지 설명을 참고로 간단하게 게임에 대해 설명드리겠습니다.(사실 설명할 필요가 있을까 생각됩니다만…)
+<a href="http://www.daewonstyle.com/nds/100mas">http://www.daewonstyle.com/nds/100mas</a></p>
+
+<h2 id="100칸-계산법이란">100칸 계산법이란?</h2>
+
+<p>‘100칸 계산법’은 계산의 기초를 익혀 숙달하기 위해 일본 전국 각지에서 사용되고 있는 교재입니다. 세로/가로에 10개씩 나열한 수를 계산하여, 그 답을 100개의 칸에 쓰는 간단한 학습법입니다.</p>
+
+<p><img src="/assets/img/project_mathpractice/shot04.JPG" alt="shot04.JPG" /></p>
+
+<ul>
+  <li>100칸 덧셈 : 세로(왼쪽 열)의 수에, 가로(위의 행)의 수를 순서대로 더해갑니다.</li>
+  <li>100칸 뺄셈 : 가로(위의 행)의 수부터 세로(왼쪽 열)의 수를 순서대로 빼 갑니다.</li>
+  <li>100칸 곱셈 : 세로(왼쪽 열)의 수에, 가로(위의 행)의 수를 순서대로 곱합니다.</li>
+</ul>
+
+<h2 id="스크린-샷">스크린 샷</h2>
+
+<p>문제를 열심히 풀고 있는 스크린 샷을 첨부합니다.</p>
+
+<p><img src="/assets/img/project_mathpractice/shot02.JPG" alt="shot02.JPG" /></p>
+
+<p>문제를 다 풀고 타이머를 클릭하면 계산 결과와 경과 시간을 알려줍니다.</p>
+
+<p><img src="/assets/img/project_mathpractice/shot03.JPG" alt="shot03.JPG" /></p>
+
+<h1 id="개발자의-변">개발자의 변</h1>
+
+<ul>
+  <li>사실 가게야마 히데오씨의 기적의 계산법 책을 읽은 다음 직접 게임을 만들기로 마음을 먹었었는데… 닌텐도 DS로 게임이 나와버리더군요.ㅠㅠ 기왕 결심한거 내 손으로 만들어보자 하는 생각에서 전부터 관심을 가졌던 자바도 익혀볼겸 게임을 만들게 되었습니다.</li>
+  <li>지뢰찾기를 뛰어넘는 시간죽이기 게임을 만들어보자가 목표였습니다. 차후에 자바를 더 열심히 공부해서 개선된 버전을 공개할 수 있기를 기원합니다. 제발~</li>
+</ul>
+
+<h1 id="설계-요구사항">설계 요구사항</h1>
+
+<ul>
+  <li><del>연산을 저장할 인스턴트 변수 char 형 (char 형으로 선언해야 나중에 switch/case문으로 비교 가능하다.) oper 선언 ‘+’, ‘-‘, ‘*’, ‘/’ 중 하나 저장</del></li>
+  <li><del>answerList를 전역변수가 아니라 함수의 인자로 넘기려고 한다면 메쏘드 내에 임시 변수로 선언해야할 것인가 아니면 내부 클래스에 넣어야 할 것인가?</del></li>
+  <li><del>계산을 담당하는 별도의 메쏘드 calc 추가 oper에 따라 계산을 달리 수행함</del></li>
+  <li><del>oper 처리는 switch/case 문으로…</del></li>
+  <li><del>row와 col에 랜덤 int 집어 넣기</del></li>
+  <li><del>시간 이벤트 추가 : 팝업 창에서 시간이 얼마 걸렸음을 표시하면 좋을 듯</del></li>
+  <li><del>종료 후 JTextField 전부 지우기(대신) 종료 후 startStop 버튼을 비활성시킴</del></li>
+  <li><del>텍스트 필드에서 입력 가능한 값은 세자리 수 이하로 제한한다</del></li>
+  <li><del>텍스트 필드에서 입력 값은 오직 숫자만 가능하도록 제한한다</del></li>
+  <li><del>텍스트 필드 가운데 정렬</del></li>
+  <li><del>뺄셈과 나눗셈은 어떻게 수행할 것인가?  뭐에서 뭘 빼고 뭐에서 뭘 나누지?</del></li>
+  <li><del>뺄셈처리(col을 두자리 수로 받아오고…뺄셈 결과도 col-row로 측정해야 한다)</del></li>
+  <li><del>메뉴표시</del></li>
+  <li><del>큰일이다! 이미지 삽입하는 일이 그렇게 쉬운 일이 아님이 드러났다!!</del></li>
+  <li><del>타이틀 이미지 삽입 : 타이틀 이미지로 사용한 스폰지밥 이미지는 여기에서 왼쪽 두번째 이미지를 사용했다. <a href="http://images.google.co.kr/images?gbv=2&amp;ndsp=20&amp;hl=ko&amp;newwindow=1&amp;q=sponge+bob+icon&amp;start=140&amp;sa=N">http://images.google.co.kr/images?gbv=2&amp;ndsp=20&amp;hl=ko&amp;newwindow=1&amp;q=sponge+bob+icon&amp;start=140&amp;sa=N</a></del></li>
+  <li><del>GRID의 왼쪽 첫번째 칸에 이미지 삽입(oper에 따라 덧셈, 뺄셈, 곱셈, 나눗셈 중 하나 저장)</del></li>
+  <li><del>miniTitle에 이미지 삽입(oper에 따라 100칸 덧셈/뺄셈/곱셈/나눗셈 중 하나가 오도록)</del></li>
+  <li><del>이것을 처리하기 위해서 상단에 메뉴를 추가하고 연산자를 선택할 수 있는 하위 메뉴를 만들어야 할 것이다(나중에 메뉴 만들때 생각할 것)</del></li>
+  <li><del>miniTitle 이미지 삽입 -&gt; oper에 따라 덧셈,뺄셈,곱셈 중 하나를 선택해서 이미지 표시</del></li>
+  <li><del>java VM 없이 실행할 수 있는 방법 알아내기</del></li>
+  <li>
+    <p><del>Version 0.1 release</del></p>
+  </li>
+  <li>button에 이미지 삽입(지뢰찾기 스마일 이미지)</li>
+  <li>초시계 보이기</li>
+  <li>숫자는 이미지로 표시(row, col)</li>
+  <li>사용자 기능 추가</li>
+  <li>사용자별로 걸린 시간을 나타내는 그래프 추가</li>
+</ul>
+
+<h1 id="알려진-버그">알려진 버그</h1>
+
+<ul>
+  <li><del>새 게임을 시작하면 새로운 프레임에서 새로 시작해버렸음</del></li>
+  <li><del>게임 진행 중에 새 게임을 시작하면 타이머가 정지하지 않음. - 게임 진행 중 메뉴를 선택하면 타이머가 정지해버렸으면 좋겠다. 아~ 그냥 startStop.setEnagle(flase); 해버리자!</del></li>
+</ul>
+
+<h1 id="참고">참고</h1>
+
+<h2 id="닌텐도-ds-기적의-계산법-기적의-계산법-참고할-것">닌텐도 DS 기적의 계산법, 기적의 계산법 참고할 것</h2>
+<ul>
+  <li><a href="http://www.daewonstyle.com/nds/100mas">http://www.daewonstyle.com/nds/100mas</a></li>
+  <li><a href="http://www.nintendo.co.kr/DS/soft/100cells/100cells.php">http://www.nintendo.co.kr/DS/soft/100cells/100cells.php</a></li>
+  <li><a href="http://cafe.naver.com/anotherstory.cafe?iframe_url=/ArticleRead.nhn%3Farticleid=6770">http://cafe.naver.com/anotherstory.cafe?iframe_url=/ArticleRead.nhn%3Farticleid=6770</a></li>
+</ul>
+
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/2017-05-01/toy-project" class="left next">Prev</a>
+  
+  
+    <a href="/2005-09-26/project-knoppix" class="right next">Next</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2020-10-15 23:22:56 -0500">2020</time> ShinJaehun. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
+      </span>
+    </footer>
+  </body>
+</html>
