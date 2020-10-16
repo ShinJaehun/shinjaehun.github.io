@@ -3,7 +3,7 @@ layout: post
 title:  "프로그래밍 학습 도구로서 게임 : Real Time Battle"
 info: "프로그래밍 학습 도구 소개"
 tech: "C, Java, C++"
-type: article
+type: 기사
 ---
 
 **2005.6.7 현재 RealTimeBattle은 1.0.7으로 판올림되어 있으며 RealTimeBattle Team에 의해서 꾸준히 개선되어가고 있는 중입니다.**
