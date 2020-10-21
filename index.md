@@ -51,6 +51,7 @@ layout: about
 * [네모네모 100칸 계산](https://wiki.kldp.org/wiki.php/MathPractice) : 머리가 좋아지는 기적의 100칸 계산법 홈페이지 설명을 참고로 간단하게 만들어본 자바 게임
 * [클래스캐스트](https://github.com/ShinJaehun/ClassCasts) : 유튜브 수업 영상을 제공하고 평가 도구와 커뮤니티 기능을 갖춘 온라인 공개 수업 도구
 * [곱셈과 나눗셈의 원리를 찾아가는 쑥쑥수학](https://github.com/ShinJaehun/SukSuk) : 곱하는 수가 두 자리 이상인 곱셈, 나누는 수가 두 자리 이상인 나눗셈, 받아 올림이 있는 곱셈, 받아 내림이 있는 나눗셈을 연습해볼 수 있는 안드로이드 응용 프로그램
+* [책짹](https://github.com/ShinJaehun/checkjjaek) : 책 읽기를 좋아하는 분들을 위한 웹 서비스
 
 # 수상경력
 * [SK텔레콤 2013 모바일웹앱공모전 장려상 수상](http://cornerstone.sktelecom.com/event/#contest)
