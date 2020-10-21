@@ -13,6 +13,17 @@ type: project
 * [프로젝트 페이지](https://github.com/ShinJaehun/checkjjaek)
 * [페이스북 그룹](https://www.facebook.com/groups/300564440675083/)
 
+## 공헌자
+
+* 양재원
+* 최다영
+* [황준우](https://github.com/zzulu)
+* [오창희](https://github.com/5chang2)
+
+## 저작권
+
+* 책짹은 GNU/GPL을 따릅니다.
+
 ## 수상 경력
 
 * 제주창조경제혁신센터 주관 멋쟁이 사자처럼과 함께하는 2018 SW개발자 양성과정(3기) 해커톤 대상(2018. 6. 2.)
