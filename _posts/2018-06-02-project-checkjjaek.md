@@ -16,7 +16,7 @@ type: project
 ## 수상 경력
 
 * 제주창조경제혁신센터 주관 멋쟁이 사자처럼과 함께하는 2018 SW개발자 양성과정(3기) 해커톤 대상(2018. 6. 2.)
-* ![관련기사](https://l.facebook.com/l.php?u=http%3A%2F%2Fjccei.kr%2Fpub%2Fsite%2Fdefault%2Febook%2FJMagazine6%2Febook.html%3Ffbclid%3DIwAR1VEdSrPw0IJ7jljPqz9zItQ83Nvx3-6cquyh8elAp_bUJjLpDaQqTaKmI%23p%3D47&h=AT214uf1nuauPYuBsv8BAcl4aYrxTF3sCO8ZuMsw6AVjlfhTb6AVFYREhW-tZkLDEvd4z19TkPEQ2Aohl6O3zpVDdtdE4p8Ynp35p9ft7RoJfhghbtrIaHyFkkWH_BzXG_6_&__tn__=-UK-R&c[0]=AT2hLUaRty9_KvdUAxtKC6CkT-CCMhN5po9U9QDbt_mIMqotZQ9Wkj7QnKuH6iiqvWpk91a5jLy2IfBON8We4Z-yho5fnqF_p_XRYEgkUm4M05wizIkZDy3zXI_p_UhqSNEMlHvHj9XDCgXO0C2yPzo) : 인터뷰는 51쪽에 실림
+  * [관련기사(인터뷰는 51쪽에 실림)](https://l.facebook.com/l.php?u=http%3A%2F%2Fjccei.kr%2Fpub%2Fsite%2Fdefault%2Febook%2FJMagazine6%2Febook.html%3Ffbclid%3DIwAR1VEdSrPw0IJ7jljPqz9zItQ83Nvx3-6cquyh8elAp_bUJjLpDaQqTaKmI%23p%3D47&h=AT214uf1nuauPYuBsv8BAcl4aYrxTF3sCO8ZuMsw6AVjlfhTb6AVFYREhW-tZkLDEvd4z19TkPEQ2Aohl6O3zpVDdtdE4p8Ynp35p9ft7RoJfhghbtrIaHyFkkWH_BzXG_6_&__tn__=-UK-R&c[0]=AT2hLUaRty9_KvdUAxtKC6CkT-CCMhN5po9U9QDbt_mIMqotZQ9Wkj7QnKuH6iiqvWpk91a5jLy2IfBON8We4Z-yho5fnqF_p_XRYEgkUm4M05wizIkZDy3zXI_p_UhqSNEMlHvHj9XDCgXO0C2yPzo)
 
 ## 소개
 
