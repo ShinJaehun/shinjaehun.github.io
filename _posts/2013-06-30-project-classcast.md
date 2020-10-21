@@ -141,3 +141,10 @@ $ cd ClassCasts/
 
 * 클래스캐스트는 GNU/GPL을 따릅니다.
 * 클래스캐스트 사용 과정에서 발생하는 문제에 대해 보증하지 않습니다.
+
+
+## 수상경력
+
+* SK텔레콤 2013 모바일웹앱공모전 장려상 수상
+
+![skmwac_result](/assets/img/project_classcast/skmwac_result)
