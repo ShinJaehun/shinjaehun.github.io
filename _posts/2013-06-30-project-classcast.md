@@ -147,4 +147,4 @@ $ cd ClassCasts/
 
 * SK텔레콤 2013 모바일웹앱공모전 장려상 수상
 
-![skmwac_result](/assets/img/project_classcast/skmwac_result)
+![skmwac_result](/assets/img/project_classcast/skmwac_result.jpg)
