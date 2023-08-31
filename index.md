@@ -2,7 +2,7 @@
 layout: about 
 ---
 
-학교 다니면서 전공은 제쳐두고 리눅스에 빠져 살다 리눅스 관련 서적을 집필했다. 지금은 폐간된 리눅스 전문지 리눅스 매거진의 객원 기자로 활동했고 데비안 기반 Knoppix의 한글화 프로젝트를 운영하기도 했다. 집필 활동 외에 틈틈이 교육용 응용 프로그램을 개발하고있다. 
+학교 다니면서 전공은 제쳐두고 리눅스에 빠져 살다 리눅스 관련 서적을 집필했다. 지금은 폐간된 리눅스 전문지 리눅스 매거진의 객원 기자로 활동했고 Knoppix 한글화 프로젝트를 운영하기도 했다. 집필 활동 외에 틈틈이 교육용 응용 프로그램을 개발하고있다. 
 
 <!-- ~~나이를 먹어갈수록 자꾸 가물가물해서...~~ 그동안 해온 일들을 정리할 필요가 있어 위키에 정리합니다. -->
 
@@ -14,6 +14,7 @@ layout: about
 * 초보 시스템 관리자를 위한 크노픽스, 에이콘, 2008-05-19
 * 우리 집 네트워크 입문 활용, 길벗, 2013-02-25
 * [리눅스 서버를 다루는 기술, 길벗, 2015-02-03](https://thebook.io/006718/)
+* [리눅스를 다루는 기술, 길벗, 2021-12-29](https://thebook.io/080277/)
 
 # 번역
 * 리눅스 시스템 관리 완벽 가이드, 에이콘, 2009-10-21
@@ -54,6 +55,6 @@ layout: about
 * [책짹](https://github.com/ShinJaehun/checkjjaek) : 책 읽기를 좋아하는 분들을 위한 웹 서비스
 
 # 수상경력
-* [SK텔레콤 2013 모바일웹앱공모전 장려상 수상(2013. 12. 5.)](http://cornerstone.sktelecom.com/event/#contest)
+* [SK텔레콤 2013 모바일웹앱공모전 장려상 수상(2013-12-5)](http://cornerstone.sktelecom.com/event/#contest)
 * 제주창조경제혁신센터 주관 멋쟁이 사자처럼과 함께하는 2018 SW개발자 양성과정(3기) 해커톤 대상(2018. 6. 2.)
-  * [관련기사(인터뷰는 51쪽에 실림)](https://l.facebook.com/l.php?u=http%3A%2F%2Fjccei.kr%2Fpub%2Fsite%2Fdefault%2Febook%2FJMagazine6%2Febook.html%3Ffbclid%3DIwAR1VEdSrPw0IJ7jljPqz9zItQ83Nvx3-6cquyh8elAp_bUJjLpDaQqTaKmI%23p%3D47&h=AT214uf1nuauPYuBsv8BAcl4aYrxTF3sCO8ZuMsw6AVjlfhTb6AVFYREhW-tZkLDEvd4z19TkPEQ2Aohl6O3zpVDdtdE4p8Ynp35p9ft7RoJfhghbtrIaHyFkkWH_BzXG_6_&__tn__=-UK-R&c[0]=AT2hLUaRty9_KvdUAxtKC6CkT-CCMhN5po9U9QDbt_mIMqotZQ9Wkj7QnKuH6iiqvWpk91a5jLy2IfBON8We4Z-yho5fnqF_p_XRYEgkUm4M05wizIkZDy3zXI_p_UhqSNEMlHvHj9XDCgXO0C2yPzo)
+  * [관련기사(인터뷰는 J-CONNECT 6월호 51쪽에 실림)](https://drive.google.com/file/d/1bC_4aFzNtZ4bQCrbTMc80HArmZDv-WDs/view)
