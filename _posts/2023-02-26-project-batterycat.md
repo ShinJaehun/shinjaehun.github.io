@@ -20,9 +20,9 @@ type: project
 * 조작법: WASD + 마우스를 사용합니다. 마우스로 고양이의 항문에서 발사되는 무기(?)의 방향을 지정할 수 있어요.
 * 게임 설명: 고양이를 쫒아오는 성가신 캐릭터들을 피해야 합니다. 고양이 위에 있는 배터리 표시가 고양이의 체력 상태를 나타냅니다. 빨간 애들은 한 방에 보낼 수 있는데 파란 애들은 몇 발 더 맞아야 합니다. 파란 애들을 없애면 건전지가 나타나는데 건전지를 먹으면 고양이의 체력이 회복됩니다.
 
-![스크린샷1](/assets/img/project_batterycat/01.png)
+![스크린샷1](/assets/img/project_batterycat/01.PNG)
 
-![스크린샷2](/assets/img/project_batterycat/02.png)
+![스크린샷2](/assets/img/project_batterycat/02.PNG)
 
 
 ## 사용한 리소스
