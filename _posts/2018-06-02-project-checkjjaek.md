@@ -13,23 +13,12 @@ type: project
 * [프로젝트 페이지](https://github.com/ShinJaehun/checkjjaek)
 * [페이스북 그룹](https://www.facebook.com/groups/300564440675083/)
 
-## 공헌자
-
-* 양재원
-* 최다영
-* [황준우](https://github.com/zzulu)
-* [오창희](https://github.com/5chang2)
-
-## 저작권
-
-* 책짹은 GNU/GPL을 따릅니다.
-
-## 수상 경력
+### 수상 경력
 
 * 제주창조경제혁신센터 주관 멋쟁이 사자처럼과 함께하는 2018 SW개발자 양성과정(3기) 해커톤 대상(2018. 6. 2.)
-  * [관련기사(인터뷰는 51쪽에 실림)](https://l.facebook.com/l.php?u=http%3A%2F%2Fjccei.kr%2Fpub%2Fsite%2Fdefault%2Febook%2FJMagazine6%2Febook.html%3Ffbclid%3DIwAR1VEdSrPw0IJ7jljPqz9zItQ83Nvx3-6cquyh8elAp_bUJjLpDaQqTaKmI%23p%3D47&h=AT214uf1nuauPYuBsv8BAcl4aYrxTF3sCO8ZuMsw6AVjlfhTb6AVFYREhW-tZkLDEvd4z19TkPEQ2Aohl6O3zpVDdtdE4p8Ynp35p9ft7RoJfhghbtrIaHyFkkWH_BzXG_6_&__tn__=-UK-R&c[0]=AT2hLUaRty9_KvdUAxtKC6CkT-CCMhN5po9U9QDbt_mIMqotZQ9Wkj7QnKuH6iiqvWpk91a5jLy2IfBON8We4Z-yho5fnqF_p_XRYEgkUm4M05wizIkZDy3zXI_p_UhqSNEMlHvHj9XDCgXO0C2yPzo)
+  * [관련기사(인터뷰는 J-CONNECT 6월호 47쪽에 실림)](https://drive.google.com/file/d/1bC_4aFzNtZ4bQCrbTMc80HArmZDv-WDs/view)
 
-## 소개
+### 소개
 
 학교에서 근무하면서 ‘정말 이건 아닌데...’ 아쉬운 것 중 하나가 독서교육입니다. 독서의 중요성이야 두말할 나위가 없겠지만 학교에서 올바른 독서 교육이 이루어지는지 묻는다면 자신 있게 그렇다고 대답하기 어려울 것 같습니다.
 
@@ -46,7 +35,7 @@ type: project
 
 아이들을 위한 웹 서비스로 개발을 시작했지만 궁극적으로 책을 좋아하는 누구나 사용할 수 있는 시스템으로 발전시키고 싶습니다. 기술이 미천하여 프론트 구현하는 것도 정말 쉽지 않지만 생각했던 기능을 하나씩 실현하는 과정이 너무 재미있습니다. 그리고 이런 노력이 아이들한테 도움이 될 수 있다는 생각에 보람을 느낍니다. 
 
-## 관련 이미지
+### 관련 이미지
 
 * 아이디어 스케치
 
@@ -71,3 +60,14 @@ type: project
 * DB UML
 
 ![DBUML](/assets/img/project_checkjjaek/DBUML.jpg)
+
+### 공헌자
+
+* 양재원
+* 최다영
+* [황준우](https://github.com/zzulu)
+* [오창희](https://github.com/5chang2)
+
+### 저작권
+
+* 책짹은 GNU/GPL을 따릅니다.
