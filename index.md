@@ -54,6 +54,7 @@ layout: about
 * [곱셈과 나눗셈의 원리를 찾아가는 쑥쑥수학]({% post_url 2015-11-18-project-suksuk %}) : 곱하는 수가 두 자리 이상인 곱셈, 나누는 수가 두 자리 이상인 나눗셈, 받아 올림이 있는 곱셈, 받아 내림이 있는 나눗셈을 연습해볼 수 있는 안드로이드 응용 프로그램
 * [책짹]({% post_url 2018-06-02-project-checkjjaek %}) : 책 읽기를 좋아하는 분들을 위한 웹 서비스
 * [BatteryCat]({% post_url 2023-02-26-project-batterycat %}) : 고양이가 평화로운 휴식을 위해 성가신 방해꾼을 없애는 게임
+* [쑥쑥인덱스]({% post_url 2025-12-31-project-suksukidx %}) : 수업 자료를 폴더 기반으로 정리하고 썸네일과 카드형 인덱스 페이지를 자동으로 생성하는 데스크톱 도구
 
 # 수상경력
 * [SK텔레콤 2013 모바일웹앱공모전 장려상 수상(2013-12-5)](http://cornerstone.sktelecom.com/event/#contest)
