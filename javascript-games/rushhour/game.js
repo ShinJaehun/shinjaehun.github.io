@@ -208,10 +208,6 @@ function isCollision(car, x, y) {
       continue;
     }
 
-    if (cx < 0 || cx >= size || cy < 0 || cy >= size) {
-      continue;
-    }
-
     if (occupied.has(`${cx},${cy}`)) {
       return true;
     }
@@ -294,34 +290,32 @@ function placeCars() {
       checkWinCondition();
     };
 
-    el.addEventListener('touchstart', event => {
-      moveCarOneCellAtATime(car, car.x, newY);
-
-      const touch = event.touches[0];
-      startDrag(touch.clientX, touch.clientY);
-    });
-
-    el.addEventListener('touchmove', event => {
-      event.preventDefault();
-
-      const touch = event.touches[0];
-      duringDrag(touch.clientX, touch.clientY);
-    }, { passive: false });
-
-    el.addEventListener('mousedown', event => {
+    el.addEventListener('pointerdown', event => {
       if (levelCleared) return;
       event.preventDefault();
 
       startDrag(event.clientX, event.clientY);
 
-      const onMouseMove = mouseMoveEvent => duringDrag(mouseMoveEvent.clientX, mouseMoveEvent.clientY);
-      const onMouseUp = () => {
-        window.removeEventListener('mousemove', onMouseMove);
-        window.removeEventListener('mouseup', onMouseUp);
+
+      el.setPointerCapture(event.pointerId);
+
+      const onPointerMove = pointerMoveEvent => {
+        pointerMoveEvent.preventDefault();
+        duringDrag(pointerMoveEvent.clientX, pointerMoveEvent.clientY);
       };
 
-      window.addEventListener('mousemove', onMouseMove);
-      window.addEventListener('mouseup', onMouseUp);
+      const onPointerUp = () => {
+        if (el.hasPointerCapture(event.pointerId)) {
+          el.releasePointerCapture(event.pointerId);
+        }
+        el.removeEventListener('pointermove', onPointerMove);
+        el.removeEventListener('pointerup', onPointerUp);
+        el.removeEventListener('pointercancel', onPointerUp);
+      };
+
+      el.addEventListener('pointermove', onPointerMove);
+      el.addEventListener('pointerup', onPointerUp);
+      el.addEventListener('pointercancel', onPointerUp);
     });
   });
 }
