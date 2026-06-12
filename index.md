@@ -52,6 +52,7 @@ layout: about
 * [네모네모 100칸 계산]({% post_url 2009-03-13-project-mathpractice %}) : 머리가 좋아지는 기적의 100칸 계산법 홈페이지 설명을 참고로 간단하게 만들어본 자바 게임
 * [클래스캐스트]({% post_url 2013-06-30-project-classcast %}) : 유튜브 수업 영상을 제공하고 평가 도구와 커뮤니티 기능을 갖춘 온라인 공개 수업 도구
 * [쑥쑥수학]({% post_url 2015-11-18-project-suksuk %}) : 곱셈과 나눗셈의 계산 과정을 단계별로 연습할 수 있도록 만든 안드로이드 기반 수학 학습 앱
+* [제주체험학습]({% post_url 2016-05-16-project-fieldtrip %}) : 제주 현장체험학습 장소를 인물·역사·자연환경 주제로 정리한 Android 앱
 * [안녕한라산]({% post_url 2016-12-23-project-annyeong-hallasan %}) : 제주 중산간 도로 통제 정보와 한라산 탐방로 날씨를 제공하던 Android 앱
 * [책짹]({% post_url 2018-06-02-project-checkjjaek %}) : 책 읽기를 좋아하는 사람들이 독서 감상을 나누는 웹 서비스
 * [내가 걷는 길]({% post_url 2022-10-23-project-the-road-i-walk %}) : 2022 스토브 온라인게임잼 출품작과 온라인 점수 집계 API
