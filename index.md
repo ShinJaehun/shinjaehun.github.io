@@ -52,7 +52,7 @@ layout: about
 * [네모네모 100칸 계산]({% post_url 2009-03-13-project-mathpractice %}) : 머리가 좋아지는 기적의 100칸 계산법 홈페이지 설명을 참고로 간단하게 만들어본 자바 게임
 * [클래스캐스트]({% post_url 2013-06-30-project-classcast %}) : 유튜브 수업 영상을 제공하고 평가 도구와 커뮤니티 기능을 갖춘 온라인 공개 수업 도구
 * [쑥쑥수학]({% post_url 2015-11-18-project-suksuk %}) : 곱셈과 나눗셈의 계산 과정을 단계별로 연습할 수 있도록 만든 안드로이드 기반 수학 학습 앱
-* [책짹]({% post_url 2018-06-02-project-checkjjaek %}) : 책 읽기를 좋아하는 분들을 위한 웹 서비스
+* [책짹]({% post_url 2018-06-02-project-checkjjaek %}) : 책 읽기를 좋아하는 사람들이 독서 감상을 나누는 웹 서비스
 * [BatteryCat]({% post_url 2023-02-26-project-batterycat %}) : 고양이가 평화로운 휴식을 위해 성가신 방해꾼을 없애는 게임
 * [쑥쑥인덱스]({% post_url 2025-12-31-project-suksukidx %}) : 수업 자료를 폴더 기반으로 정리하고 썸네일과 카드형 인덱스 페이지를 자동으로 생성하는 데스크톱 도구
 

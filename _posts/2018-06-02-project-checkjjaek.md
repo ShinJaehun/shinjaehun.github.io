@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "책짹"
-info: "checkjjaek"
-tech: "Web Service, ROR, Ruby, Rails, Ruby On Rails, Educational software"
+info: "책 읽기를 좋아하는 사람들이 독서 감상을 나누는 웹 서비스"
+tech: "Web Service, Ruby, Ruby on Rails, Hotwire, Turbo, Stimulus, Tailwind CSS, Educational software"
 type: project
 ---
 
@@ -10,15 +10,32 @@ type: project
 
 ## 프로젝트 페이지
 
-* [프로젝트 페이지](https://github.com/ShinJaehun/checkjjaek)
-* [페이스북 그룹](https://www.facebook.com/groups/300564440675083/)
+책짹은 한 번에 완성된 서비스가 아니라, 여러 번의 구현과 재설계를 거치며 방향을 다듬어 온 프로젝트입니다.
 
-### 수상 경력
+* [최신 리뉴얼 저장소 checkjjaek4](https://github.com/ShinJaehun/checkjjaek4)  
+  책, 서재, 책장, 책짹, 관계 기반 공개 범위를 중심으로 다시 설계한 현재 리부트 버전입니다.
 
-* 제주창조경제혁신센터 주관 멋쟁이 사자처럼과 함께하는 2018 SW개발자 양성과정(3기) 해커톤 대상(2018. 6. 2.)
-  * [관련기사(인터뷰는 J-CONNECT 6월호 47쪽에 실림)](https://drive.google.com/file/d/1bC_4aFzNtZ4bQCrbTMc80HArmZDv-WDs/view)
+* [2020 레거시 확장 저장소 checkjjaek3](https://github.com/ShinJaehun/checkjjaek3)  
+  책 기반 SNS를 더 넓은 기능으로 확장해 본 레거시 버전입니다. 일반적인 SNS 기능을 붙여 가며 서비스 가능성을 실험했습니다.
 
-### 소개
+* [2018 최초 구현 저장소 checkjjaek](https://github.com/ShinJaehun/checkjjaek)  
+  2018년 해커톤에서 시작한 최초 구현 버전입니다. 책을 읽고 짧은 감상을 남기는 웹 서비스라는 책짹의 출발점입니다.
+
+* [페이스북 그룹](https://www.facebook.com/groups/300564440675083/)  
+  책짹을 처음 공개하고 의견을 나누기 위해 운영했던 페이스북 그룹입니다.
+
+## 리뉴얼
+
+책짹은 2018년 해커톤에서 시작한 독서 커뮤니티 프로젝트입니다. 처음에는 책을 읽고 짧은 감상을 남기는 웹 서비스로 출발했고, 이후 `checkjjaek3`에서는 일반적인 SNS 기능을 더 넓게 붙여 가는 방식으로 확장했습니다. 하지만 시간이 지나면서 책짹이 정말 다루고 싶은 핵심은 단순한 글쓰기 SNS가 아니라, 책을 읽는 사람의 서재, 독서 상태, 책에 대한 감정, 책친구와의 관계, 책짹의 공개 범위라는 점이 더 분명해졌습니다.
+
+최신 버전인 `checkjjaek4`에서는 기존 구조를 그대로 이어가기보다, 책과 서재를 중심으로 다시 설계했습니다. 현재 버전은 책, 서재, 책장, 책짹, 책활동, 소식받기, 책친구 관계를 핵심 모델로 삼아 독서 흐름을 표현하는 방향으로 개발하고 있습니다. `checkjjaek4` 리뉴얼 과정에서는 ChatGPT를 개발 보조 도구로 활용했습니다. 기존 구조의 한계를 정리하고, 책·서재·책장·책짹·책활동·소식받기·책친구 관계를 중심으로 도메인을 다시 설계하는 과정에서 설계 검토와 리팩터링 방향을 함께 점검했습니다.
+
+## 수상 경력
+
+* 제주창조경제혁신센터 주관 멋쟁이 사자처럼과 함께하는 2018 SW개발자 양성과정(3기) 해커톤 대상(2018. 6. 2.)<br>
+  [관련기사(인터뷰는 J-CONNECT 6월호 47쪽에 실림)](https://drive.google.com/file/d/1bC_4aFzNtZ4bQCrbTMc80HArmZDv-WDs/view)
+
+## 2018년 책짹을 시작하며
 
 학교에서 근무하면서 ‘정말 이건 아닌데...’ 아쉬운 것 중 하나가 독서교육입니다. 독서의 중요성이야 두말할 나위가 없겠지만 학교에서 올바른 독서 교육이 이루어지는지 묻는다면 자신 있게 그렇다고 대답하기 어려울 것 같습니다.
 
@@ -35,7 +52,7 @@ type: project
 
 아이들을 위한 웹 서비스로 개발을 시작했지만 궁극적으로 책을 좋아하는 누구나 사용할 수 있는 시스템으로 발전시키고 싶습니다. 기술이 미천하여 프론트 구현하는 것도 정말 쉽지 않지만 생각했던 기능을 하나씩 실현하는 과정이 너무 재미있습니다. 그리고 이런 노력이 아이들한테 도움이 될 수 있다는 생각에 보람을 느낍니다. 
 
-### 관련 이미지
+## 관련 이미지
 
 * 아이디어 스케치
 
@@ -61,13 +78,14 @@ type: project
 
 ![DBUML](/assets/img/project_checkjjaek/DBUML.jpg)
 
-### 공헌자
+## 공헌자
 
 * 양재원
 * 최다영
 * [황준우](https://github.com/zzulu)
 * [오창희](https://github.com/5chang2)
 
-### 저작권
+## 저작권
 
-* 책짹은 GNU/GPL을 따릅니다.
+* 책짹은 신재훈이 만들고 있습니다.
+* 책짹은 GNU GPL을 따릅니다.
