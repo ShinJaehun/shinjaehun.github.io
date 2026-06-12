@@ -54,11 +54,19 @@ layout: about
 * [쑥쑥수학]({% post_url 2015-11-18-project-suksuk %}) : 곱셈과 나눗셈의 계산 과정을 단계별로 연습할 수 있도록 만든 안드로이드 기반 수학 학습 앱
 * [책짹]({% post_url 2018-06-02-project-checkjjaek %}) : 책 읽기를 좋아하는 사람들이 독서 감상을 나누는 웹 서비스
 * [BatteryCat]({% post_url 2023-02-26-project-batterycat %}) : 고양이가 평화로운 휴식을 위해 성가신 방해꾼을 없애는 게임
+* [겨울노트]({% post_url 2024-01-24-project-winter-notes %}) : 눈 내리는 UI를 더한 Android 노트앱을 Room DB와 Firebase 등 여러 저장 구조로 실험한 프로젝트
+* [쑥쑥뽑아]({% post_url 2023-12-15-project-suksuk-picker %}) : 수업 중 학생 뽑기와 발표 순서 정하기를 돕는 교실용 도구
+* [오름올라]({% post_url 2024-05-21-project-oreumola %}) : 제주 오름 탐방 경로를 GPS로 기록하고 카카오 지도 위에 표시해 저장하는 안드로이드 기반 오름 루트 트래킹 앱
+* [쑥쑥동학년]({% post_url 2024-08-08-project-donghaknyun %}) : 동학년 교사들이 준비물 예약과 학년 공동 일정을 함께 조율할 수 있도록 만든 Rails 기반 공유 시스템
+* [쑥쑥수학게임]({% post_url 2025-06-26-project-suksuk-math-games %}) : 초등 수학 수업에서 사용할 수 있는 브라우저 기반 수학 학습 게임 모음
 * [쑥쑥인덱스]({% post_url 2025-10-30-project-suksukidx %}) : 수업 자료를 폴더 기반으로 정리하고 카드형 인덱스 페이지를 자동으로 생성하는 데스크톱 도구
+* [codex_review]({% post_url 2026-04-05-project-codex-review %}) : Codex 작업 결과를 검토하고 정리하기 위한 보조 도구
+* [쑥쑥칭찬통장]({% post_url 2026-05-22-project-suksuk-praise %}) : 교실 단위 칭찬 기록, 쿠폰 보상, 학생 PIN 로그인, 메시지를 관리하는 Rails 기반 교실 보상 시스템
+* [쑥쑥교실투표]({% post_url 2026-06-10-project-suksuk-class-vote %}) : 투표자 명단을 바탕으로 교사가 감독하는 절차형 교실 투표 시스템
 
 # 수상경력
-* [SK텔레콤 2013 모바일웹앱공모전 장려상 수상(2013-12-5)](http://cornerstone.sktelecom.com/event/#contest)
-  * <https://wiki.kldp.org/wiki.php/GunSmoke>
-* 제주창조경제혁신센터 주관 멋쟁이 사자처럼과 함께하는 2018 SW개발자 양성과정(3기) 해커톤 대상(2018. 6. 2.)
-  * [관련기사(인터뷰는 J-CONNECT 6월호 47쪽에 실림)](https://drive.google.com/file/d/1bC_4aFzNtZ4bQCrbTMc80HArmZDv-WDs/view)
-* [제3회 KGMC 교육잼 1등!](https://cafe.naver.com/crazygm?iframe_url_utf8=%2FArticleRead.nhn%253Fclubid%3D13522745%2526page%3D1%2526menuid%3D1%2526boardtype%3DL%2526articleid%3D229436%2526referrerAllArticles%3Dfalse)
+* [SK텔레콤 2013 모바일웹앱공모전 장려상 수상 (2013-12-05)]({% post_url 2013-06-30-project-classcast %})<br>
+  당시 수상 관련 소식은 클래스캐스트 프로젝트 기록에 보관해둠. 현재 [공식 페이지](http://cornerstone.sktelecom.com/event/#contest)와 [KLDP 위키 링크](https://wiki.kldp.org/wiki.php/GunSmoke)는 접속되지 않음.
+* 제주창조경제혁신센터 주관 멋쟁이 사자처럼과 함께하는 2018 SW개발자 양성과정(3기) 해커톤 대상(2018. 6. 2.)<br>
+  [관련기사(인터뷰는 J-CONNECT 6월호 47쪽에 실림)](https://drive.google.com/file/d/1bC_4aFzNtZ4bQCrbTMc80HArmZDv-WDs/view)
+* [제3회 KGMC 교육잼 1등! (2023-04-03)](https://cafe.naver.com/crazygm?iframe_url_utf8=%2FArticleRead.nhn%253Fclubid%3D13522745%2526page%3D1%2526menuid%3D1%2526boardtype%3DL%2526articleid%3D229436%2526referrerAllArticles%3Dfalse)
