@@ -54,6 +54,7 @@ layout: about
 * [쑥쑥수학]({% post_url 2015-11-18-project-suksuk %}) : 곱셈과 나눗셈의 계산 과정을 단계별로 연습할 수 있도록 만든 안드로이드 기반 수학 학습 앱
 * [안녕한라산]({% post_url 2016-12-23-project-annyeong-hallasan %}) : 제주 중산간 도로 통제 정보와 한라산 탐방로 날씨를 제공하던 Android 앱
 * [책짹]({% post_url 2018-06-02-project-checkjjaek %}) : 책 읽기를 좋아하는 사람들이 독서 감상을 나누는 웹 서비스
+* [내가 걷는 길]({% post_url 2022-10-23-project-the-road-i-walk %}) : 2022 스토브 온라인게임잼 출품작과 온라인 점수 집계 API
 * [BatteryCat]({% post_url 2023-02-26-project-batterycat %}) : 고양이가 평화로운 휴식을 위해 성가신 방해꾼을 없애는 게임
 * [겨울노트]({% post_url 2024-01-24-project-winter-notes %}) : 눈 내리는 UI를 더한 Android 노트앱을 Room DB와 Firebase 등 여러 저장 구조로 실험한 프로젝트
 * [쑥쑥뽑아]({% post_url 2023-12-15-project-suksuk-picker %}) : 수업 중 학생 뽑기와 발표 순서 정하기를 돕는 교실용 도구
