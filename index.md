@@ -48,24 +48,25 @@ layout: about
  * [FreeBSD KR 사용자 그룹(KFUG)의 리더 최준호 그만의 이야기, 리눅스 매거진, 2004-03]({% post_url 2004-02-28-interview-kfugleader %})
 
 # 프로젝트
-* [크노픽스 한글 프로젝트]({% post_url 2005-09-26-project-knoppix %}) : 데비안 기반 라이브 CD 리눅스 Knoppix를 한글화하기 위한 프로젝트
-* [네모네모 100칸 계산]({% post_url 2009-03-13-project-mathpractice %}) : 머리가 좋아지는 기적의 100칸 계산법 홈페이지 설명을 참고로 간단하게 만들어본 자바 게임
-* [클래스캐스트]({% post_url 2013-06-30-project-classcast %}) : 유튜브 수업 영상을 제공하고 평가 도구와 커뮤니티 기능을 갖춘 온라인 공개 수업 도구
-* [쑥쑥수학]({% post_url 2015-11-18-project-suksuk %}) : 곱셈과 나눗셈의 계산 과정을 단계별로 연습할 수 있도록 만든 안드로이드 기반 수학 학습 앱
-* [제주체험학습]({% post_url 2016-05-16-project-fieldtrip %}) : 제주 현장체험학습 장소를 인물·역사·자연환경 주제로 정리한 Android 앱
-* [안녕한라산]({% post_url 2016-12-23-project-annyeong-hallasan %}) : 제주 중산간 도로 통제 정보와 한라산 탐방로 날씨를 제공하던 Android 앱
-* [책짹]({% post_url 2018-06-02-project-checkjjaek %}) : 책 읽기를 좋아하는 사람들이 독서 감상을 나누는 웹 서비스
-* [내가 걷는 길]({% post_url 2022-10-23-project-the-road-i-walk %}) : 2022 스토브 온라인게임잼 출품작과 온라인 점수 집계 API
-* [BatteryCat]({% post_url 2023-02-26-project-batterycat %}) : 고양이가 평화로운 휴식을 위해 성가신 방해꾼을 없애는 게임
-* [겨울노트]({% post_url 2024-01-24-project-winter-notes %}) : 눈 내리는 UI를 더한 Android 노트앱을 Room DB와 Firebase 등 여러 저장 구조로 실험한 프로젝트
-* [쑥쑥뽑아]({% post_url 2023-12-15-project-suksuk-picker %}) : 수업 중 학생 뽑기와 발표 순서 정하기를 돕는 교실용 도구
-* [오름올라]({% post_url 2024-05-21-project-oreumola %}) : 제주 오름 탐방 경로를 GPS로 기록하고 카카오 지도 위에 표시해 저장하는 안드로이드 기반 오름 루트 트래킹 앱
-* [쑥쑥동학년]({% post_url 2024-08-08-project-donghaknyun %}) : 동학년 교사들이 준비물 예약과 학년 공동 일정을 함께 조율할 수 있도록 만든 Rails 기반 공유 시스템
-* [쑥쑥수학게임]({% post_url 2025-06-26-project-suksuk-math-games %}) : 초등 수학 수업에서 사용할 수 있는 브라우저 기반 수학 학습 게임 모음
-* [쑥쑥인덱스]({% post_url 2025-10-30-project-suksukidx %}) : 수업 자료를 폴더 기반으로 정리하고 카드형 인덱스 페이지를 자동으로 생성하는 데스크톱 도구
-* [codex_review]({% post_url 2026-04-05-project-codex-review %}) : Codex 작업 결과를 검토하고 정리하기 위한 보조 도구
-* [쑥쑥칭찬통장]({% post_url 2026-05-22-project-suksuk-praise %}) : 교실 단위 칭찬 기록, 쿠폰 보상, 학생 PIN 로그인, 메시지를 관리하는 Rails 기반 교실 보상 시스템
-* [쑥쑥교실투표]({% post_url 2026-06-10-project-suksuk-class-vote %}) : 투표자 명단을 바탕으로 교사가 감독하는 절차형 교실 투표 시스템
+
+* [크노픽스 한글 프로젝트]({% post_url 2005-09-26-project-knoppix %}) : 데비안 기반 라이브 CD 리눅스 Knoppix를 한글화하기 위한 프로젝트, 2005-09-26
+* [네모네모 100칸 계산]({% post_url 2009-03-13-project-mathpractice %}) : 머리가 좋아지는 기적의 100칸 계산법 홈페이지 설명을 참고로 간단하게 만들어본 자바 게임, 2009-03-13
+* [클래스캐스트]({% post_url 2013-06-30-project-classcast %}) : 유튜브 수업 영상을 제공하고 평가 도구와 커뮤니티 기능을 갖춘 온라인 공개 수업 도구, 2013-06-30
+* [쑥쑥수학]({% post_url 2015-11-18-project-suksuk %}) : 곱셈과 나눗셈의 계산 과정을 단계별로 연습할 수 있도록 만든 안드로이드 기반 수학 학습 앱, 2015-11-18
+* [제주체험학습]({% post_url 2016-05-16-project-fieldtrip %}) : 제주 현장체험학습 장소를 인물·역사·자연환경 주제로 정리한 Android 앱, 2016-05-16
+* [안녕한라산]({% post_url 2016-12-23-project-annyeong-hallasan %}) : 제주 중산간 도로 통제 정보와 한라산 탐방로 날씨를 제공하던 Android 앱, 2016-12-23
+* [책짹]({% post_url 2018-06-02-project-checkjjaek %}) : 책 읽기를 좋아하는 사람들이 독서 감상을 나누는 웹 서비스, 2018-06-02
+* [내가 걷는 길]({% post_url 2022-10-23-project-the-road-i-walk %}) : 2022 스토브 온라인게임잼 출품작과 온라인 점수 집계 API, 2022-10-23
+* [BatteryCat]({% post_url 2023-02-26-project-batterycat %}) : 고양이가 평화로운 휴식을 위해 성가신 방해꾼을 없애는 게임, 2023-02-26
+* [쑥쑥뽑아]({% post_url 2023-12-15-project-suksuk-picker %}) : 수업 중 학생 뽑기와 발표 순서 정하기를 돕는 교실용 도구, 2023-12-15
+* [겨울노트]({% post_url 2024-01-24-project-winter-notes %}) : 눈 내리는 UI를 더한 Android 노트앱을 Room DB와 Firebase 등 여러 저장 구조로 실험한 프로젝트, 2024-01-24
+* [오름올라]({% post_url 2024-05-21-project-oreumola %}) : 제주 오름 탐방 경로를 GPS로 기록하고 카카오 지도 위에 표시해 저장하는 안드로이드 기반 오름 루트 트래킹 앱, 2024-05-21
+* [쑥쑥동학년]({% post_url 2024-08-08-project-donghaknyun %}) : 동학년 교사들이 준비물 예약과 학년 공동 일정을 함께 조율할 수 있도록 만든 Rails 기반 공유 시스템, 2024-08-08
+* [쑥쑥수학게임]({% post_url 2025-06-26-project-suksuk-math-games %}) : 초등 수학 수업에서 사용할 수 있는 브라우저 기반 수학 학습 게임 모음, 2025-06-26
+* [쑥쑥인덱스]({% post_url 2025-10-30-project-suksukidx %}) : 수업 자료를 폴더 기반으로 정리하고 카드형 인덱스 페이지를 자동으로 생성하는 데스크톱 도구, 2025-10-30
+* [codex_review]({% post_url 2026-04-05-project-codex-review %}) : Codex 작업 결과를 검토하고 정리하기 위한 보조 도구, 2026-04-05
+* [쑥쑥칭찬통장]({% post_url 2026-05-22-project-suksuk-praise %}) : 교실 단위 칭찬 기록, 쿠폰 보상, 학생 PIN 로그인, 메시지를 관리하는 Rails 기반 교실 보상 시스템, 2026-05-22
+* [쑥쑥교실투표]({% post_url 2026-06-10-project-suksuk-class-vote %}) : 투표자 명단을 바탕으로 교사가 감독하는 절차형 교실 투표 시스템, 2026-06-10
 
 # 수상경력
 * [SK텔레콤 2013 모바일웹앱공모전 장려상 수상 (2013-12-05)]({% post_url 2013-06-30-project-classcast %})<br>
