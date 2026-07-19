@@ -159,26 +159,26 @@ A: 램이 작은 컴퓨터에서는 크노픽스 씨디로 부팅했을 때 스�
 
   - 64MB짜리 스왑파일 용 선형 파일을 하나 만듭니다.
 
-<!-- end list -->
-
+```
     dd if=/dev/zero of=/mnt/hda1/swapfile bs=1024 count=65536
+```
 
   - 스왑 파티션 테이블을 추가합니다.
 
-<!-- end list -->
-
+```
     mkswap /mnt/hda1/swapfile
+```
 
   - */etc/fstab*에 이 파일을 등록합니다. 루트권한으로 다음 한 줄을 추가합니다.
 
-<!-- end list -->
-
+```
     /mnt/hda1/swapfile swap swap defaults 0 0
+```
 
   - 스왑을 켭니다. 다음을 루트권한으로 실행하십시오.
 
-<!-- end list -->
-
+```
     swapon -a
+```
 
   - */proc/swaps*에 스왑 파일이 나타나는지 확인하십시오.

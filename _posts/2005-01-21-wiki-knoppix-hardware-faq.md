@@ -140,7 +140,7 @@ A:
 
 #### Q: 리눅스와 호환되는 하드웨어를 구입하고 싶습니다. 어떻게 알 수 있죠?
 
-A: <http://www.tldp.org/HOWTO/Hardware-HOWTO/index.html와> <http://www.tldp.org/HOWTO/Hardware-HOWTO/incompatible.html를> 참고하십시오.
+A: <http://www.tldp.org/HOWTO/Hardware-HOWTO/index.html>와 <http://www.tldp.org/HOWTO/Hardware-HOWTO/incompatible.html>를 참고하십시오.
 
 #### Q: 크노픽스에서 다른 CD를 사용하는 것이 가능합니까?
 

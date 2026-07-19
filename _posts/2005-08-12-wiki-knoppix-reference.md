@@ -11,9 +11,6 @@ original_site: "KLDP Wiki"
 > 이 글은 예전에 KLDP Wiki에 작성하거나 옮겨 두었던 문서를 포트폴리오 보존 목적으로 옮긴 것이다.  
 > 일부 오래된 외부 링크는 현재 접속되지 않을 수 있다.
 
-  - 원문 : <https://wiki.kldp.org/wiki.php/Knoppix/Reference>
-  - 번역 : 신재훈([GunSmoke](https://wiki.kldp.org/wiki.php/GunSmoke) : gunsmoke.shin at gmail.com)
-
 ![logo.jpg]({{ "/assets/img/kldp-wiki/knoppix-reference/logo.jpg" | relative_url }})
 
 ## Knoppix 한글 프로젝트

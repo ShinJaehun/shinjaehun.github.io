@@ -444,19 +444,19 @@ nvidia 모듈이 잡혔으면 modprobe nvidia로 nvidia 모듈이 올라오는 �
 ## 참고문헌
 
 권순선 KNOPPIX로 데비안 시스템 설치하기  
-http://bbs.kldp.org/viewtopic.phpt=38582\&highlight=knoppix  
+<http://bbs.kldp.org/viewtopic.phpt=38582\&highlight=knoppix>
 [FixMe](https://wiki.kldp.org/wiki.php/FixMe) (사이트가 변경되어 링크 위치의 문서가 없어짐. 어디로 가 있을까요?)
 
 [DeleteMe](https://wiki.kldp.org/wiki.php/DeleteMe) 아래 3곳의 주소인 debianusers 사이트가 없어짐....
 
 debianusers grub 부트 매니저로 바꾸기 (빠른 길잡이)  
-http://debianusers.org/DebianWiki/wiki.php/grub부트매니저로바꾸기
+<http://debianusers.org/DebianWiki/wiki.php/grub부트매니저로바꾸기>
 
 한정훈 grub에 바탕그림깔기  
-http://debianusers.org/DebianWiki/wiki.php/GRUB에 바탕그림깔기
+<http://debianusers.org/DebianWiki/wiki.php/GRUB에바탕그림깔기>
 
 debianusers 한글설정의 기본 개념  
-http****://debianusers.org/DebianWiki/wiki.php/한글설정의기본개념
+<http://debianusers.org/DebianWiki/wiki.php/한글설정의기본개념>
 
 ## 커멘트
 

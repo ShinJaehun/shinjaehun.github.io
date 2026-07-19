@@ -214,7 +214,7 @@ CD에서 프로그램 실행은 이상한 문제의 원인이 되는데 특히 �
 
 #### 참고자료
 
-그다지 매력적인 읽을 거리는 되지 못하지만 언제나 메뉴얼 페이지에는 완전한 명령과 옵션에 대한 설명이 포함되어 있다. 시스템 복구 명령에 매우 유용한 메뉴얼 페이지는 다음과 같다.
+- 그다지 매력적인 읽을 거리는 되지 못하지만 언제나 메뉴얼 페이지에는 완전한 명령과 옵션에 대한 설명이 포함되어 있다. 시스템 복구 명령에 매우 유용한 메뉴얼 페이지는 다음과 같다.
 
   - man fdisk
   - man mkfs
@@ -230,34 +230,32 @@ CD에서 프로그램 실행은 이상한 문제의 원인이 되는데 특히 �
   - man dd
   - man lspci  
 
-Cameron Laird, "Knoppix gives bootable, one-disk Linux" (developerWorks, February 2003) : 크노픽스에 대한 가장 좋은 입문서이다.
+- Cameron Laird, "Knoppix gives bootable, one-disk Linux" (developerWorks, February 2003) : 크노픽스에 대한 가장 좋은 입문서이다.
 
-Knoppix.org는 크노픽스의 제작자 Klaus Knopper의 공식 사이트이다.
+- Knoppix.org는 크노픽스의 제작자 Klaus Knopper의 공식 사이트이다.
 
-크노픽스와 관련하여 참고할 만한 사이트로 가장 중요한 곳이 Knoppix.net이다. 사용자 포럼, 위키, 하우투 문서, 크노픽스 관련 프로젝트(자기 입맛에 맞는 라이브 리눅스 CD 만들기, 크노픽스를 하드 드라이브에서 실행하기, USB 메뮤리에 대한 창의적인 활용, 매우 작은 리눅스들 등과 같은)에 대한 링크를 포함하고 있다.
+- 크노픽스와 관련하여 참고할 만한 사이트로 가장 중요한 곳이 Knoppix.net이다. 사용자 포럼, 위키, 하우투 문서, 크노픽스 관련 프로젝트(자기 입맛에 맞는 라이브 리눅스 CD 만들기, 크노픽스를 하드 드라이브에서 실행하기, USB 메뮤리에 대한 창의적인 활용, 매우 작은 리눅스들 등과 같은)에 대한 링크를 포함하고 있다.
 
-Knoppix Customizations에서는 Oralux, SkoleKNOPPIX 등과 같은 비 공식적인 변형 크노픽스를 소개하고 있다.
+- Knoppix Customizations에서는 Oralux, SkoleKNOPPIX 등과 같은 비 공식적인 변형 크노픽스를 소개하고 있다.
 
-"Build a Linux test network" (developerWorks, May 2003) : 이 문서에는 유익한 GRUB 명령을 포함하고 있다. 부팅 문제를 해결하는데 도움이 필요하면 이 문서를 참고하라.
+- "Build a Linux test network" (developerWorks, May 2003) : 이 문서에는 유익한 GRUB 명령을 포함하고 있다. 부팅 문제를 해결하는데 도움이 필요하면 이 문서를 참고하라.
 
-"Burning CDs on Linux" (developerWorks, April 2003) : 명령행에서 CD를 굽는 방법을 보여준다.
+- "Burning CDs on Linux" (developerWorks, April 2003) : 명령행에서 CD를 굽는 방법을 보여준다.
 
-처음 리눅스 환경에서 개발하는 입장이라면 IBM 미들웨어에서 리눅스 응용 프로그램을 개발하는 방법에 대해 소개하고 있는 developerWorks의 "Speed-start your Linux app" 문서를 살펴보라.
+- 처음 리눅스 환경에서 개발하는 입장이라면 IBM 미들웨어에서 리눅스 응용 프로그램을 개발하는 방법에 대해 소개하고 있는 developerWorks의 "Speed-start your Linux app" 문서를 살펴보라.
 
-The Debian GNU/Linux Network Administrator's Manual은 너무나 귀중한 참고 자료이다.
+- The Debian GNU/Linux Network Administrator's Manual은 너무나 귀중한 참고 자료이다.
 
-  
+- Wireless LAN resources for Linux : 무선 네트워크에 대한 알기 쉬운 안내서이다.
 
-Wireless LAN resources for Linux : 무선 네트워크에 대한 알기 쉬운 안내서이다.
+- 크노픽스 이전에 저자를 구원해주었던 Tom's Root Boot (or tomsrtbt)와 Peter Anvin's SuperRescue CD.
 
-크노픽스 이전에 저자를 구원해주었던 Tom's Root Boot (or tomsrtbt)와 Peter Anvin's SuperRescue CD.
+- Carnegie Mellon 대학의 CERT Coordination Center에서 검색해보면 다양하게 구현된 SSH 및 다른 소프트웨어에 대한 취약점 정보를 얻을 수 있다.
 
-Carnegie Mellon 대학의 CERT Coordination Center에서 검색해보면 다양하게 구현된 SSH 및 다른 소프트웨어에 대한 취약점 정보를 얻을 수 있다.
+- Secure Shell FAQ에서 ssh에 대한 모든 해답을 얻을 수 있다.
 
-Secure Shell FAQ에서 ssh에 대한 모든 해답을 얻을 수 있다.
+- OpenSSH는 무료이며 오픈 소스로 구현된 ssh이다.
 
-OpenSSH는 무료이며 오픈 소스로 구현된 ssh이다.
+- IBM Linux Technology Center의 멤버들은 APC 모뎀(Mwave) 드라이버, BlueDrekar 미들웨어 전송 드라이버, Hotplug 프로젝트, 리눅스에서의 USB 등을 포함한 몇몇 디바이스 관련 리눅스 프로젝트에 공헌한 바 있다. Linux Technology Center 웹 사이트에서 모든 지원 프로젝트들을 찾아볼 수 있을 것이다.
 
-IBM Linux Technology Center의 멤버들은 APC 모뎀(Mwave) 드라이버, BlueDrekar 미들웨어 전송 드라이버, Hotplug 프로젝트, 리눅스에서의 USB 등을 포함한 몇몇 디바이스 관련 리눅스 프로젝트에 공헌한 바 있다. Linux Technology Center 웹 사이트에서 모든 지원 프로젝트들을 찾아볼 수 있을 것이다.
-
-developerWorks 리눅스 코너에서 더 많은 리눅스 관련 문서들과 설명서를 찾을 수 있을 것이다.
+- developerWorks 리눅스 코너에서 더 많은 리눅스 관련 문서들과 설명서를 찾을 수 있을 것이다.
