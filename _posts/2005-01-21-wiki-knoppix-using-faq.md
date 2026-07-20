@@ -77,7 +77,7 @@ A: 크노픽스 5.0.1부터는 자동 인식된 파일 시스템에 대해 기�
     knoppix# mount -o remount,rw /dev/<device>
 ```
 
-여기서 \<device\>는 'hda1'과 같이 속성을 변경할 파티션을 말합니다. 장치 및 마운트되어 있는 디렉토리의 허가권을 수정함으로서 쓰기가 가능해지는 것은 아님을 주의하기 바랍니다.
+여기서 <device>는 'hda1'과 같이 속성을 변경할 파티션을 말합니다. 장치 및 마운트되어 있는 디렉토리의 허가권을 수정함으로서 쓰기가 가능해지는 것은 아님을 주의하기 바랍니다.
 
 NTFS 파일 시스템에 대한 쓰기 지원은 (비록 여전히 실험적이라 사용할때 주의를 기울여야 하지만)크노픽스 5부터 가능해졌습니다.
 
@@ -85,7 +85,7 @@ NTFS 파일 시스템에 대한 쓰기 지원은 (비록 여전히 실험적이�
 
 ![http://joga.daug.net/readwrite.png](http://joga.daug.net/readwrite.png)
 
-[\[PNG external image\]](http://joga.daug.net/readwrite.png)
+[[PNG external image]](http://joga.daug.net/readwrite.png)
 
 #### Q: NTFS 파티션에 데이터를 쓰기 위해서는 어떻게 해야합니까?
 
@@ -96,7 +96,7 @@ A: 크노픽스 5는 libntfs와 fuse를 통하여 [NTFS](http://www.wikipedia.or
 A1: **윈도우즈 NT, XP (NTFS) and 윈도우즈 95, 98에서** USB 메모리를 사용하는 방법
 
 - USB 메모리 설치하고 크노픽스로 부팅합니다. 데스크탑에 USB 메모리의 아이콘이 나타날 것입니다.
-- 기본적으로 USB 메모리의 속성은 읽기 전용입니다. 읽고 쓰기 속성을 부여하기 위해 마우스 오른쪽 단추 - Actions -\> Change Read/Write mode -\> yes를 클릭합니다.
+- 기본적으로 USB 메모리의 속성은 읽기 전용입니다. 읽고 쓰기 속성을 부여하기 위해 마우스 오른쪽 단추 - Actions -> Change Read/Write mode -> yes를 클릭합니다.
 - USB 메모리의 파일 시스템에 저장된 파일은 윈도우즈에서 읽을 수 있습니다.
 
 - 플로피 디스켓을 이용하는 방법은?
@@ -132,7 +132,7 @@ hda1의 파티션 형식이 NTFS 라면 다음과 같이 입력합니다.
 컹커러가 실행되면 위치 표시줄(location bar)에 윈도우즈 도메인 인증을 위해 다음과 같이 입력합니다. 그러면 윈도우즈 공유 네트워크에 접근할 수 있습니다.
 
 ``` 
- smb:/domain\username@IP.address.of.machine
+ smb:/domain_username@IP.address.of.machine
 ```
 
 만일 윈도우즈 도메인 인증이 필요없다면 다음과 같이 입력합니다.
@@ -210,7 +210,7 @@ A: 없습니다. 모든 비밀번호는 기본적으로 잠겨(locked/scrambled)
     knoppix# passwd
 ```
 
-그리고 루트계정의 비밀번호를 입력합니다. 크노픽스 5.0.1에서는 크노픽스 메뉴 - 설정 - 루트 비밀번호 변경을 선택할 수 있습니다. 이 주제와 관련해서 KNOPPIX/README\_Security.txt 파일을 참고하기 바랍니다.
+그리고 루트계정의 비밀번호를 입력합니다. 크노픽스 5.0.1에서는 크노픽스 메뉴 - 설정 - 루트 비밀번호 변경을 선택할 수 있습니다. 이 주제와 관련해서 KNOPPIX/README_Security.txt 파일을 참고하기 바랍니다.
 
 콘솔에서 다음처럼 또는
 
@@ -262,7 +262,7 @@ A: 먼저 크노픽스를 하드디스크에 설치해야 합니다. 만일 크�
     knoppix# /sbin/hdparm -d <device name>
 ```
 
-이를테면 '/sbin/hdparm -d /dev/hdc'라고 입력했을때 'using\_dma = 1 (on)'가 출력된다면 이미 활성화되어 있는 상태임을 알려줍니다.
+이를테면 '/sbin/hdparm -d /dev/hdc'라고 입력했을때 'using_dma = 1 (on)'가 출력된다면 이미 활성화되어 있는 상태임을 알려줍니다.
 
   - 다음과 같은 방법으로 DMA 기능을 활성화시킬 수도 있습니다.
 
@@ -282,7 +282,7 @@ A: 먼저 크노픽스를 하드디스크에 설치해야 합니다. 만일 크�
 
 **역주 : 크노픽스 한글은 이미 로케일 설정이 되어 있으므로 별도의 로케일, 언어 설정이 필요없습니다.**
 
-A : 상태표시줄(taskbar)의 트레이에 있는 독일 국기 아이콘에서 오른쪽 클릭, 팝업 메뉴의 설정을 선택하여 키보드 레이아웃을 변경할 수 있습니다. 아니면 KMenu \> 설정 \> 제어판 \> Regional & Accessibility \> 국가/지역 & 언어 \> 로케일 \> 국가를 "C - Default"로 선택하고 키보드를 English: US로 선택합니다. 이는 KDE에 반영됩니다.
+A : 상태표시줄(taskbar)의 트레이에 있는 독일 국기 아이콘에서 오른쪽 클릭, 팝업 메뉴의 설정을 선택하여 키보드 레이아웃을 변경할 수 있습니다. 아니면 KMenu > 설정 > 제어판 > Regional & Accessibility > 국가/지역 & 언어 > 로케일 > 국가를 "C - Default"로 선택하고 키보드를 English: US로 선택합니다. 이는 KDE에 반영됩니다.
 
 그외 시스템의 다른 부분의 설정을 변경하기 위해 루트 권한을 획득하고 다음과 같이 입력합니다.
 
@@ -290,19 +290,19 @@ A : 상태표시줄(taskbar)의 트레이에 있는 독일 국기 아이콘에�
     knoppix# dpkg-reconfigure locales
 ```
 
-로케일 목록을 선택하는 화면에서는 Tab 키, Enter 키를 눌러 넘어갑니다. 다음 화면에서 "Which locale should be the default in the system environment?"라고 물을때 en\_US를 선택합니다. ISO-8859-15도 좋습니다.(Euro가 포함되어 있습니다.) ISO-8859-1(Latin1을 말합니다.)도 나쁘지 않습니다.
+로케일 목록을 선택하는 화면에서는 Tab 키, Enter 키를 눌러 넘어갑니다. 다음 화면에서 "Which locale should be the default in the system environment?"라고 물을때 en_US를 선택합니다. ISO-8859-15도 좋습니다.(Euro가 포함되어 있습니다.) ISO-8859-1(Latin1을 말합니다.)도 나쁘지 않습니다.
 
 #### Q: KDE에서 기본 언어와 키보드를 설정했습니다. 그런데 모질라 웹 브라우저에서 몇몇 페이지는 여전히 영어가 아닌 독일어로 보여지네요. 어떻게 고칠 수 있습니까?
 
 **역주 : 크노픽스 한글은 이미 파이어폭스의 언어 설정이 되어 있으므로 별도의 설정이 필요없습니다.**
 
-A1: 모질라 웹 브라우저에서 Edit \> Preferences...를 선택하고 Language를 체크합니다. 아마 다중 언어 항목에서 독일어가 영어보다 더 선호되는 언어로 지정되어 있을 것입니다. 영어를 독일어보다 위로 올려 선호 언어로 지정할 수 있습니다.
+A1: 모질라 웹 브라우저에서 Edit > Preferences...를 선택하고 Language를 체크합니다. 아마 다중 언어 항목에서 독일어가 영어보다 더 선호되는 언어로 지정되어 있을 것입니다. 영어를 독일어보다 위로 올려 선호 언어로 지정할 수 있습니다.
 
-A2: 파이어폭스에서 Edit \> Preferences를 선택하고 Advanced 단추를 클릭합니다. General탭에서 Edit Languages 단추를 클릭합니다. 영어에 클릭하여 가장 윗쪽으로 옮깁니다.
+A2: 파이어폭스에서 Edit > Preferences를 선택하고 Advanced 단추를 클릭합니다. General탭에서 Edit Languages 단추를 클릭합니다. 영어에 클릭하여 가장 윗쪽으로 옮깁니다.
 
-#### Q: 크노픽스의 [partimage](http://www.partimage.org)를 이용해서 파티션 이미지를 만들 수 있을 것 같은데요? 누구 해본 사람 없나요? Thanks in advance\! <http://linuxwiki.de/Brüßler>
+#### Q: 크노픽스의 [partimage](http://www.partimage.org)를 이용해서 파티션 이미지를 만들 수 있을 것 같은데요? 누구 해본 사람 없나요? Thanks in advance! <http://linuxwiki.de/Brüßler>
 
-A: 잘 동작합니다. [LinuxWiki PartImage (독일어-\_-;)](http://linuxwiki.de/PartImage)를 참고하세요.
+A: 잘 동작합니다. [LinuxWiki PartImage (독일어-_-;)](http://linuxwiki.de/PartImage)를 참고하세요.
 
 #### Q: CD로 부팅되어 있을때 세션의 설정 내용(언어, UI 등)을 어떻게 저장하나요? 설정 내용은 어떻게 불러오죠?
 
@@ -314,7 +314,7 @@ A : K-menu - KNOPPIX - 설정에서 설정내용 저장하기를 선택하면 �
 
 부팅중에 저장되어 있는 설정 내용을 불러올 것입니다
 
-#### Q: lang=es 옵션을 적용하여 크노픽스를 하드디스크에 설치했습니다. 실수로 /home/knoppix 디렉토리의 사용자 환경 설정 파일을 삭제하니 spanish 키보드의 "\< \>" 키가 KDE 데스크탑 환경에서 인식되지 않는군요. 관련된 설정 파일에 대해 가르쳐주세요.
+#### Q: lang=es 옵션을 적용하여 크노픽스를 하드디스크에 설치했습니다. 실수로 /home/knoppix 디렉토리의 사용자 환경 설정 파일을 삭제하니 spanish 키보드의 "< >" 키가 KDE 데스크탑 환경에서 인식되지 않는군요. 관련된 설정 파일에 대해 가르쳐주세요.
 
 **역주 : 크노픽스 한글은 이미 로케일 설정이 되어 있으므로 별도의 로케일, 언어 설정이 필요없습니다.**
 
@@ -336,7 +336,7 @@ A: 먼저 USB 메모리를 꽂은 채 크노픽스로 부팅합니다. 크노픽
     knoppix myconf=scan home=scan
 ```
 
-#### Q: 크노픽스를 사용한 후에 컴퓨터가 시작되지 않습니다\!(델 컴퓨터)
+#### Q: 크노픽스를 사용한 후에 컴퓨터가 시작되지 않습니다!(델 컴퓨터)
 
 A: 델 컴퓨터의 BIOS와 관련된 얘기입니다. 단순히 전원 코드를 뽑아서 몇 초 동안 기다렸다가 다시 부팅하면 정상적으로 시작됩니다. 크노픽스 부팅시 다음과 같이 커널 파라미터를 입력함으로서 문제를 해결할 수도 있습니다.
 
@@ -368,7 +368,7 @@ A: [Knoppix Tutorial.](http://www.eleli.de/knoppix/docs/tutorial/english)를 참
 
 A: 깨끗한 데스크탑 바탕화면으로 부팅하기 위해 시작 스크립트를 수정하는 4 단계를 소개합니다.
 
-1.먼저 루트 권한을 획득합니다. 콘솔에서 다음과 같이 입력하세요.
+1\.먼저 루트 권한을 획득합니다. 콘솔에서 다음과 같이 입력하세요.
 
 ```
     knoppix# sudo -s

@@ -20,7 +20,7 @@ date_note: "정확한 최초 작성일은 확인 중이며, 현재 확인 가능
 
 **20051120 수정 [GunSmoke](https://wiki.kldp.org/wiki.php/GunSmoke)**
 
------
+---
 
 * TITLE1="Create persistent KNOPPIX home directory"
 * TITLE1="KNOPPIX 홈 디렉토리 유지기능"
@@ -99,7 +99,7 @@ You may now reboot your computer, and KNOPPIX should find the image automaticall
 
 **20051120 수정 [GunSmoke](https://wiki.kldp.org/wiki.php/GunSmoke)**
 
------
+---
 
 * ERROR2="Sorry, no usable partitions available for swapfile."
 * ERROR2="스왑파일로 사용할 수 있는 파티션이 없습니다."
@@ -140,7 +140,7 @@ You may now reboot your computer, and KNOPPIX should find the image automaticall
 
 **20051120 수정 [GunSmoke](https://wiki.kldp.org/wiki.php/GunSmoke)**
 
------
+---
 
 * TITLE1="Create KNOPPIX configuration archive"
 * TITLE1="KNOPPIX 환경설정 저장 기능"
@@ -196,7 +196,9 @@ You may now reboot your computer, and KNOPPIX should find the image automaticall
 
 ## wlcardconfig
 
-(번역: 박신조. Sinjo Park. kte123 AT gmail DOT com)
+**번역: 박신조. Sinjo Park. kte123 AT gmail DOT com**
+
+---
 
 * MESSAGE0="No wireless network card found."
 * MESSAGE0="무선 네트워크 카드를 찾을 수 없습니다."
@@ -267,7 +269,9 @@ You may now reboot your computer, and KNOPPIX should find the image automaticall
 
 ## ndiswrapper.sh
 
-번역: 박신조. Sinjo Park. (kte123 AT gmail DOT com)
+**번역: 박신조. Sinjo Park. kte123 AT gmail DOT com**
+
+---
 
 * The selected file is no *.inf file or the *.inf file is invalid, exiting.
 * 선택된 파일은 inf 파일이 아니거나 잘못되었습니다. 끝냅니다.
@@ -419,7 +423,7 @@ gprsconnect의 번역작업은 중지해주시기 바랍니다. - [GunSmoke](htt
 
 **1차번역 : 요즘 논문에 치여 살고 계신 jhumwhale님**
 
------
+---
 
 ## knoppix-terminalserver
 
@@ -489,7 +493,9 @@ for addresses from 192.168.0.101 to (and including) 192.168.0.200. "
 
 ## samba start
 
-(번역: 박신조. Sinjo Park. kte123 AT gmail DOT com)
+**번역: 박신조. Sinjo Park. kte123 AT gmail DOT com**
+
+---
 
 * MESSAGE1="Set password for user 'knoppix'";
 * MESSAGE1="사용자 'knoppix'의 암호를 설정하십시오.";
@@ -508,7 +514,9 @@ for addresses from 192.168.0.101 to (and including) 192.168.0.200. "
 
 ## firewall
 
-(1차 번역: 알 수 없음) (교정 및 추가 번역: 박신조. Sinjo Park. kte123 AT gmail DOT com)
+**1차 번역: 알 수 없음, 교정 및 추가 번역: 박신조. Sinjo Park. kte123 AT gmail DOT com**
+
+---
 
 * MAIN="Main Menu"
 * MAIN="주 메뉴"
@@ -644,7 +652,9 @@ for addresses from 192.168.0.101 to (and including) 192.168.0.200. "
 
 ## knoppix-dma
 
-(번역: 김보년. Bo Nyeon, Kim. espereto AT gmail DOT com)
+**번역: 김보년. Bo Nyeon, Kim. espereto AT gmail DOT com**
+
+---
 
 * TITLE1="KNOPPIX DMA Acelleration"
 * TITLE1="KNOPPIX DMA 가속"
@@ -660,7 +670,9 @@ DMA 가속을 활성화 시킬 모든 장치를 선택하십시오."
 
 ## mkbootfloopy
 
-(번역: 김보년. Bo Nyeon, Kim. espereto AT gmail DOT com)
+**번역: 김보년. Bo Nyeon, Kim. espereto AT gmail DOT com**
+
+---
 
 * CONTINUE="Continue"
 * CONTINUE="계속"
@@ -680,8 +692,8 @@ DMA 가속을 활성화 시킬 모든 장치를 선택하십시오."
 * MESSAGE="This program creates two floppy disks, which can be used in order to boot Knoppix on a computer that cannot boot directly from CD. Besides a current KNOPPIX-CD (3.4 and up), you will need two 1.44MB floppy disks, which be COMPLETELY ERASED, \"overformatted\" with 1.7MB, and installed with a Linux-kernel and an initial ramdisk. If you want to continue, please insert the KNOPPIX-CD into a CD-Rom drive now, mount the CD so that it is accessible, and click on \"Continue\"."
 * MESSAGE="이 프로그램은 CD에서 직접 부트할 수 없는 컴퓨터에서 Knoppix로 부팅할 수 있게 해 주는 두 장의 플로피 디스크를 생성합니다. 또 현재 KNOPPIX-CD (3.4 이상)는 완전하게 비어 있는 두 장의 1.44MB 플로피 디스크를 1.7MB로 \"오버포맷\"하고, 리눅스 커널과 초기화 램디스크를 설치합니다. 계속 진행하고 싶으시면 KNOPPIX-CD를 CD-ROM 드라이브에 넣고 CD에 접근할 수 있도록 마운트 한 후 \"계속\"을 선택하십시오."
 
-*ERROR="Can't find the KNOPPIX-CD in any CD-Rom drive (searched /cdrom*, /mnt/cdrom* and /media/cdrom*). Try again?"
-*ERROR="어떤 CD-Rom 드라이브에서도 KNOPPIX-CD를 찾을 수 없습니다. (다음에서 찾았습니다 /cdrom*, /mnt/cdrom*, /media/cdrom*). 다시 시도할까요?"
+* ERROR="Can't find the KNOPPIX-CD in any CD-Rom drive (searched /cdrom*, /mnt/cdrom* and /media/cdrom*). Try again?"
+* ERROR="어떤 CD-Rom 드라이브에서도 KNOPPIX-CD를 찾을 수 없습니다. (다음에서 찾았습니다 /cdrom*, /mnt/cdrom*, /media/cdrom*). 다시 시도할까요?"
 
 * MESSAGE1="Please insert the first floppy disk now (for creating the Kernel-bootfloppy)."
 * MESSAGE1="(커널-부트 플로피를 만들) 첫번째 플로피 디스크를 넣으십시오."

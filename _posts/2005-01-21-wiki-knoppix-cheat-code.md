@@ -21,7 +21,9 @@ date_note: "정확한 최초 작성일은 확인 중이며, 현재 확인 가능
 
 **예:**
 
+```
     knoppix xvrefresh=60 noscsi floppyconfig
+```
 
 ## 옵션
 
@@ -60,7 +62,7 @@ X 수직 주사율을 혹은 kHz로 지정한다.
 
 X 수평 주사율을 80 kHz로 지정한다.
 
-**`xserver=[XFree86](https://wiki.kldp.org/wiki.php/XFree86)|XF86\_SVGA`**
+**`xserver=[XFree86](https://wiki.kldp.org/wiki.php/XFree86)|XF86_SVGA`**
 
 지정한 X 서버를 사용한다.
 
@@ -194,7 +196,7 @@ CD를 램에 복사하고 거기에서 실행한다. - 2003-09-05 이후
 
 **`bootfrom=/dev/hda1/KNX.iso`**
 
-이미지에 접근하여 ISO 이미지로 부팅한다. - 크노픽스 3.4 주의 : bootfrom은 파티션/ISO 이미지 마운트 전에 부트 커널이 동일한 크노픽스 시스템에 접근해야할 필요가 있다. 이 기능은 NTFS 파티션에서 poor mans install을 가능하게 하며 ISO 이미지로 직접 부팅 할 수 있게 한다. ISO 파일 이름에 와일드 카드를 사용할 수도 있지만 부팅하려는 ISO 이미지가 유일해야만 한다. /dev/hda1에 KNOPPIX.iso를 하나 가지고 있다면 "bootfrom=/dev/hda1/K\*.iso"로 접근 가능하나 이미지가 몇 개 더 있다면 부팅하기 원하는 이미지를 명확히 해야할 필요가 있다.(이 기능은 Fabian Franz에 의해 추가되었다.)
+이미지에 접근하여 ISO 이미지로 부팅한다. - 크노픽스 3.4 주의 : bootfrom은 파티션/ISO 이미지 마운트 전에 부트 커널이 동일한 크노픽스 시스템에 접근해야할 필요가 있다. 이 기능은 NTFS 파티션에서 poor mans install을 가능하게 하며 ISO 이미지로 직접 부팅 할 수 있게 한다. ISO 파일 이름에 와일드 카드를 사용할 수도 있지만 부팅하려는 ISO 이미지가 유일해야만 한다. /dev/hda1에 KNOPPIX.iso를 하나 가지고 있다면 "bootfrom=/dev/hda1/K*.iso"로 접근 가능하나 이미지가 몇 개 더 있다면 부팅하기 원하는 이미지를 명확히 해야할 필요가 있다.(이 기능은 Fabian Franz에 의해 추가되었다.)
 
 경고 : 크노픽스 3.4 CD의 커널 2.4는 ext3 파일 시스템을 지원하지 않으므로 ISO 이미지는 ext2 파일 시스템에 저장되어 있어야 한다.
 
@@ -220,7 +222,7 @@ CD를 램에 복사하고 거기에서 실행한다. - 2003-09-05 이후
 
 **`home=scan`**
 
-홈 디렉토리를 설정한다. 'scan'은 모든 파티션의 루트에서 "knoppix.img"를 찾을 것이다. 홈 디렉토리를 생성하려면 K 메뉴 -\> 크노픽스 -\> 설정 -\> 고정 홈 디렉토리 생성을 선택한다. 홈 디렉토리를 생성할 때 잘 모른다면 파티션 전체를 사용하지 않도록 주의하라. 다른 방법으로 **`home=/dev/hda1/knoppix.img home=/mnt/hda1/knoppix.img`**를 사용할 수 있다. 만일 USB 메모리를 사용한다면 **`home=/dev/sda1/knoppix.img`**로 사용할 수 있다. 그러나 home=scan 역시 동작할 것이다.
+홈 디렉토리를 설정한다. 'scan'은 모든 파티션의 루트에서 "knoppix.img"를 찾을 것이다. 홈 디렉토리를 생성하려면 K 메뉴 -> 크노픽스 -> 설정 -> 고정 홈 디렉토리 생성을 선택한다. 홈 디렉토리를 생성할 때 잘 모른다면 파티션 전체를 사용하지 않도록 주의하라. 다른 방법으로 **`home=/dev/hda1/knoppix.img home=/mnt/hda1/knoppix.img`**를 사용할 수 있다. 만일 USB 메모리를 사용한다면 **`home=/dev/sda1/knoppix.img`**로 사용할 수 있다. 그러나 home=scan 역시 동작할 것이다.
 
 **`blind`**
 
@@ -252,11 +254,11 @@ PnP 바이오스 초기화를 실시하지 않는다.
 
 ACPI 바이오스를 완전히 비활성시킨다.
 
-**`knoppix\_dir=KNOPPIX`**
+**`knoppix_dir=KNOPPIX`**
 
 CD에서 찾을 디렉토리를 명시한다.
 
-**`knoppix\_name=KNOPPIX`**
+**`knoppix_name=KNOPPIX`**
 
 CD에서 찾을 cloop 파일을 명시한다.
 

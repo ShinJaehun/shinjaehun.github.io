@@ -36,8 +36,9 @@ Knoppix를 이해하는데 참고할만한 웹페이지의 링크입니다.
 
 ### knoppix scripts 파일
 
-  - linuxrc, knoppix-autoconfig 파일 분석, 다음의 문서를 참고할 것.
-    <http://debianusers.org/DebianWiki/wiki.php/KnoppixBoot> <http://wiki.kldp.org/wiki.php/BooyoLiveCD>  
+  - linuxrc, knoppix-autoconfig 파일 분석, 다음의 문서를 참고할 것.  
+    <http://debianusers.org/DebianWiki/wiki.php/KnoppixBoot>  
+    <http://wiki.kldp.org/wiki.php/BooyoLiveCD>  
 
   - [Making Linux run from CD](http://www.knopper.net/knoppix-info/knoppix-slides-ifa2001.pdf)  
 

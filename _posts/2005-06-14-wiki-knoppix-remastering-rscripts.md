@@ -407,15 +407,15 @@ GIMP 등을 이용해서 knoppix의 바탕화면을 수정한다. knoppix.png
 
 ## 참고
 
-[KnoppixKo37](http://debianusers.org/DebianWiki/wiki.php/KnoppixKo37)천명권, knoppix 3.7 한글화
+[KnoppixKo37](http://debianusers.org/DebianWiki/wiki.php/KnoppixKo37) 천명권, knoppix 3.7 한글화
 
-[KnoppixCd](http://debianusers.org/DebianWiki/wiki.php/KnoppixCd)천명권, 하드디스크 마운트 준비
+[KnoppixCd](http://debianusers.org/DebianWiki/wiki.php/KnoppixCd) 천명권, 하드디스크 마운트 준비
 
-[KnoppixKo](http://debianusers.org/DebianWiki/wiki.php/KnoppixKo)천명권, 한글 패키지를 위한 공간 만들기
+[KnoppixKo](http://debianusers.org/DebianWiki/wiki.php/KnoppixKo) 천명권, 한글 패키지를 위한 공간 만들기
 
-[KnoppixAddPackagesforHangul](http://debianusers.org/DebianWiki/wiki.php/KnoppixAddPackagesforHangul)천명권, 한글 패키지 설치하기
+[KnoppixAddPackagesforHangul](http://debianusers.org/DebianWiki/wiki.php/KnoppixAddPackagesforHangul) 천명권, 한글 패키지 설치하기
 
-[KnoppixKo](http://debianusers.org/DebianWiki/wiki.php/KnoppixKo)천명권, 한글관련 설정, cd 이미지 생성
+[KnoppixKo](http://debianusers.org/DebianWiki/wiki.php/KnoppixKo) 천명권, 한글관련 설정, cd 이미지 생성
 
 [Knoppix.net, Knoppix Remastering Howto](http://www.knoppix.net/wiki/Knoppix_Remastering_Howto)
 

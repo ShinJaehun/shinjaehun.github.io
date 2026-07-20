@@ -23,7 +23,9 @@ A: 크노픽스 메뉴의 프린터 설정을 클릭하면 프린터 설정 마�
 
 A: 부트 프롬프트에서 다음과 같이 입력합니다.
 
+```
     knoppix wheelmouse
+```
 
 안타깝게도 휠마우스는 자동감지되지 않으며 휠마우스의 프로토콜은 표준 ps/2 프로토콜과 호환되지 않습니다. 그러므로 일반적인 ps/2 프로토콜을(휠마우스 지원 없이) 그대로 사용하는 것이 안전합니다.
 
@@ -45,14 +47,18 @@ A: 두가지 방법이 있습니다. (**이 방법은 아직 테스트되지 않
   - 부팅 정보를 나타내는 행에 "wheelmouse" 옵션을 추가합니다. (여러 행에 걸쳐 부팅 매개변수가 있을 것입니다.)  
   - 루트 권한으로 다음의 명령을 실행합니다. 에러 메시지가 없기를 기대합니다.
 
+```
     knoppix# lilo -v
+```
 
 #### Q: Microsoft Wireless Intelli Mouse explorer (Optical, USB)를 사용하고 있습니다. 마우스 포인터가 움직이지 않는군요\!
 
 A: 루트 콘솔을 하나 열고(Ctrl + Alt + F2) 다음을 입력합니다.
 
+```
     knoppix# modprobe -r usbmouse
     knoppix# modprobe hid
+```
 
 Ctlr + Alt + F5 키를 눌러 KDE로 돌아옵니다.
 
@@ -114,7 +120,9 @@ A: 몇몇 보드에서 리눅스 커널에 정확하지 않은 메모리 크기�
 
 A: 루트권한으로 /etc/X11/XF86Config-4를 수정해야 합니다. "Device" 부분에 다음 내용을 추가하십시오.
 
+```
     Option "Rotation" "CW"
+```
 
 CW는 [시계방향](http://en.wikipedia.org/wiki/Clockwise)을 말합니다. 다른 옵션인 CCW는 [반시계방향](http://en.wikipedia.org/wiki/Counterclockwise)입니다.
 
@@ -122,8 +130,10 @@ CW는 [시계방향](http://en.wikipedia.org/wiki/Clockwise)을 말합니다. �
 
 A: dmesg 결과에 cciss가 나타난다면 드라이버를 가지고 있다는 것을 의미합니다. 그러나 크노픽스 4.0은 /dev/cciss가 포함되어 있지 않지요. 다음과 같이 해봅니다.
 
+```
     knoppix# cd /dev
     knoppix# sh MAKEDEV cciss
+```
 
 /dev/cciss/\*가 만들어질 것입니다. 이제 새로운 파일 시스템을 /dev/cciss/c0d0p1 등에 마운트할 수 있습니다.
 
@@ -140,7 +150,8 @@ A:
 
 #### Q: 리눅스와 호환되는 하드웨어를 구입하고 싶습니다. 어떻게 알 수 있죠?
 
-A: <http://www.tldp.org/HOWTO/Hardware-HOWTO/index.html>와 <http://www.tldp.org/HOWTO/Hardware-HOWTO/incompatible.html>를 참고하십시오.
+A: <http://www.tldp.org/HOWTO/Hardware-HOWTO/index.html>와  
+   <http://www.tldp.org/HOWTO/Hardware-HOWTO/incompatible.html>를 참고하십시오.
 
 #### Q: 크노픽스에서 다른 CD를 사용하는 것이 가능합니까?
 
