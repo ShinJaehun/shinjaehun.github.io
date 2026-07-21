@@ -511,20 +511,35 @@ layout: about
 
 # 기고
 
-* [프로그래밍 학습 도구로서 게임 : Real Time Battle, 리눅스 매거진, 2002-07]({% post_url 2002-06-28-article-rtb %})
-* [명인들의 메카 - 제리모 : 제주지역 리눅스 사용자 모임, 리눅스 매거진, 2002-09]({% post_url 2002-08-28-interview-jerimo %})
+* [프로그래밍 학습 도구로서 게임 : Real Time Battle]({% post_url 2002-06-28-article-rtb %}), 리눅스 매거진, 2002-07
+* [명인들의 메카 - 제리모 : 제주지역 리눅스 사용자 모임]({% post_url 2002-08-28-interview-jerimo %}), 리눅스 매거진, 2002-09
 * 제주지역 리눅스 매거진 구매가이드, 리눅스 매거진, 2002-10
-* [제주대학교 컴퓨터 교육과 전시회 및 세미나 소식, 리눅스 매거진, 2002-12]({% post_url 2002-11-28-interview-computereducation %})
-* [세기정보통신 웹 마스터 양조현 인터뷰, 리눅스 매거진, 2003-01]({% post_url 2002-12-28-interview-webmaster %})
-* [리눅스를 데스크탑으로!! - 리눅스용 오피스 슈트 3종 분석, 리눅스 매거진, 2003-02]({% post_url 2003-01-28-article-linux-office %})
+* [제주대학교 컴퓨터 교육과 전시회 및 세미나 소식]({% post_url 2002-11-28-interview-computereducation %}), 리눅스 매거진, 2002-12
+* [세기정보통신 웹 마스터 양조현 인터뷰]({% post_url 2002-12-28-interview-webmaster %}), 리눅스 매거진, 2003-01
+* [리눅스를 데스크탑으로!! - 리눅스용 오피스 슈트 3종 분석]({% post_url 2003-01-28-article-linux-office %}), 리눅스 매거진, 2003-02
 * 제주지역 관공서 홈페이지의 운영체제 및 웹서버 운영실태조사, 리눅스 매거진, 2003-03
 * 제주 소방서 홈페이지 웹 마스터 한동훈 인터뷰, 리눅스 매거진, 2003-05
-* [제주 ITS(첨단교통)센터 웹 서버 관리자 : 고혁준, 리눅스 매거진, 2003-06]({% post_url 2003-05-28-interview-itsadmin %})
-* [자유롭게 살고자 하는 리눅서 FreeKGB, 강기봉과의 만남, 리눅스 매거진, 2003-10]({% post_url 2003-09-28-interview-freekgb %})
-* [대한민국 서버 관리자 그룹 : 수퍼유저코리아의 수퍼유저 박성수, 리눅스 매거진, 2003-11]({% post_url 2003-10-28-interview-superuserceo %})
-* [대한민국 Tcl/Tk 사용자 그룹의 리더 : 민인학, 리눅스 매거진, 2004-01]({% post_url 2003-12-28-interview-tcltkgroupleader %})
-* [어셈블리 개발자 그룹, 어셈러브의 운영자 : 김기오, 리눅스 매거진, 2004-02]({% post_url 2004-01-28-interview-asmloveleader %})
-* [FreeBSD KR 사용자 그룹(KFUG)의 리더 최준호 그만의 이야기, 리눅스 매거진, 2004-03]({% post_url 2004-02-28-interview-kfugleader %})
+* [제주 ITS(첨단교통)센터 웹 서버 관리자 : 고혁준]({% post_url 2003-05-28-interview-itsadmin %}), 리눅스 매거진, 2003-06
+* [자유롭게 살고자 하는 리눅서 FreeKGB, 강기봉과의 만남]({% post_url 2003-09-28-interview-freekgb %}), 리눅스 매거진, 2003-10
+* [대한민국 서버 관리자 그룹 : 수퍼유저코리아의 수퍼유저 박성수]({% post_url 2003-10-28-interview-superuserceo %}), 리눅스 매거진, 2003-11
+* [대한민국 Tcl/Tk 사용자 그룹의 리더 : 민인학]({% post_url 2003-12-28-interview-tcltkgroupleader %}), 리눅스 매거진, 2004-01
+* [어셈블리 개발자 그룹, 어셈러브의 운영자 : 김기오]({% post_url 2004-01-28-interview-asmloveleader %}), 리눅스 매거진, 2004-02
+* [FreeBSD KR 사용자 그룹(KFUG)의 리더 최준호 그만의 이야기]({% post_url 2004-02-28-interview-kfugleader %}), 리눅스 매거진, 2004-03
+
+# 위키 문서
+
+* [KNOPPIX를 이용한 Debian 설치]({% post_url 2005-01-21-wiki-debian-install-using-knoppix %}) : KNOPPIX를 이용한 Debian 설치 과정 소개, 2005-01-21
+* [Knoppix Cheat Code]({% post_url 2005-01-21-wiki-knoppix-cheat-code %}) : Knoppix 부트 치트코드 번역, 2005-01-21
+* [Knoppix General FAQ]({% post_url 2005-01-21-wiki-knoppix-general-faq %}) : Knoppix 일반 FAQ 번역, 2005-01-21
+* [Knoppix Hardware FAQ]({% post_url 2005-01-21-wiki-knoppix-hardware-faq %}) : Knoppix 하드웨어 FAQ 번역, 2005-01-21
+* [Knoppix Rescue FAQ]({% post_url 2005-01-21-wiki-knoppix-rescue-faq %}) : Knoppix를 이용한 응급 복구 FAQ 번역, 2005-01-21
+* [Knoppix로 시스템 복구하기]({% post_url 2005-01-21-wiki-knoppix-system-recovery %}) : Knoppix 기반 시스템 복구 방법 문서 번역, 2005-01-21
+* [Knoppix Using FAQ]({% post_url 2005-01-21-wiki-knoppix-using-faq %}) : Knoppix 사용 FAQ 번역, 2005-01-21
+* [Knoppix 3.7 Remastering]({% post_url 2005-03-15-wiki-knoppix-remastering %}) : Knoppix 3.7 리마스터링 과정 소개, 2005-03-15
+* [remaster scripts를 이용한 Knoppix Remastering]({% post_url 2005-06-14-wiki-knoppix-remastering-rscripts %}) : Knoppix 3.8 리마스터링 과정 소개, 2005-06-14
+* [Knoppix Reference]({% post_url 2005-08-12-wiki-knoppix-reference %}) : Knoppix 한글 프로젝트와 관련 문서 모음, 2005-08-12
+* [Knoppix Links]({% post_url 2005-08-12-wiki-knoppix-links %}) : Knoppix 관련 참고 자료와 링크, 2005-08-12
+* [Knoppix 한글 스크립트 번역 작업]({% post_url 2005-11-20-wiki-knoppix-msg-trans %}) : Knoppix 한글화를 위한 스크립트 메시지 번역 기록, 2005-11-20
 
 # 프로젝트
 
