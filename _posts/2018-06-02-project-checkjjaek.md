@@ -4,6 +4,7 @@ title:  "책짹"
 info: "책 읽기를 좋아하는 사람들이 독서 감상을 나누는 웹 서비스"
 tech: "Web Service, Ruby, Ruby on Rails, Hotwire, Turbo, Stimulus, Tailwind CSS, Educational software"
 type: project
+hide_title: true
 ---
 
 ![책짹](/assets/img/project_checkjjaek/github_banner.png)
@@ -52,31 +53,191 @@ type: project
 
 아이들을 위한 웹 서비스로 개발을 시작했지만 궁극적으로 책을 좋아하는 누구나 사용할 수 있는 시스템으로 발전시키고 싶습니다. 기술이 미천하여 프론트 구현하는 것도 정말 쉽지 않지만 생각했던 기능을 하나씩 실현하는 과정이 너무 재미있습니다. 그리고 이런 노력이 아이들한테 도움이 될 수 있다는 생각에 보람을 느낍니다. 
 
-## 관련 이미지
+## checkjjaek3
 
-* 아이디어 스케치
+### 시연 영상
 
-![idea_sketch01.jpg](/assets/img/project_checkjjaek/idea_sketch01.jpg){: width="400"}
+<video
+  class="project-video"
+  src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-web.mp4' | relative_url }}"
+  poster="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-feed.png' | relative_url }}"
+  controls
+  preload="auto"
+  playsinline
+>
+  브라우저에서 동영상 재생을 지원하지 않습니다.
+</video>
 
-![idea_sketch02.jpg](/assets/img/project_checkjjaek/idea_sketch02.jpg){: width="400"}
+### 주요 화면
 
-![idea_sketch03.jpg](/assets/img/project_checkjjaek/idea_sketch03.jpg){: width="400"}
+<div class="image-grid">
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-login.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-login.png' | relative_url }}"
+      alt="checkjjaek3 로그인 화면"
+      loading="lazy"
+    >
+  </a>
 
-![idea_sketch04.jpg](/assets/img/project_checkjjaek/idea_sketch04.jpg){: width="400"}
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-feed.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-feed.png' | relative_url }}"
+      alt="checkjjaek3 피드 화면"
+      loading="lazy"
+    >
+  </a>
 
-![idea_sketch05.jpg](/assets/img/project_checkjjaek/idea_sketch05.jpg){: width="400"}
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search01.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search01.png' | relative_url }}"
+      alt="checkjjaek3 검색 화면 1"
+      loading="lazy"
+    >
+  </a>
 
-![idea_sketch06.jpg](/assets/img/project_checkjjaek/idea_sketch06.jpg){: width="400"}
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search02.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search02.png' | relative_url }}"
+      alt="checkjjaek3 검색 화면 2"
+      loading="lazy"
+    >
+  </a>
 
-* 프로토타입
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search03.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search03.png' | relative_url }}"
+      alt="checkjjaek3 검색 화면 3"
+      loading="lazy"
+    >
+  </a>
 
-![prototype01.jpg](/assets/img/project_checkjjaek/prototype01.jpg){: width="400"}
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search04.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search04.png' | relative_url }}"
+      alt="checkjjaek3 검색 화면 4"
+      loading="lazy"
+    >
+  </a>
+  
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups01.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups01.png' | relative_url }}"
+      alt="checkjjaek3 그룹 화면 1"
+      loading="lazy"
+    >
+  </a>
 
-![prototype02.jpg](/assets/img/project_checkjjaek/prototype02.jpg){: width="400"}
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups02.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups02.png' | relative_url }}"
+      alt="checkjjaek3 그룹 화면 2"
+      loading="lazy"
+    >
+  </a>
 
-* DB UML
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups03.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups03.png' | relative_url }}"
+      alt="checkjjaek3 그룹 화면 3"
+      loading="lazy"
+    >
+  </a>
 
-![DBUML](/assets/img/project_checkjjaek/DBUML.jpg)
+  <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups04.png' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups04.png' | relative_url }}"
+      alt="checkjjaek3 그룹 화면 4"
+      loading="lazy"
+    >
+  </a>
+
+</div>
+
+## 개발 초기 아이디어
+
+### 아이디어 스케치
+
+<div class="image-grid">
+  <a href="{{ '/assets/img/project_checkjjaek/idea_sketch01.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/idea_sketch01.jpg' | relative_url }}"
+      alt="책짹 아이디어 스케치 1"
+      loading="lazy"
+    >
+  </a>
+
+  <a href="{{ '/assets/img/project_checkjjaek/idea_sketch02.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/idea_sketch02.jpg' | relative_url }}"
+      alt="책짹 아이디어 스케치 2"
+      loading="lazy"
+    >
+  </a>
+
+  <a href="{{ '/assets/img/project_checkjjaek/idea_sketch03.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/idea_sketch03.jpg' | relative_url }}"
+      alt="책짹 아이디어 스케치 3"
+      loading="lazy"
+    >
+  </a>
+
+  <a href="{{ '/assets/img/project_checkjjaek/idea_sketch04.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/idea_sketch04.jpg' | relative_url }}"
+      alt="책짹 아이디어 스케치 4"
+      loading="lazy"
+    >
+  </a>
+
+  <a href="{{ '/assets/img/project_checkjjaek/idea_sketch05.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/idea_sketch05.jpg' | relative_url }}"
+      alt="책짹 아이디어 스케치 5"
+      loading="lazy"
+    >
+  </a>
+
+  <a href="{{ '/assets/img/project_checkjjaek/idea_sketch06.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/idea_sketch06.jpg' | relative_url }}"
+      alt="책짹 아이디어 스케치 6"
+      loading="lazy"
+    >
+  </a>
+</div>
+
+### 프로토타입
+
+<div class="image-grid">
+  <a href="{{ '/assets/img/project_checkjjaek/prototype01.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/prototype01.jpg' | relative_url }}"
+      alt="책짹 프로토타입 1"
+      loading="lazy"
+    >
+  </a>
+
+  <a href="{{ '/assets/img/project_checkjjaek/prototype02.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/prototype02.jpg' | relative_url }}"
+      alt="책짹 프로토타입 2"
+      loading="lazy"
+    >
+  </a>
+</div>
+
+### DB UML
+
+<div class="project-image-link">
+  <a href="{{ '/assets/img/project_checkjjaek/DBUML.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/project_checkjjaek/DBUML.jpg' | relative_url }}"
+      alt="책짹 DB UML"
+      loading="lazy"
+    >
+  </a>
+</div>
 
 ## 공헌자
 
