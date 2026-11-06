@@ -6,127 +6,94 @@ tech: Ruby on Rails / PostgreSQL / Devise / Hotwire Turbo / Stimulus / RSpec
 type: personal
 ---
 
-## 쑥쑥교실투표
-
-쑥쑥교실투표는 투표자 명단을 바탕으로 교사가 감독하는 **절차형 교실 투표 시스템**입니다. 학생이 각자 계정을 만들거나 개인 단말로 접속하는 방식이 아니라, 교사가 준비한 투표자 명단을 기준으로 현재 투표자를 한 명씩 진행시키며 투표 완료, 미참여, 기권을 기록하는 구조를 목표로 합니다. 전교어린이회 선거, 학급 임원 선거, 학급 토의 안건 선택, 토론 입장 선택처럼 학교 현장에서 실제로 필요한 투표를 안정적으로 운영하기 위한 Rails 기반 웹 애플리케이션입니다.
+쑥쑥교실투표는 교사가 학생의 투표 순서를 관리하는 **학교용 웹 투표 시스템**입니다. 학생마다 계정을 만들 필요 없이 교사가 준비한 명단으로 학급투표를 진행할 수 있으며, 전교학생회 선거에서는 학교 관리자가 선거를 준비하고 각 학급의 담임교사가 투표를 운영합니다.
 
 ## 프로젝트 페이지
 
+* [쑥쑥교실투표 바로가기](https://vote.suksukclass.kr)
 * [GitHub 저장소](https://github.com/ShinJaehun/suksuk_class_vote)
 
-## 주요 특징
+## 학급투표
 
-* 교사 감독형 투표
+교사가 투표를 준비하고, 학생이 한 명씩 참여한 뒤 결과를 확인하는 순서로 진행합니다. **이미지를 클릭하면 확대해서 볼 수 있습니다.**
 
-  * 학생이 각자 로그인해서 투표하는 방식이 아니라, 교사가 투표 진행을 관리합니다.
-  * 교사 장치 앞에서 투표자 명단 순서대로 한 명씩 투표를 진행합니다.
-  * 현재 투표자가 확정되어야 다음 투표자로 넘어갈 수 있습니다.
+<div class="image-grid">
+  <div class="vote-step">
+    <h3>1. 투표 준비</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote01.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote01.png' | relative_url }}" alt="학급투표 준비 화면" loading="lazy"></a>
+    <p>교사는 투표 항목과 후보자 또는 선택지를 준비합니다. 참여 학생은 학급 명단을 기준으로 정해집니다.</p>
+  </div>
+  <div class="vote-step">
+    <h3>2. 교사 진행 화면</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote02.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote02.png' | relative_url }}" alt="투표 시작 후 교사 진행 화면" loading="lazy"></a>
+    <p>교사는 현재 투표자의 화면을 열어 주고, 투표가 끝나면 다음 학생으로 진행하거나 미참여 학생을 처리합니다.</p>
+  </div>
+  <div class="vote-step">
+    <h3>3. 학생 투표 화면</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote03.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote03.png' | relative_url }}" alt="학생이 선택지를 확인하고 투표하는 화면" loading="lazy"></a>
+    <p>학생은 교사가 열어 준 화면에서 선택지를 확인하고 투표합니다. 개인 계정 로그인은 필요하지 않습니다.</p>
+  </div>
+  <div class="vote-step">
+    <h3>4. 학급투표 결과</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote04.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote04.png' | relative_url }}" alt="학급투표 결과 집계 화면" loading="lazy"></a>
+    <p>투표 종료 후 참여 현황과 항목별 득표 결과를 확인합니다. 학생 개인의 선택이나 기권 여부는 공개하지 않습니다.</p>
+  </div>
+</div>
 
-* 투표자 명단 기반 진행
+## 전교학생회 투표
 
-  * 교사는 투표 전에 투표자 명단을 만듭니다.
-  * 명단에는 학생 번호와 이름을 등록합니다.
-  * 투표 시작 시 명단을 기준으로 투표자 스냅샷을 생성합니다.
-  * 투표 시작 이후 원래 명단이 바뀌어도 이미 시작된 투표의 스냅샷은 유지됩니다.
+학교 관리자가 선거를 준비하고 학급별 투표 세션을 배정하면, 각 학급의 교사가 투표를 진행합니다. 학교 관리자는 전체 진행 상태와 결과를 확인합니다.
 
-* 선택지와 집계 스냅샷
+<div class="image-grid">
+  <div class="vote-step">
+    <h3>1. 선거 항목과 후보자 관리</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote06.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote06.png' | relative_url }}" alt="전교투표 항목과 후보자를 관리하는 화면" loading="lazy"></a>
+    <p>학교 관리자는 선거 항목과 후보자를 등록하며, 후보자 사진도 함께 사용할 수 있습니다.</p>
+  </div>
+  <div class="vote-step">
+    <h3>2. 참여 학급 배정</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote07.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote07.png' | relative_url }}" alt="전교투표 참여 학급의 세션 배정 화면" loading="lazy"></a>
+    <p>참여 학년이나 학급을 선택해 투표 세션을 배정합니다. 각 학급의 담임교사는 자신의 학급 투표를 진행합니다.</p>
+  </div>
+  <div class="vote-step">
+    <h3>3. 학생 투표 화면</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote08.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote08.png' | relative_url }}" alt="후보자 사진이 표시된 전교투표 학생 화면" loading="lazy"></a>
+    <p>학생은 후보자의 이름과 사진을 확인하며 투표합니다. 진행 방식은 학급투표와 같습니다.</p>
+  </div>
+  <div class="vote-step">
+    <h3>4. 학급별 진행 현황</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote09.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote09.png' | relative_url }}" alt="전교투표 학급별 세션 진행 상태 화면" loading="lazy"></a>
+    <p>학교 관리자는 각 학급이 투표를 어디까지 진행했는지 한곳에서 확인할 수 있습니다.</p>
+  </div>
+  <div class="vote-step">
+    <h3>5. 전교투표 결과</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote10.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote10.png' | relative_url }}" alt="전교투표 결과 집계 화면" loading="lazy"></a>
+    <p>학급별 투표 결과를 합산해 학교 전체 참여 현황과 후보별 득표 결과를 확인합니다.</p>
+  </div>
+</div>
 
-  * 투표 시작 시점의 선택지를 기준으로 후보별 집계 레코드를 만듭니다.
-  * 선택지별 득표 수는 투표 진행 중 안전하게 누적됩니다.
-  * 시작 이후 선택지 변경으로 결과가 흔들리지 않도록 스냅샷 구조를 사용합니다.
+## 학교 관리
 
-* 투표 완료, 미참여, 기권 구분
+학교 관리자는 선생님과 교실 정보를 관리해 학급투표와 전교투표 운영을 지원합니다.
 
-  * 각 투표자는 투표 완료, 미참여, 기권 중 하나의 상태로 확정됩니다.
-  * 미참여와 기권은 득표 수를 증가시키지 않지만, 결과에는 별도로 기록됩니다.
-  * 단순히 표가 사라지는 것이 아니라, 어떤 이유로 투표하지 않았는지 구분해 확인할 수 있습니다.
+<div class="image-grid">
+  <div class="vote-step">
+    <h3>1. 학교 운영 현황</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote11.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote11.png' | relative_url }}" alt="학교 운영 현황과 선생님 관리 메뉴 화면" loading="lazy"></a>
+    <p>학교의 선생님·학급·학생 현황을 확인하고 선생님 계정과 배정을 관리합니다.</p>
+  </div>
+  <div class="vote-step">
+    <h3>2. 교실 관리</h3>
+    <a href="{{ '/assets/img/project_suksuk_class_vote/vote12.png' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk_class_vote/vote12.png' | relative_url }}" alt="교실과 담임 배정을 관리하는 화면" loading="lazy"></a>
+    <p>학년·반별 교실과 담당 교사를 배정합니다. 교사는 자신이 담당하는 학급의 학생 명단을 관리합니다.</p>
+  </div>
+</div>
 
-* 선거, 토의, 토론 활동 지원
+## 개발 현황
 
-  * 같은 구조 안에서 여러 유형의 교실 투표를 다룰 수 있도록 설계했습니다.
-  * 선거에서는 선택지를 후보자로 표시합니다.
-  * 토의에서는 의견, 토론에서는 입장처럼 활동 유형에 맞게 문구를 다르게 사용할 수 있습니다.
+Ruby on Rails와 PostgreSQL을 기반으로 구현했으며, Turbo·Stimulus로 투표 진행 화면을 갱신합니다. 교사와 학교 관리자의 권한을 구분하고, 학생 개인의 선택을 공개하지 않는 집계 방식과 투표 진행 기록의 무결성을 고려했습니다.
 
-* 진행 이벤트 기록
-
-  * 투표 시작, 투표 완료, 미참여, 기권, 종료 같은 주요 흐름을 이벤트로 남길 수 있습니다.
-  * 중단이나 복구 상황에서 현재 상태를 파악하기 쉽도록 설계했습니다.
-
-## 기본 사용 흐름
-
-1. 교사가 로그인합니다.
-2. 투표자 명단을 만듭니다.
-3. 학생 번호와 이름을 등록합니다.
-4. 투표 제목과 활동 유형을 정합니다.
-5. 후보자, 의견, 입장 같은 선택지를 등록합니다.
-6. 투표를 시작합니다.
-7. 교사 장치 앞에서 현재 투표자 한 명씩 투표를 진행합니다.
-8. 각 투표자를 투표 완료, 미참여, 기권 중 하나로 확정합니다.
-9. 모든 투표자가 처리되면 투표를 종료합니다.
-10. 결과 화면에서 득표 수와 참여 상태를 확인합니다.
-
-## 주요 기능
-
-* 투표자 명단 생성과 관리
-* 학생 1명씩 추가
-* 학생 이름 일괄 추가
-* 투표 생성
-* 활동 유형 선택
-* 선택지 등록
-* 투표 시작 시 투표자 스냅샷 생성
-* 선택지별 집계 레코드 생성
-* 현재 투표자 진행
-* 투표 완료 처리
-* 미참여 처리
-* 기권 처리
-* 첫 미처리 투표자 재개
-* 투표 종료
-* 결과 확인
-* 투표 진행 이벤트 기록
-
-## 기술 스택
-
-* Ruby
-* Ruby on Rails
-* PostgreSQL
-* Devise
-* Hotwire Turbo
-* Stimulus
-* Tailwind CSS
-* RSpec
-* FactoryBot
-* Capybara
-
-## 개발 과정
-
-쑥쑥교실투표는 학교 현장에서 실제로 필요한 투표 절차를 웹 애플리케이션으로 정리하기 위해 기획·설계·구현한 프로젝트입니다. 처음부터 단순 설문 도구가 아니라, 교사가 투표자 명단을 준비하고, 현재 투표자를 한 명씩 진행시키며, 투표 완료·미참여·기권을 분리해서 기록하는 절차형 시스템을 목표로 했습니다. 개발 과정에서는 ChatGPT를 개발 보조 도구로 활용했습니다. ChatGPT는 코드를 대신 결정하는 도구가 아니라, 투표 절차와 도메인 규칙을 정리하고, Rails 모델과 컨트롤러 책임을 나누며, 테스트해야 할 흐름을 점검하는 보조 도구로 사용했습니다.
-
-## 현재 상태
-
-* Rails 기반 기본 애플리케이션 구조 구현
-* 교사 로그인 구조 구현
-* 투표자 명단 관리 기능 구현
-* 투표 생성과 선택지 관리 기능 구현
-* 투표 시작 시 스냅샷 생성 구조 구현
-* 현재 투표자 기반 진행 흐름 구현
-* 투표 완료, 미참여, 기권 처리 구현
-* 후보별 득표 집계 구조 구현
-* 투표 종료와 결과 확인 흐름 구현
-* 진행 이벤트 기록 구조 구현
-* request spec 기반 주요 흐름 테스트 작성
-
-## 앞으로의 개선 방향
-
-* 실제 전교어린이회 선거 운영 흐름 점검
-* 투표 결과 출력 화면 개선
-* 투표 결과 인쇄용 화면
-* 후보자 사진 또는 기호 표시
-* 투표자 명단 가져오기 기능 개선
-* HWP/Excel 복사·붙여넣기 기반 명단 입력
-* 모바일·태블릿 화면 최적화
-* 투표 진행 화면의 실수 방지 UX 강화
-* 감사 로그와 복구 흐름 개선
-* 선거 규정에 따른 단일 후보 처리 정책 확장
+설계와 구현에 관한 자세한 내용은 [GitHub README](https://github.com/ShinJaehun/suksuk_class_vote#readme)에 정리했습니다.
 
 ## 저작권
 

@@ -7,21 +7,19 @@ type: project
 hide_title: true
 ---
 
-![책짹](/assets/img/project_checkjjaek/github_banner.png)
+<img class="portfolio-original" src="/assets/img/project_checkjjaek/github_banner.png" alt="책짹 배너">
 
 ## 프로젝트 페이지
 
 책짹은 한 번에 완성된 서비스가 아니라, 여러 번의 구현과 재설계를 거치며 방향을 다듬어 온 프로젝트입니다.
 
+* [책짹 바로가기](https://jjaek.kr)
 * [최신 리뉴얼 저장소 checkjjaek4](https://github.com/ShinJaehun/checkjjaek4)  
   책, 서재, 책장, 책짹, 관계 기반 공개 범위를 중심으로 다시 설계한 현재 리부트 버전입니다.
-
-* [2020 레거시 확장 저장소 checkjjaek3](https://github.com/ShinJaehun/checkjjaek3)  
+* [2020 레거시 저장소 checkjjaek3](https://github.com/ShinJaehun/checkjjaek3)  
   책 기반 SNS를 더 넓은 기능으로 확장해 본 레거시 버전입니다. 일반적인 SNS 기능을 붙여 가며 서비스 가능성을 실험했습니다.
-
 * [2018 최초 구현 저장소 checkjjaek](https://github.com/ShinJaehun/checkjjaek)  
   2018년 해커톤에서 시작한 최초 구현 버전입니다. 책을 읽고 짧은 감상을 남기는 웹 서비스라는 책짹의 출발점입니다.
-
 * [페이스북 그룹](https://www.facebook.com/groups/300564440675083/)  
   책짹을 처음 공개하고 의견을 나누기 위해 운영했던 페이스북 그룹입니다.
 
@@ -72,7 +70,7 @@ hide_title: true
 
 <div class="image-grid">
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-login.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-login.png' | relative_url }}"
       alt="checkjjaek3 로그인 화면"
       loading="lazy"
@@ -80,7 +78,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-feed.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-feed.png' | relative_url }}"
       alt="checkjjaek3 피드 화면"
       loading="lazy"
@@ -88,7 +86,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search01.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search01.png' | relative_url }}"
       alt="checkjjaek3 검색 화면 1"
       loading="lazy"
@@ -96,7 +94,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search02.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search02.png' | relative_url }}"
       alt="checkjjaek3 검색 화면 2"
       loading="lazy"
@@ -104,7 +102,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search03.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search03.png' | relative_url }}"
       alt="checkjjaek3 검색 화면 3"
       loading="lazy"
@@ -112,7 +110,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search04.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-search04.png' | relative_url }}"
       alt="checkjjaek3 검색 화면 4"
       loading="lazy"
@@ -120,7 +118,7 @@ hide_title: true
   </a>
   
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups01.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups01.png' | relative_url }}"
       alt="checkjjaek3 그룹 화면 1"
       loading="lazy"
@@ -128,7 +126,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups02.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups02.png' | relative_url }}"
       alt="checkjjaek3 그룹 화면 2"
       loading="lazy"
@@ -136,7 +134,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups03.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups03.png' | relative_url }}"
       alt="checkjjaek3 그룹 화면 3"
       loading="lazy"
@@ -144,7 +142,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups04.png' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/checkjjaek3/checkjjaek3-groups04.png' | relative_url }}"
       alt="checkjjaek3 그룹 화면 4"
       loading="lazy"
@@ -159,7 +157,7 @@ hide_title: true
 
 <div class="image-grid">
   <a href="{{ '/assets/img/project_checkjjaek/idea_sketch01.jpg' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/idea_sketch01.jpg' | relative_url }}"
       alt="책짹 아이디어 스케치 1"
       loading="lazy"
@@ -167,7 +165,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/idea_sketch02.jpg' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/idea_sketch02.jpg' | relative_url }}"
       alt="책짹 아이디어 스케치 2"
       loading="lazy"
@@ -175,7 +173,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/idea_sketch03.jpg' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/idea_sketch03.jpg' | relative_url }}"
       alt="책짹 아이디어 스케치 3"
       loading="lazy"
@@ -183,7 +181,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/idea_sketch04.jpg' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/idea_sketch04.jpg' | relative_url }}"
       alt="책짹 아이디어 스케치 4"
       loading="lazy"
@@ -191,7 +189,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/idea_sketch05.jpg' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/idea_sketch05.jpg' | relative_url }}"
       alt="책짹 아이디어 스케치 5"
       loading="lazy"
@@ -199,7 +197,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/idea_sketch06.jpg' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/idea_sketch06.jpg' | relative_url }}"
       alt="책짹 아이디어 스케치 6"
       loading="lazy"
@@ -211,7 +209,7 @@ hide_title: true
 
 <div class="image-grid">
   <a href="{{ '/assets/img/project_checkjjaek/prototype01.jpg' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/prototype01.jpg' | relative_url }}"
       alt="책짹 프로토타입 1"
       loading="lazy"
@@ -219,7 +217,7 @@ hide_title: true
   </a>
 
   <a href="{{ '/assets/img/project_checkjjaek/prototype02.jpg' | relative_url }}">
-    <img
+    <img class="portfolio-thumbnail"
       src="{{ '/assets/img/project_checkjjaek/prototype02.jpg' | relative_url }}"
       alt="책짹 프로토타입 2"
       loading="lazy"
@@ -229,15 +227,7 @@ hide_title: true
 
 ### DB UML
 
-<div class="project-image-link">
-  <a href="{{ '/assets/img/project_checkjjaek/DBUML.jpg' | relative_url }}">
-    <img
-      src="{{ '/assets/img/project_checkjjaek/DBUML.jpg' | relative_url }}"
-      alt="책짹 DB UML"
-      loading="lazy"
-    >
-  </a>
-</div>
+<img class="portfolio-original" src="/assets/img/project_checkjjaek/DBUML.jpg" alt="책짹 DB UML">
 
 ## 공헌자
 
