@@ -25,11 +25,11 @@ hide_title: true
 
 <div class="image-grid">
   <div>
-    <a href="{{ '/assets/img/project_suksuk/suksukmath01.PNG' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk/suksukmath01.PNG' | relative_url }}" alt="쑥쑥수학 시작 화면" loading="lazy"></a>
+    <a href="{{ '/assets/img/project_suksuk/suksukmath01.PNG' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk/suksukmath01.PNG' | relative_url }}" alt="쑥쑥수학 시작 화면" loading="lazy"></a>
     <p><strong>시작 화면</strong> — 문제풀기 버튼으로 연습을 시작합니다.</p>
   </div>
   <div>
-    <a href="{{ '/assets/img/project_suksuk/suksukmath02.PNG' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk/suksukmath02.PNG' | relative_url }}" alt="쑥쑥수학 곱셈, 나눗셈, 도전 문제 유형 선택" loading="lazy"></a>
+    <a href="{{ '/assets/img/project_suksuk/suksukmath02.PNG' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk/suksukmath02.PNG' | relative_url }}" alt="쑥쑥수학 곱셈, 나눗셈, 도전 문제 유형 선택" loading="lazy"></a>
     <p><strong>유형 선택</strong> — 곱셈·나눗셈의 자릿수별 연습이나 도전 문제를 선택합니다.</p>
   </div>
 </div>
@@ -38,11 +38,11 @@ hide_title: true
 
 <div class="image-grid">
   <div>
-    <a href="{{ '/assets/img/project_suksuk/suksukmath03-1.PNG' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk/suksukmath03-1.PNG' | relative_url }}" alt="곱셈 세로셈을 풀며 빈칸에 숫자를 입력하는 화면" loading="lazy"></a>
+    <a href="{{ '/assets/img/project_suksuk/suksukmath03-1.PNG' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk/suksukmath03-1.PNG' | relative_url }}" alt="곱셈 세로셈을 풀며 빈칸에 숫자를 입력하는 화면" loading="lazy"></a>
     <p><strong>계산 과정</strong> — 세로셈의 빈칸을 숫자 버튼으로 채우며 곱셈을 진행합니다.</p>
   </div>
   <div>
-    <a href="{{ '/assets/img/project_suksuk/suksukmath03-2.PNG' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk/suksukmath03-2.PNG' | relative_url }}" alt="곱셈 풀이를 완성한 뒤 칭찬 메시지가 나오는 화면" loading="lazy"></a>
+    <a href="{{ '/assets/img/project_suksuk/suksukmath03-2.PNG' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk/suksukmath03-2.PNG' | relative_url }}" alt="곱셈 풀이를 완성한 뒤 칭찬 메시지가 나오는 화면" loading="lazy"></a>
     <p><strong>풀이 완료</strong> — 계산을 끝내면 칭찬 화면으로 성취감을 느낄 수 있습니다.</p>
   </div>
 </div>
@@ -51,18 +51,18 @@ hide_title: true
 
 <div class="image-grid">
   <div>
-    <a href="{{ '/assets/img/project_suksuk/suksukmath04-1.PNG' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk/suksukmath04-1.PNG' | relative_url }}" alt="나눗셈 세로셈의 중간 계산을 입력하는 화면" loading="lazy"></a>
+    <a href="{{ '/assets/img/project_suksuk/suksukmath04-1.PNG' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk/suksukmath04-1.PNG' | relative_url }}" alt="나눗셈 세로셈의 중간 계산을 입력하는 화면" loading="lazy"></a>
     <p><strong>계산 과정</strong> — 몫과 중간 계산을 순서대로 입력하며 나눗셈을 연습합니다.</p>
   </div>
   <div>
-    <a href="{{ '/assets/img/project_suksuk/suksukmath04-2.PNG' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk/suksukmath04-2.PNG' | relative_url }}" alt="나눗셈 풀이 완료 후 칭찬 메시지가 표시된 화면" loading="lazy"></a>
+    <a href="{{ '/assets/img/project_suksuk/suksukmath04-2.PNG' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk/suksukmath04-2.PNG' | relative_url }}" alt="나눗셈 풀이 완료 후 칭찬 메시지가 표시된 화면" loading="lazy"></a>
     <p><strong>풀이 완료</strong> — 몫과 나머지까지 계산을 마치면 결과를 확인합니다.</p>
   </div>
 </div>
 
 ## 도전 문제풀기
 
-<a href="{{ '/assets/img/project_suksuk/suksukmath05.PNG' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_suksuk/suksukmath05.PNG' | relative_url }}" alt="곱셈과 나눗셈 빈칸을 풀어 보는 도전 문제 화면" loading="lazy"></a>
+<a href="{{ '/assets/img/project_suksuk/suksukmath05.PNG' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk/suksukmath05.PNG' | relative_url }}" alt="곱셈과 나눗셈 빈칸을 풀어 보는 도전 문제 화면" loading="lazy"></a>
 
 도전 문제에서는 계산 과정에 제시된 빈칸을 채우며 곱셈과 나눗셈을 응용해 봅니다.
 

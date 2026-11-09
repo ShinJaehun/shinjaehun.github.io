@@ -6,69 +6,9 @@ tech: Android / Java / ContentProvider / SyncAdapter / CursorLoader / Jsoup
 type: personal
 ---
 
-## 안녕한라산
-
 안녕한라산은 제주 한라산 방문객을 위해 만든 Android 앱입니다.
 
 제주 시내 날씨가 괜찮아 보여도 겨울철 한라산 중산간 도로는 결빙되거나 통제되는 일이 자주 있습니다. 안녕한라산은 한라산을 찾는 사람들이 도로 통제 상황과 탐방 관련 날씨 정보를 더 쉽게 확인할 수 있도록 만든 앱입니다.
-
-앱은 제주 중산간 도로 통제 정보를 가져와 지도 이미지 위에 직관적으로 표시하고, 한라산 탐방로 주변의 날씨 정보를 함께 보여주는 것을 목표로 했습니다.
-
-## 프로젝트 페이지
-
-* [GitHub 저장소](https://github.com/ShinJaehun/AnnyeongHallasan)
-
-## 주요 특징
-
-* 제주 중산간 도로 통제 정보 표시
-
-  * 한라산 접근에 중요한 도로들의 통제 여부를 확인합니다.
-  * 통제된 도로는 지도 이미지 위에서 깜빡이는 애니메이션으로 표시합니다.
-  * 방문객이 도로 상황을 한눈에 파악할 수 있도록 하는 데 초점을 두었습니다.
-
-* 한라산 탐방 관련 날씨 정보 제공
-
-  * 한라산 주변 지점별 날씨 정보를 표시합니다.
-  * 기온, 강수량, 하늘 상태, 강수 형태, 습도, 풍향, 풍속 등의 정보를 다룹니다.
-  * 날씨 항목을 누르면 상세 정보를 Dialog로 확인할 수 있도록 구성했습니다.
-
-* 겨울철 도로 상황에 초점
-
-  * 시내 날씨만 보고 한라산 방문을 결정하기 어려운 제주 환경을 고려했습니다.
-  * 11월부터 3월까지 도로 통제 정보를 적극적으로 표시하도록 구성했습니다.
-  * 겨울철 중산간 도로 결빙과 통제 상황을 직관적으로 전달하는 것이 핵심이었습니다.
-
-* Android 옛 구조 학습
-
-  * ContentProvider, CursorLoader, SyncAdapter를 사용했습니다.
-  * 도로 통제 정보와 날씨 정보를 로컬 DB에 저장하고, Loader로 화면에 연결했습니다.
-  * 현재 기준으로는 오래된 Android 구조이지만, 당시 Android 데이터 동기화와 로컬 저장 구조를 학습하기 위한 프로젝트였습니다.
-
-## 기본 사용 흐름
-
-1. 앱을 실행합니다.
-2. 네트워크 연결 상태를 확인합니다.
-3. 도로 통제 정보와 날씨 정보를 동기화합니다.
-4. 도로 통제 상황을 지도 이미지 위에서 확인합니다.
-5. 한라산 주변 날씨 정보를 목록으로 확인합니다.
-6. 날씨 항목을 누르면 상세 정보를 확인합니다.
-7. 일정 시간이 지난 뒤 다시 앱을 열면 데이터를 다시 동기화합니다.
-
-## 기술 스택
-
-* Android
-* Java
-* Android Support Library
-* AppCompat
-* Fragment
-* ContentProvider
-* CursorLoader
-* LoaderManager
-* SyncAdapter
-* SharedPreferences
-* Jsoup
-* XML Layout
-* Gradle
 
 ## 개발 과정
 
@@ -80,29 +20,30 @@ type: personal
 
 날씨 정보는 한라산 주변 지점별로 보여주고, 각 항목을 누르면 상세 날씨 정보를 확인할 수 있도록 구성했습니다.
 
-현재 기준으로 보면 오래된 Android 앱입니다. Android Support Library, SyncAdapter, CursorLoader 같은 구조를 사용하고 있으며, 최신 Android 앱 구조와는 거리가 있습니다. 하지만 당시에는 Android의 데이터 동기화, ContentProvider, Loader, 웹 스크래핑, 로컬 캐시 구조를 직접 구현해 본 의미 있는 프로젝트였습니다.
+## 프로젝트 페이지
 
-## 현재 상태
+* [GitHub 저장소](https://github.com/ShinJaehun/AnnyeongHallasan)
 
-* 2016년 말 시작, 2017년에 개발한 옛 Android 앱입니다.
-* Android Java 기반으로 작성되었습니다.
-* 도로 통제 정보와 한라산 주변 날씨 정보를 제공하는 구조를 구현했습니다.
-* 현재 Android SDK와 Gradle 환경 기준으로는 리뉴얼이 필요합니다.
-* 데이터 수집 대상 사이트 구조가 바뀌었을 가능성이 있어 현재 동작은 보장하기 어렵습니다.
-* 포트폴리오에서는 “제주/한라산 안전 정보 앱의 초기 시도”로 보관합니다.
+## 도로 통제 상황과 날씨
 
-## 앞으로의 개선 방향
+<div class="image-grid">
+  <div>
+    <a href="{{ '/assets/img/project_annyeong_hallasan/hallasan01.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_annyeong_hallasan/hallasan01.png' | relative_url }}" alt="중산간 도로가 정상 운행 중일 때의 한라산 날씨 화면" loading="lazy"></a>
+    <p><strong>정상 운행</strong> — 도로 통제가 없는 상태의 지도와 한라산·어리목·영실·성판악·관음사·돈내코 주변 날씨를 확인할 수 있습니다.</p>
+  </div>
+  <div>
+    <a href="{{ '/assets/img/project_annyeong_hallasan/hallasan02.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_annyeong_hallasan/hallasan02.png' | relative_url }}" alt="눈으로 평화로·번영로·1100도로가 통제된 상황을 지도에 표시한 화면" loading="lazy"></a>
+    <p><strong>눈으로 인한 도로 통제</strong> — 평화로·번영로·1100도로가 통제된 상황을 지도 위의 색상 표시로 알려줍니다. 앱에서는 통제된 도로를 깜빡이는 방식으로 강조했습니다.</p>
+  </div>
+</div>
 
-* Kotlin 기반 재작성
-* AndroidX / Material3 전환
-* Jetpack Compose UI 적용
-* SyncAdapter 대신 WorkManager 사용
-* Room 기반 로컬 캐시 구성
-* 공식 API 또는 안정적인 데이터 수집 구조 검토
-* 도로 통제 정보와 날씨 정보 모델 분리
-* 한라산 탐방로별 날씨 카드 개선
-* 도로 통제 지도 시각화 개선
-* 오름올라와 연계한 제주 산행/오름 탐방 안전 정보 앱으로 확장 검토
+지도에서 도로 상황을 빠르게 확인하고, 화면 아래에서는 주요 탐방 지점의 날씨와 기온을 함께 살펴볼 수 있도록 구성했습니다. 날씨 항목을 선택하면 상세 정보도 확인할 수 있습니다.
+
+## 개발 기록
+
+2016년 말부터 2017년에 걸쳐 **Java 기반 Android 앱**으로 개발했습니다. 웹에서 수집한 도로 통제 정보와 날씨 정보를 로컬에 저장하고, `SyncAdapter`와 `ContentProvider`, `CursorLoader`를 이용해 갱신된 정보를 화면에 반영했습니다.
+
+현재는 오래된 Android 개발 환경과 외부 정보 수집 방식 때문에 정상 동작을 보장하기 어렵습니다. 당시의 구현 구조와 자세한 기술 설명은 [GitHub README](https://github.com/ShinJaehun/AnnyeongHallasan#readme)에 남겨 두었습니다.
 
 ## 저작권
 
