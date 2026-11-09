@@ -16,11 +16,11 @@ type: personal
 
 <div class="image-grid">
   <div>
-    <a href="{{ '/assets/img/project_oreumola/OO02.jpg' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_oreumola/OO02.jpg' | relative_url }}" alt="사라봉과 별도봉 탐방 경로를 표시한 기록 목록" loading="lazy"></a>
+    <a href="{{ '/assets/img/project_oreumola/OO02.jpg' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_oreumola/OO02.jpg' | relative_url }}" alt="사라봉과 별도봉 탐방 경로를 표시한 기록 목록" loading="lazy"></a>
     <p><strong>사라봉·별도봉</strong> — 실제 이동 경로를 지도 위에 빨간 선으로 표시하고, 날짜와 소요 시간·거리·평균 속도·소모 칼로리를 함께 보여줍니다.</p>
   </div>
   <div>
-    <a href="{{ '/assets/img/project_oreumola/OO01.jpg' | relative_url }}"><img class="portfolio-thumbnail" src="{{ '/assets/img/project_oreumola/OO01.jpg' | relative_url }}" alt="삼의악 탐방 경로를 표시한 기록 목록" loading="lazy"></a>
+    <a href="{{ '/assets/img/project_oreumola/OO01.jpg' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_oreumola/OO01.jpg' | relative_url }}" alt="삼의악 탐방 경로를 표시한 기록 목록" loading="lazy"></a>
     <p><strong>삼의악</strong> — 오름을 걸으며 기록한 GPS 경로를 저장해 두었다가 날짜별 목록에서 다시 확인할 수 있습니다.</p>
   </div>
 </div>
