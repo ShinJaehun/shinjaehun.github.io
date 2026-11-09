@@ -14,7 +14,7 @@ type: personal
 
 ## 번호 뽑기
 
-<a href="/assets/img/project_suksuk_picker/picker01.png" target="_blank"><img src="/assets/img/project_suksuk_picker/picker01.png" alt="쑥쑥뽑아 메인 화면" loading="lazy"></a>
+<img src="/assets/img/project_suksuk_picker/picker01.png" alt="쑥쑥뽑아 메인 화면" loading="lazy">
 
 버튼을 눌러 번호 추첨을 시작하고 번호를 확정합니다. 이미 뽑힌 번호는 화면 아래에 표시되며 중복해서 뽑히지 않습니다.
 
@@ -22,7 +22,7 @@ type: personal
 
 ## 설정
 
-<a href="/assets/img/project_suksuk_picker/picker02.png" target="_blank"><img src="/assets/img/project_suksuk_picker/picker02.png" alt="쑥쑥뽑아 설정 화면" loading="lazy"></a>
+<img src="/assets/img/project_suksuk_picker/picker02.png" alt="쑥쑥뽑아 설정 화면" loading="lazy">
 
 설정 창에서 이름, 전체 인원, 추첨에서 제외할 번호를 지정할 수 있습니다. 설정 적용과 초기화 기능도 제공합니다.
 
