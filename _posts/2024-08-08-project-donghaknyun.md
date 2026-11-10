@@ -6,92 +6,47 @@ tech: Ruby on Rails / Turbo / Stimulus / SortableJS / PostgreSQL
 type: personal
 ---
 
-## 동학년
-
-동학년은 동학년 교사들이 **준비물 예약**과 **학년 공동 일정**을 함께 조율할 수 있도록 만든 Ruby on Rails 기반 공유 시스템입니다. 학년 단위로 수업을 운영하다 보면 같은 준비물, 같은 장소, 같은 수업 자료를 여러 반이 함께 사용해야 하는 일이 자주 생깁니다. 동학년은 이런 상황에서 준비물 사용 시간을 한눈에 확인하고, 교사들이 서로 겹치지 않게 예약할 수 있도록 돕는 것을 목표로 합니다.
+동학년은 같은 학년 선생님들이 **공동 준비물과 수업 일정을 함께 확인하고 예약**할 수 있도록 만든 Ruby on Rails 웹 애플리케이션입니다. 준비물을 카드로 등록한 뒤 날짜·층·교시별 일정판에 끌어다 놓아, 여러 학급이 사용하는 자료와 시간을 쉽게 조율할 수 있습니다.
 
 ## 프로젝트 페이지
 
 * [GitHub 저장소](https://github.com/ShinJaehun/donghaknyun)
 
-## 주요 특징
+## 로그인하지 않아도 볼 수 있는 공동 일정
 
-* 학년 공동 준비물 관리
+<a href="{{ '/assets/img/project_donghaknyun/donhaknyun00.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_donghaknyun/donhaknyun00.png' | relative_url }}" alt="로그인 전에도 공용 TODO와 학급별 준비물 예약을 확인할 수 있는 주간 일정표" loading="lazy"></a>
 
-  * 학년에서 함께 사용하는 준비물이나 수업 자료를 등록합니다.
-  * 각 준비물은 카드 형태로 표시됩니다.
-  * 교사들은 필요한 준비물을 일정표 위에 배치해 예약할 수 있습니다.
+로그인하지 않은 방문자도 **공용 준비물 목록과 주간 예약 현황**을 살펴볼 수 있습니다. 일정은 월요일부터 금요일까지 표시되며, 각 날짜를 3층·4층과 교시별로 나누어 어떤 학급이 무엇을 사용하도록 예약했는지 보여줍니다.
 
-* Drag & Drop 기반 예약
+## 준비물 카드 등록
 
-  * 준비물 카드를 원하는 날짜와 교시 칸으로 끌어다 놓을 수 있습니다.
-  * SortableJS를 활용해 준비물 이동과 복제 흐름을 구현했습니다.
-  * 수업 시간표를 보듯 준비물 사용 일정을 직관적으로 조정할 수 있습니다.
+<a href="{{ '/assets/img/project_donghaknyun/donhaknyun01.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_donghaknyun/donhaknyun01.png' | relative_url }}" alt="관리자가 공용 TODO 목록에 준비물 카드를 추가하는 입력 창" loading="lazy"></a>
 
-* 동학년 일정 공유
+관리자는 공용 TODO 영역에서 준비물이나 수업 활동을 카드로 등록합니다. **이름과 설명을 입력**하면 카드가 공용 목록에 추가되고, 선생님들은 이 카드를 필요한 날짜와 교시로 드래그해 예약할 수 있습니다. 이때 공용 카드 원본은 남고 일정판에 예약 카드가 복제됩니다.
 
-  * 날짜, 층, 교시를 기준으로 학년 공동 일정을 확인할 수 있습니다.
-  * 같은 학년 교사들이 서로의 예약 상황을 보며 수업 준비를 조율할 수 있습니다.
-  * 준비물 사용 시간이 겹치는 상황을 줄이는 데 초점을 두었습니다.
+## 교사별 준비물 예약과 권한
 
-* 공용 TODO 카드 복제
+<a href="{{ '/assets/img/project_donghaknyun/donhaknyun03.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_donghaknyun/donhaknyun03.png' | relative_url }}" alt="4반 교사로 로그인했을 때 자신의 예약 카드에만 관리 버튼이 표시되는 주간 일정표" loading="lazy"></a>
 
-  * 공용 목록에 있는 준비물 카드를 각 교사의 일정으로 복제할 수 있습니다.
-  * 같은 준비물을 여러 반에서 순차적으로 사용할 때 유용합니다.
-  * 원본 카드와 예약된 카드를 구분해 관리할 수 있도록 설계했습니다.
+각 선생님은 다른 학급의 예약까지 **함께 확인**할 수 있지만, **자신이 등록한 예약 카드만 이동하거나 삭제**할 수 있습니다. 화면에는 여러 반의 카드가 함께 보이므로 같은 준비물을 서로 다른 시간에 사용하도록 조정하기 쉽습니다.
 
-* 교사별 예약 구분
+## 관리자 권한과 다음 주 일정
 
-  * 예약한 교사 정보를 기준으로 카드를 구분할 수 있습니다.
-  * 자신이 만든 예약을 이동하거나 삭제할 수 있도록 권한을 나누었습니다.
-  * 관리자와 일반 교사의 관리 범위를 구분하는 구조를 사용했습니다.
+<a href="{{ '/assets/img/project_donghaknyun/donhaknyun04.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_donghaknyun/donhaknyun04.png' | relative_url }}" alt="관리자로 로그인했을 때 모든 예약 카드의 관리 버튼과 다음 주 일정 생성 버튼이 표시되는 화면" loading="lazy"></a>
 
-## 기본 사용 흐름
+관리자는 **모든 학급의 예약 카드를 관리**할 수 있습니다. 또한 `New schedules` 버튼으로 **다음 주 일정판을 생성**하고, 생성된 주차의 일정표로 이동해 예약 상황을 확인할 수 있습니다.
 
-1. 교사가 로그인합니다.
-2. 학년 일정표를 엽니다.
-3. 공용 준비물 목록에서 필요한 카드를 확인합니다.
-4. 준비물 카드를 원하는 날짜와 교시에 끌어다 놓습니다.
-5. 동학년 교사들이 예약된 준비물 사용 시간을 함께 확인합니다.
-6. 필요한 경우 예약을 이동하거나 삭제해 일정을 조정합니다.
+## 공용 준비물 편집
 
-## 기술 스택
+<a href="{{ '/assets/img/project_donghaknyun/donhaknyun05.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_donghaknyun/donhaknyun05.png' | relative_url }}" alt="공용 TODO 카드에 수정 및 삭제 아이콘이 표시된 관리자 화면" loading="lazy"></a>
 
-* Ruby on Rails
-* PostgreSQL
-* Turbo
-* Stimulus
-* SortableJS
-* Bootstrap
-* Devise
-* Rolify
-* CanCanCan
+관리자는 공용 TODO 카드의 **이름과 내용을 수정하거나 불필요한 카드를 삭제**할 수 있습니다. 교사들이 같은 준비물 목록을 공유하면서 각자의 수업 시간에 예약하는 구조입니다.
 
-## 개발 과정
+## 개발 기록
 
-동학년은 학교 현장에서 동학년 교사들과 함께 준비물과 수업 일정을 조율할 때 느낀 불편함에서 출발한 프로젝트입니다. 처음에는 학년 공동 준비물과 일정표를 웹에서 함께 확인하고 조정할 수 있는 구조를 목표로 했습니다. 이후 준비물 카드를 단순히 입력하는 방식보다, 실제 시간표 위에 끌어다 놓는 방식이 교사들에게 더 직관적이라고 판단해 Drag & Drop 기반 예약 흐름을 구현했습니다. Rails의 서버 기반 구조를 유지하면서도 Turbo와 Stimulus를 활용해 화면 전환을 줄이고, SortableJS를 통해 준비물 카드 이동과 복제 기능을 구현했습니다.
+Rails와 PostgreSQL을 기반으로 구현했으며, **Turbo·Stimulus·SortableJS**로 카드 등록과 Drag & Drop 예약을 처리했습니다. 교사와 관리자 사이에는 권한을 구분해, 학년 전체의 예약 현황은 공유하되 다른 교사의 예약을 임의로 변경하지 못하도록 구성했습니다.
 
-## 현재 상태
-
-* Rails 기반 기본 구조 구현
-* 사용자 로그인과 권한 구조 구현
-* 학년 일정표 화면 구현
-* 준비물 카드 등록과 표시 구현
-* Drag & Drop 기반 준비물 이동 구현
-* 공용 카드 복제 흐름 구현
-* 교사별 예약 구분과 권한 처리 구현
-* 출시 후 유지보수 중
-
-## 앞으로의 개선 방향
-
-* 학년 공용 알림장
-* 학급별 전담 수업시간 기반 스케줄러
-* 준비물 사용 현황 통계
-* 예약 충돌 감지
-* 모바일 화면 개선
-* 교사별 필터와 검색 기능
-* 반복 예약 기능
-* 학년 업무 공유 기능 확장
+구체적인 데이터 구조와 구현 내용은 [GitHub README](https://github.com/ShinJaehun/donghaknyun#readme)에 정리했습니다.
 
 ## 저작권
 
