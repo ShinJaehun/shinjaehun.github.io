@@ -6,115 +6,56 @@ tech: HTML / CSS / JavaScript / Canvas / Pointer Events / GitHub Pages
 type: personal
 ---
 
-## 쑥쑥수학게임
-
-쑥쑥수학게임은 초등 수학 수업에서 사용할 수 있는 **브라우저 기반 수학 학습 게임 모음**입니다. 처음에는 별도 저장소에서 만든 러시아워 게임으로 시작했습니다. 이후 닷링크, 테트리스, 파이프 드림 같은 게임을 더하면서 단순한 개별 게임이 아니라, 초등 수학 수업에서 도형의 이동, 회전, 방향, 경로, 공간 감각을 다룰 수 있는 작은 학습 게임 모음으로 확장했습니다. 설치나 로그인 없이 브라우저에서 바로 실행할 수 있도록 만들었고, 교실 태블릿이나 PC에서 수업 중 가볍게 사용할 수 있는 것을 목표로 합니다.
+쑥쑥수학게임은 **초등 수학의 도형 이동과 공간 감각을 직접 조작하며 익힐 수 있도록 만든 브라우저 기반 학습 게임 모음**입니다. 설치나 로그인 없이 PC와 태블릿에서 실행할 수 있으며, 점 잇기부터 도형 밀기, 회전·뒤집기, 경로 연결까지 여러 활동을 제공합니다.
 
 ## 프로젝트 페이지
 
+* [게임 실행하기](https://shinjaehun.github.io/suksuk-math-games/)
 * [GitHub 저장소](https://github.com/ShinJaehun/suksuk-math-games)
-* [실행 페이지](https://shinjaehun.github.io/suksuk-math-games/)
 
-## 주요 특징
+## 게임 선택
 
-* 브라우저에서 바로 실행
+<a href="{{ '/assets/img/project_suksuk_math_games/mathgames01.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk_math_games/mathgames01.png' | relative_url }}" alt="쑥쑥수학게임의 다섯 가지 게임을 선택하는 첫 화면" loading="lazy"></a>
 
-  * 별도 설치 없이 웹 브라우저에서 실행합니다.
-  * 학생용 태블릿이나 교실 PC에서 바로 사용할 수 있습니다.
-  * GitHub Pages로 배포할 수 있는 정적 웹앱 구조를 사용합니다.
+첫 화면에서 **닷링크, 러시아워, 테트리스, 파이프 드림, 파이프 드림 2** 중 원하는 활동을 선택합니다. 각 게임은 도형의 이동이나 경로 구성처럼 수업에서 다루는 수학 개념과 연결됩니다.
 
-* 초등 수학 수업과 연결
+## 점 연결과 도형 밀기
 
-  * 도형의 이동, 회전, 방향, 경로 찾기 같은 수학적 요소를 게임으로 다룹니다.
-  * 단순한 오락 게임이 아니라 수업 활동과 연결할 수 있는 게임을 목표로 합니다.
-  * 특히 평면도형의 이동, 공간 추론, 경로 구성 활동과 잘 어울리도록 구성했습니다.
+<div class="image-grid">
+  <div>
+    <a href="{{ '/assets/img/project_suksuk_math_games/mathgames02.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk_math_games/mathgames02.png' | relative_url }}" alt="닷링크에서 같은 색 점을 연결하는 화면" loading="lazy"></a>
+    <p><strong>닷링크 — 점 이동하기</strong> 같은 색 점을 선으로 연결하며 겹치지 않는 이동 경로를 찾습니다. 모든 칸을 채우는 과정을 통해 경로와 위치 관계를 생각해 봅니다.</p>
+  </div>
+  <div>
+    <a href="{{ '/assets/img/project_suksuk_math_games/mathgames03.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk_math_games/mathgames03.png' | relative_url }}" alt="러시아워에서 자동차 모양 도형을 밀어 출구로 이동시키는 화면" loading="lazy"></a>
+    <p><strong>러시아워 — 도형 밀기</strong> 자동차 모양 도형을 정해진 방향으로 밀어 빨간 자동차를 출구까지 이동시킵니다. 도형의 이동과 공간 추론을 연습할 수 있습니다.</p>
+  </div>
+</div>
 
-* 여러 게임을 하나의 모음으로 구성
+## 도형 돌리기와 뒤집기
 
-  * 처음에는 러시아워 게임에서 출발했습니다.
-  * 이후 닷링크, 테트리스, 파이프 드림 계열 게임을 추가했습니다.
-  * 개별 게임을 모아 초등 수학 수업용 게임 모음으로 확장했습니다.
+<a href="{{ '/assets/img/project_suksuk_math_games/4mathgames03.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk_math_games/4mathgames03.png' | relative_url }}" alt="테트리스에서 떨어지는 도형을 회전하고 이동시키는 화면" loading="lazy"></a>
 
-* 단순한 조작
+**테트리스**는 떨어지는 도형을 좌우로 옮기고 회전하거나 뒤집으면서 빈 공간에 맞추는 게임입니다. 도형의 모양이 바뀌는 과정을 관찰하고, 공간을 채우는 방법을 생각해 볼 수 있습니다.
 
-  * 마우스, 터치, 포인터 이벤트를 활용해 학생이 쉽게 조작할 수 있도록 했습니다.
-  * 복잡한 회원가입이나 설정 없이 게임을 바로 시작할 수 있습니다.
-  * 교사가 수업 중 활동을 안내하고 학생들이 각자 실습할 수 있는 구조를 지향합니다.
+## 파이프 드림 — 평면도형의 이동 응용
 
-## 포함된 게임
+<div class="image-grid">
+  <div>
+    <a href="{{ '/assets/img/project_suksuk_math_games/mathgames04.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk_math_games/mathgames04.png' | relative_url }}" alt="파이프 드림에서 시작점에서 목표 지점까지 파이프를 연결하는 화면" loading="lazy"></a>
+    <p><strong>파이프 드림 — 목표 지점 연결</strong> 파이프 조각의 방향을 살피며 시작점에서 목표 지점까지 물이 흐를 수 있는 길을 만듭니다.</p>
+  </div>
+  <div>
+    <a href="{{ '/assets/img/project_suksuk_math_games/mathgames05.png' | relative_url }}"><img class="portfolio-thumbnail portfolio-thumbnail-lg" src="{{ '/assets/img/project_suksuk_math_games/mathgames05.png' | relative_url }}" alt="파이프 드림 2에서 제한 시간 안에 물길을 완성하는 화면" loading="lazy"></a>
+    <p><strong>파이프 드림 2 — 제한 시간 도전</strong> 제한 시간 안에 파이프를 배치해 물이 계속 흐를 수 있도록 경로를 완성합니다. 방향과 연결 관계를 빠르게 판단해야 합니다.</p>
+  </div>
+</div>
 
-* 닷링크
+## 개발 기록
 
-  * 점과 점을 연결하며 경로를 찾는 게임입니다.
-  * 이동 경로, 순서, 연결 관계를 생각하게 합니다.
+러시아워 게임에서 시작해 닷링크, 테트리스, 파이프 드림으로 확장한 프로젝트입니다. HTML·CSS·JavaScript를 사용해 구현했으며, 마우스와 터치 조작으로 수학 활동을 경험할 수 있도록 구성했습니다.
 
-* 러시아워
-
-  * 막힌 차량을 움직여 목표 차량을 밖으로 빼내는 퍼즐입니다.
-  * 도형의 이동, 공간 추론, 순차적 문제 해결을 다룹니다.
-  * 쑥쑥수학게임의 출발점이 된 첫 게임입니다.
-
-* 테트리스
-
-  * 떨어지는 도형을 회전하고 배치하는 게임입니다.
-  * 도형의 회전, 배치, 공간 채우기 감각을 다룹니다.
-
-* 파이프 드림
-
-  * 파이프 조각을 연결해 흐름이 이어지도록 만드는 게임입니다.
-  * 방향, 연결, 경로 구성, 예측을 다룹니다.
-
-* 파이프 드림 2
-
-  * 파이프 드림의 흐름을 확장한 게임입니다.
-  * 제한 시간, 경로 개선, 더 복잡한 연결 문제를 다룰 수 있도록 확장할 수 있습니다.
-
-## 기본 사용 흐름
-
-1. 실행 페이지에 접속합니다.
-2. 원하는 게임을 선택합니다.
-3. 게임 규칙을 확인합니다.
-4. 마우스나 터치로 게임을 조작합니다.
-5. 문제를 해결하며 도형의 이동, 방향, 경로를 탐색합니다.
-6. 교사는 수업 내용과 연결해 활동을 안내합니다.
-
-## 기술 스택
-
-* HTML
-* CSS
-* JavaScript
-* DOM API
-* Canvas
-* Pointer Events
-* GitHub Pages
-
-## 개발 과정
-
-쑥쑥수학게임은 처음부터 하나의 큰 게임 모음으로 시작한 프로젝트는 아닙니다. 처음에는 러시아워 게임을 별도 프로젝트로 만들면서 출발했습니다. 러시아워는 차량을 위아래 또는 좌우로 움직여 목표 차량을 탈출시키는 퍼즐로, 초등 수학에서 다루는 도형의 이동, 위치 변화, 공간 추론 활동과 연결하기 좋은 게임이었습니다. 이후 이 아이디어를 확장해, 러시아워 하나만이 아니라 여러 개의 작은 수학 게임을 모아 수업에서 활용할 수 있는 형태로 정리하기 시작했습니다. 닷링크, 테트리스, 파이프 드림 같은 게임은 모두 학생들이 손으로 조작하면서 방향, 이동, 회전, 연결, 경로를 생각하게 만든다는 공통점을 가지고 있습니다. 개발 과정에서는 ChatGPT를 개발 보조 도구로 활용했습니다. ChatGPT는 게임의 전체 방향을 대신 정하는 도구가 아니라, 게임 규칙을 코드 구조로 정리하고, JavaScript 로직을 나누며, 브라우저에서 안정적으로 동작하도록 리팩터링 방향을 점검하는 보조 도구로 사용했습니다.
-
-## 현재 상태
-
-* 러시아워 게임 구현
-* 닷링크 게임 구현
-* 테트리스 게임 구현
-* 파이프 드림 게임 구현
-* 파이프 드림 2 확장 흐름 구현
-* 브라우저 기반 실행 구조 구현
-* GitHub Pages 배포 구조 구현
-* 초등 수학 수업용 게임 모음으로 정리 중
-
-## 앞으로의 개선 방향
-
-* 각 게임별 난이도 단계 정리
-* 수학 단원별 게임 분류
-* 4학년 평면도형 이동 단원과의 연결 강화
-* 태블릿 터치 조작 개선
-* 전체 화면 수업 모드
-* 교사용 활동 안내 문서
-* 학생용 미션 카드
-* 게임별 기록 저장
-* 더 많은 수학 단원으로 확장
-* 수업 활동 후 공유와 피드백 기능 검토
+게임별 구현 내용과 소스 코드는 [GitHub README](https://github.com/ShinJaehun/suksuk-math-games#readme)에 정리했습니다.
 
 ## 저작권
 
